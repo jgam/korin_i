@@ -1,14 +1,14 @@
 # main text of home
-name: John Doe
-bio: A Man who travels the world eating noodles
+name: Jimmy Gam
+bio: A day without a laughter is a disaster
 
 # twitter summary info
-description: A blog about technology and stuff related
+description: A journey to dream
 
 # if it's an external image, update below for true
 # better with square images
 external-image: false
-picture: assets/images/profile.jpg
+picture: assets/images/bb.jpeg
 
 # If you want to include your resume, set to true
 # and specify source (external or local).
@@ -16,7 +16,7 @@ resume: true
 resume-external: true
 resume-url: https://google.com/?q=my+resume
 
-url: https://koppl.in/indigo
+url: https://jgam.github.io
 # your url: http://USERNAME.github.io
 
 permalink: /:title/
@@ -34,24 +34,24 @@ disqus:
   categories: [blog, project] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
-facebook: myfacebook
-twitter: mytwitter
+facebook: jgam1333
+#twitter: mytwitter
 # google: mygoogle
-# instagram: myinstagram
+instagram: jgam__
 # pinterest: mypinterest
-# linkedin: mylinkedin
+linkedin: in/jeonghan-jimmy-gam-67726b127
 # youtube: myyoutube
 # spotify: myspotify
-github: mygithub
+github: jgam
 # gitlab: mygitlab
 # lastfm: mylastfm
 # stackoverflow: 7044681/mystackoverflow
 # quora: userquora
 # reddit: username
-medium: medium
+#medium: medium
 # vimeo: myvimeo
 # lanyrd: mylanyrd
-email: myemail@gmail.com
+email: jgam@alumni.nd.edu
 
 authors:
     johndoe:
