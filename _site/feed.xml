@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-02-23T12:51:59+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jimmy Gam</title><subtitle>A journey to dream</subtitle><entry><title type="html">Markdown Extra Components</title><link href="http://localhost:4000/markdown-extra-components/" rel="alternate" type="text/html" title="Markdown Extra Components" /><published>2016-02-24T22:48:00+09:00</published><updated>2016-02-24T22:48:00+09:00</updated><id>http://localhost:4000/markdown-extra-components</id><content type="html" xml:base="http://localhost:4000/markdown-extra-components/">&lt;h2 id=&quot;summary&quot;&gt;Summary:&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-02-23T13:53:38+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jimmy Gam</title><subtitle>A journey to dream</subtitle><entry><title type="html">First blog</title><link href="http://localhost:4000/introduction/" rel="alternate" type="text/html" title="First blog" /><published>2019-02-23T00:00:00+09:00</published><updated>2019-02-23T00:00:00+09:00</updated><id>http://localhost:4000/introduction</id><content type="html" xml:base="http://localhost:4000/introduction/">&lt;h2 id=&quot;why-blog&quot;&gt;Why Blog?&lt;/h2&gt;
+
+&lt;p&gt;I have a dream and I feel like this platform can be my &lt;strong&gt;shoes&lt;/strong&gt; in many ways.&lt;/p&gt;
+
+&lt;p&gt;More importantly, I hope this blog can deliver messages to people just like I did.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-to-include&quot;&gt;What to include?&lt;/h2&gt;
+
+&lt;p&gt;Mostly Algorithms. I want to publish not only the concepts but also problems.&lt;/p&gt;
+
+&lt;p&gt;While exploring algorithmic approaches, I want to dig deeper into the interactions between language and operating system&lt;/p&gt;
+
+&lt;h2 id=&quot;what-to-expect&quot;&gt;What to expect?&lt;/h2&gt;
+
+&lt;p&gt;Hopefully, I can engage other people (in a humble way) and create or think something greater.&lt;/p&gt;
+
+&lt;h2 id=&quot;finishing&quot;&gt;Finishing…&lt;/h2&gt;
+
+&lt;p&gt;Thank you so much for reading and approach me through any means as you will find my contacts in homepage.&lt;/p&gt;</content><author><name>jgam</name></author><category term="blog" /><category term="jgam" /><category term="elements" /><summary type="html">Why Blog?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/markdown.jpg" /></entry><entry><title type="html">Markdown Extra Components</title><link href="http://localhost:4000/markdown-extra-components/" rel="alternate" type="text/html" title="Markdown Extra Components" /><published>2016-02-24T22:48:00+09:00</published><updated>2016-02-24T22:48:00+09:00</updated><id>http://localhost:4000/markdown-extra-components</id><content type="html" xml:base="http://localhost:4000/markdown-extra-components/">&lt;h2 id=&quot;summary&quot;&gt;Summary:&lt;/h2&gt;
 
 &lt;p&gt;You can pick as item to see how to apply in markdown.&lt;/p&gt;
 

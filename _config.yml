@@ -16,7 +16,7 @@ resume: true
 resume-external: true
 resume-url: https://google.com/?q=my+resume
 
-url: https://jgam.github.io
+url: https://jgam.github.io/korin_i
 # your url: http://USERNAME.github.io
 
 permalink: /:title/
@@ -39,7 +39,7 @@ facebook: jgam1333
 # google: mygoogle
 instagram: jgam__
 # pinterest: mypinterest
-linkedin: in/jeonghan-jimmy-gam-67726b127
+linkedin: jeonghan-jimmy-gam-67726b127
 # youtube: myyoutube
 # spotify: myspotify
 github: jgam
