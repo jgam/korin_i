@@ -1,18 +1,60 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-02-23T13:53:38+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jimmy Gam</title><subtitle>A journey to dream</subtitle><entry><title type="html">First blog</title><link href="http://localhost:4000/introduction/" rel="alternate" type="text/html" title="First blog" /><published>2019-02-23T00:00:00+09:00</published><updated>2019-02-23T00:00:00+09:00</updated><id>http://localhost:4000/introduction</id><content type="html" xml:base="http://localhost:4000/introduction/">&lt;h2 id=&quot;why-blog&quot;&gt;Why Blog?&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-02-25T16:39:15+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jimmy Gam</title><subtitle>A journey to dream</subtitle><entry><title type="html">Arrays and Strings</title><link href="http://localhost:4000/crackingthecodinginterview1/" rel="alternate" type="text/html" title="Arrays and Strings" /><published>2019-02-25T00:00:00+09:00</published><updated>2019-02-25T00:00:00+09:00</updated><id>http://localhost:4000/crackingthecodinginterview1</id><content type="html" xml:base="http://localhost:4000/crackingthecodinginterview1/">&lt;h2 id=&quot;해쉬-테이블-hash-tables&quot;&gt;해쉬 테이블 Hash Tables&lt;/h2&gt;
+&lt;p&gt;A datastructure that maps keys to values for highly efficient lookup. To retrive the value pair by its key, you find the key then compute the run time to find the value in a key(if it is a list, the runtime is N.)&lt;/p&gt;
 
-&lt;p&gt;I have a dream and I feel like this platform can be my &lt;strong&gt;shoes&lt;/strong&gt; in many ways.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Worst Case Runtime&lt;/strong&gt; O(N)&lt;/p&gt;
 
-&lt;p&gt;More importantly, I hope this blog can deliver messages to people just like I did.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;average Runtime&lt;/strong&gt; O(1)&lt;/p&gt;
+
+&lt;h2 id=&quot;arraylist--resizable-arrays&quot;&gt;ArrayList &amp;amp; Resizable Arrays&lt;/h2&gt;
+&lt;p&gt;I use python and in python, the size of array is automatically resized whereas in Java, arrays are fixed length. &lt;strong&gt;The size is defined when you create the array&lt;/strong&gt;
+Let’s take a look at details of the resizing!&lt;/p&gt;
+
+&lt;p&gt;When the array is full, the array doubles in size is the conventional way of resizing. This doubling takes O(n) time, but happens so rarely that its amortized inserition time is still O(1)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Why amortized insertion gives O(1) rather than O(n)?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;For example, after resized, we have an array of size N. Let’s see how this array became to have a size of N&lt;/p&gt;
+
+&lt;p&gt;final capacity increaes -&amp;gt; n/2 elements to copy&lt;/p&gt;
+
+&lt;p&gt;previous capacity increase -&amp;gt; n/4 elements to copy&lt;/p&gt;
+
+&lt;p&gt;previous capacity increase -&amp;gt; n/8 elements to copy&lt;/p&gt;
+
+&lt;p&gt;.&lt;/p&gt;
+
+&lt;p&gt;.&lt;/p&gt;
+
+&lt;p&gt;.&lt;/p&gt;
+
+&lt;p&gt;second capacity increase -&amp;gt; 2 elements to copy&lt;/p&gt;
+
+&lt;p&gt;first capacity increase -&amp;gt; 1 element to copy&lt;/p&gt;
+
+&lt;p&gt;Therefore, we only have 1 + 2 + … + N/4 + N/2 which is less than N.&lt;/p&gt;
+
+&lt;p&gt;This is less than O(N)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;worst case runtime&lt;/strong&gt; O(N)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;average case runtime&lt;/strong&gt; O(1)&lt;/p&gt;
+
+&lt;h2 id=&quot;interview-questions&quot;&gt;Interview Questions&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/jgam/crackingthecoding/tree/master/chpt1&quot;&gt;Here is the answers of interview questions!&lt;/a&gt;&lt;/p&gt;</content><author><name>jgam</name></author><category term="blog" /><category term="jgam" /><category term="cracking the coding interview" /><category term="arrays" /><category term="strings" /><summary type="html">해쉬 테이블 Hash Tables A datastructure that maps keys to values for highly efficient lookup. To retrive the value pair by its key, you find the key then compute the run time to find the value in a key(if it is a list, the runtime is N.)</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/markdown.jpg" /></entry><entry><title type="html">First blog</title><link href="http://localhost:4000/introduction/" rel="alternate" type="text/html" title="First blog" /><published>2019-02-23T00:00:00+09:00</published><updated>2019-02-23T00:00:00+09:00</updated><id>http://localhost:4000/introduction</id><content type="html" xml:base="http://localhost:4000/introduction/">&lt;h2 id=&quot;why-blog&quot;&gt;Why Blog?&lt;/h2&gt;
+
+&lt;p&gt;I have a dream and I feel like this blog can be my &lt;strong&gt;drawings of my dream&lt;/strong&gt; in many ways.&lt;/p&gt;
+
+&lt;p&gt;More importantly, I hope this blog can deliver messages to people just like I did receive one from those of others.&lt;/p&gt;
 
 &lt;h2 id=&quot;what-to-include&quot;&gt;What to include?&lt;/h2&gt;
 
-&lt;p&gt;Mostly Algorithms. I want to publish not only the concepts but also problems.&lt;/p&gt;
+&lt;p&gt;Mostly Algorithms. I want to publish not only the concepts but also problems in more details so I can actually implement them in my projects or thought processes.&lt;/p&gt;
 
-&lt;p&gt;While exploring algorithmic approaches, I want to dig deeper into the interactions between language and operating system&lt;/p&gt;
+&lt;p&gt;While exploring algorithmic approaches, I want to dig deeper into the interactions between language and operating system.&lt;/p&gt;
 
 &lt;h2 id=&quot;what-to-expect&quot;&gt;What to expect?&lt;/h2&gt;
 
-&lt;p&gt;Hopefully, I can engage other people (in a humble way) and create or think something greater.&lt;/p&gt;
+&lt;p&gt;Hopefully, I can engage other people (in a humble way) and develop myself as a systematic developer.&lt;/p&gt;
 
 &lt;h2 id=&quot;finishing&quot;&gt;Finishing…&lt;/h2&gt;
 
