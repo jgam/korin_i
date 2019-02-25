@@ -23,13 +23,13 @@ More importantly, I hope this blog can deliver messages to people just like I di
 
 ## What to include?
 
-Mostly Algorithms. I want to publish not only the concepts but also problems.
+Mostly Algorithms. I want to publish not only the concepts but also problems in more details so I can actually implement them in my projects or thought processes.
 
-While exploring algorithmic approaches, I want to dig deeper into the interactions between language and operating system
+While exploring algorithmic approaches, I want to dig deeper into the interactions between language and operating system.
 
 ## What to expect?
 
-Hopefully, I can engage other people (in a humble way) and create or think something greater.
+Hopefully, I can engage other people (in a humble way) and develop myself as a systematic developer.
 
 ## Finishing...
 
