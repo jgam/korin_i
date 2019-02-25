@@ -15,9 +15,9 @@ description: Why this blog?
 
 ## Why Blog?
 
-I have a dream and I feel like this platform can be my **shoes** in many ways.
+I have a dream and I feel like this blog can be my **drawings of my dream** in many ways.
 
-More importantly, I hope this blog can deliver messages to people just like I did.
+More importantly, I hope this blog can deliver messages to people just like I did receive one from those of others.
 
 
 
