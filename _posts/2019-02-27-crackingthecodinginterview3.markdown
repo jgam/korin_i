@@ -25,12 +25,24 @@ The queue in other hands, uses FIFO (First in First out) ordering. Items are rem
 
 Queue is useful in breadth-first search or in implementing a cache. For example, we used a queue to sotre a list of note nodes that we need to process. Each time we process a node, we add its adjacent nodes to the back of the queue. This allows us to process nodesi n the order in which they are viewed.
 
+#graph
+We have weighted graph and unweighted graph. Weighted means there exists directions whereas the unweighted graph exists no directions.
+
+As the graph is undirected each edge is stored in both incident node adjacent sets. Here is the code followed by:
+```python
+graph = {'A': set(['B','C']),
+        'B': set(['A','D','E']),
+        'C': set(['A', 'F']),
+        'D': set(['B']),
+        'E': set(['B','F']),
+        'F': set(['C','E'])}
+```
+
 #simple Breadth First Search
 Before taking details of BFS and DFS, one of the data structures called graph needs to be gone over.
 
-We have weighted graph and unweighted graph. Weighted means there exists directions whereas the unweighted graph exists no directions.
-
-Now BFS uses Queue which means,
+We hav
+Now BFS uses Queue which is a FIFO.
 #simple s
 
 #Creating a Linked List
