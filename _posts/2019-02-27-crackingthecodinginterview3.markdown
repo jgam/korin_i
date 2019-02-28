@@ -10,7 +10,6 @@ tag:
 - stacks
 - queues
 - algorithm
-star: true
 category: blog
 author: jgam
 description: Stacks & queues
