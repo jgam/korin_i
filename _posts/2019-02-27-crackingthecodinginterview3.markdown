@@ -54,7 +54,7 @@ def dfs(graph, start):
 dfs(graph, 'A')#{E,D,F,A,C,B}
 ```
 
-#Breadth First Search
+###Breadth First Search
 Before taking details of BFS and DFS, one of the data structures called graph needs to be gone over.
 
 Now BFS uses Queue which is a FIFO.
