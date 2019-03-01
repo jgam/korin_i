@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-03-01T09:43:53+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jimmy Gam</title><subtitle>A journey to dream</subtitle><entry><title type="html">tres and graphs</title><link href="http://localhost:4000/crackingthecodinginterview4/" rel="alternate" type="text/html" title="tres and graphs" /><published>2019-02-28T00:00:00+09:00</published><updated>2019-02-28T00:00:00+09:00</updated><id>http://localhost:4000/crackingthecodinginterview4</id><content type="html" xml:base="http://localhost:4000/crackingthecodinginterview4/">&lt;h2 id=&quot;trees&quot;&gt;Trees&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-03-01T09:46:53+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jimmy Gam</title><subtitle>A journey to dream</subtitle><entry><title type="html">tres and graphs</title><link href="http://localhost:4000/crackingthecodinginterview4/" rel="alternate" type="text/html" title="tres and graphs" /><published>2019-02-28T00:00:00+09:00</published><updated>2019-02-28T00:00:00+09:00</updated><id>http://localhost:4000/crackingthecodinginterview4</id><content type="html" xml:base="http://localhost:4000/crackingthecodinginterview4/">&lt;h2 id=&quot;trees&quot;&gt;Trees&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;tree is a datastructure composed of nodes&lt;/li&gt;
   &lt;li&gt;The root node has zero or more child nodes&lt;/li&gt;
@@ -26,7 +26,7 @@
 
 &lt;div class=&quot;side-by-side&quot;&gt;
     &lt;div class=&quot;tocenter&quot;&gt;
-        &lt;img class=&quot;image&quot; src=&quot;http://localhost:4000/asset/images/completeBT.png&quot; alt=&quot;Alt Text&quot; /&gt;
+        &lt;img class=&quot;image&quot; src=&quot;http://localhost:4000//blog/assets/images/completeBT.png&quot; alt=&quot;Alt Text&quot; /&gt;
         &lt;figcaption class=&quot;caption&quot;&gt;Photo by John Doe&lt;/figcaption&gt;
     &lt;/div&gt;
 &lt;/div&gt;
