@@ -1459,7 +1459,7 @@ pre {
     
 
     
-        1 min
+        3 mins
     
 </span>
 
@@ -1510,9 +1510,84 @@ pre {
 <div class="side-by-side">
     <div class="tocenter">
         <img class="image" src="http://localhost:4000//blog/assets/images/completeBT.png" alt="Alt Text" />
-        <figcaption class="caption">Photo by John Doe</figcaption>
+        <figcaption class="caption">Photo by jgam CREDIT: cracking the coindg interview</figcaption>
     </div>
 </div>
+
+<h2 id="full-binary-trees">Full Binary Trees</h2>
+<p>A full binary tree is a binary tree in which every node has either zero or two children. No nodes have <strong>only one</strong> child.</p>
+
+<div class="side-by-side">
+    <div class="tocenter">
+        <img class="image" src="http://localhost:4000/" alt="Alt Text" />
+        <figcaption class="caption">Photo by jgam CREDIT: cracking the coindg interview</figcaption>
+    </div>
+</div>
+
+<h2 id="perfect-binary-trees">Perfect Binary Trees</h2>
+<p>A perfect binary tree is one that is both full and complete. All leaf nodes will be at the same level, and this level has the maximum number of nodes</p>
+
+<div class="side-by-side">
+    <div class="tocenter">
+        <img class="image" src="http://localhost:4000/" alt="Alt Text" />
+        <figcaption class="caption">Photo by jgam CREDIT: cracking the coindg interview</figcaption>
+    </div>
+</div>
+
+<h2 id="binary-tree-traversal">Binary Tree Traversal</h2>
+<p>Let us be comfortable implementing in-order, post-order, and pre-order traversal. the most common of these is in-order traversal.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="c">#Use this instead , a simple recursion ::</span>
+
+<span class="k">class</span> <span class="nc">Node</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">key</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">left</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">right</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">val</span> <span class="o">=</span> <span class="n">key</span>
+
+<span class="k">def</span> <span class="nf">printInorder</span><span class="p">(</span><span class="n">root</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">root</span><span class="p">:</span>
+        <span class="n">printInorder</span><span class="p">(</span><span class="n">root</span><span class="o">.</span><span class="n">left</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">root</span><span class="o">.</span><span class="n">val</span><span class="p">)</span>
+        <span class="n">printInorder</span><span class="p">(</span><span class="n">root</span><span class="o">.</span><span class="n">right</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">printPostorder</span><span class="p">(</span><span class="n">root</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">root</span><span class="p">:</span>
+        <span class="n">printPostorder</span><span class="p">(</span><span class="n">root</span><span class="o">.</span><span class="n">left</span><span class="p">)</span>
+        <span class="n">printPostorder</span><span class="p">(</span><span class="n">root</span><span class="o">.</span><span class="n">right</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">root</span><span class="o">.</span><span class="n">val</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">printPreorder</span><span class="p">(</span><span class="n">root</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">root</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">root</span><span class="o">.</span><span class="n">val</span><span class="p">)</span>
+        <span class="n">printPreorder</span><span class="p">(</span><span class="n">root</span><span class="o">.</span><span class="n">left</span><span class="p">)</span>
+        <span class="n">printPreorder</span><span class="p">(</span><span class="n">root</span><span class="o">.</span><span class="n">right</span><span class="p">)</span>
+
+<span class="c"># Driver code</span>
+<span class="n">root</span> <span class="o">=</span> <span class="n">Node</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">root</span><span class="o">.</span><span class="n">left</span>      <span class="o">=</span> <span class="n">Node</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">root</span><span class="o">.</span><span class="n">right</span>     <span class="o">=</span> <span class="n">Node</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">root</span><span class="o">.</span><span class="n">left</span><span class="o">.</span><span class="n">left</span>  <span class="o">=</span> <span class="n">Node</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="n">root</span><span class="o">.</span><span class="n">left</span><span class="o">.</span><span class="n">right</span>  <span class="o">=</span> <span class="n">Node</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="k">print</span> <span class="s">"Preorder traversal of binary tree is"</span>
+<span class="n">printPreorder</span><span class="p">(</span><span class="n">root</span><span class="p">)</span>
+
+<span class="k">print</span> <span class="s">"</span><span class="se">\n</span><span class="s">Inorder traversal of binary tree is"</span>
+<span class="n">printInorder</span><span class="p">(</span><span class="n">root</span><span class="p">)</span>
+
+<span class="k">print</span> <span class="s">"</span><span class="se">\n</span><span class="s">Postorder traversal of binary tree is"</span>
+<span class="n">printPostorder</span><span class="p">(</span><span class="n">root</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>##In order Traversal
+This means to “visit”the left branch, then the current node, and finally, the right branch.</p>
+
+<p>##Pre-Order Traversal
+It visits the current node before its child nodes(hence the name “pre-order”.)</p>
+
+<p>##Post-Order Traversal
+It visits the current node after its child nodes</p>
 
 <h2 id="lists">Lists</h2>
 

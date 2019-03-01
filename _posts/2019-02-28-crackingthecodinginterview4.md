@@ -41,9 +41,85 @@ A binary tree in which every level of the tree is fully filled, except for perha
 <div class="side-by-side">
     <div class="tocenter">
         <img class="image" src="{{ site.url }}/{{ site.bst }}" alt="Alt Text">
-        <figcaption class="caption">Photo by John Doe</figcaption>
+        <figcaption class="caption">Photo by jgam CREDIT: cracking the coindg interview</figcaption>
     </div>
 </div>
+
+## Full Binary Trees
+A full binary tree is a binary tree in which every node has either zero or two children. No nodes have **only one** child.
+
+<div class="side-by-side">
+    <div class="tocenter">
+        <img class="image" src="{{ site.url }}/{{ site.fbt }}" alt="Alt Text">
+        <figcaption class="caption">Photo by jgam CREDIT: cracking the coindg interview</figcaption>
+    </div>
+</div>
+
+## Perfect Binary Trees
+A perfect binary tree is one that is both full and complete. All leaf nodes will be at the same level, and this level has the maximum number of nodes
+
+<div class="side-by-side">
+    <div class="tocenter">
+        <img class="image" src="{{ site.url }}/{{ site.pbt }}" alt="Alt Text">
+        <figcaption class="caption">Photo by jgam CREDIT: cracking the coindg interview</figcaption>
+    </div>
+</div>
+
+## Binary Tree Traversal
+Let us be comfortable implementing in-order, post-order, and pre-order traversal. the most common of these is in-order traversal.
+
+```python
+
+#Use this instead , a simple recursion ::
+
+class Node:
+    def __init__(self,key):
+        self.left = None
+        self.right = None
+        self.val = key
+
+def printInorder(root):
+    if root:
+        printInorder(root.left)
+        print(root.val)
+        printInorder(root.right)
+
+def printPostorder(root):
+    if root:
+        printPostorder(root.left)
+        printPostorder(root.right)
+        print(root.val)
+
+def printPreorder(root):
+    if root:
+        print(root.val)
+        printPreorder(root.left)
+        printPreorder(root.right)
+
+# Driver code
+root = Node(1)
+root.left      = Node(2)
+root.right     = Node(3)
+root.left.left  = Node(4)
+root.left.right  = Node(5)
+print "Preorder traversal of binary tree is"
+printPreorder(root)
+
+print "\nInorder traversal of binary tree is"
+printInorder(root)
+
+print "\nPostorder traversal of binary tree is"
+printPostorder(root)
+```
+
+##In order Traversal
+This means to "visit"the left branch, then the current node, and finally, the right branch.
+
+##Pre-Order Traversal
+It visits the current node before its child nodes(hence the name "pre-order".)
+
+##Post-Order Traversal
+It visits the current node after its child nodes
 
 
 ## Lists

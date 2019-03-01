@@ -10,6 +10,9 @@ description: A journey to dream
 external-image: true
 picture: assets/images/profile.jpeg
 bst: /blog/assets/images/completeBT.png
+fbt: /blog/assets/images/fbt.png
+pbt: /blog/assets/images/pbt.png
+
 
 # If you want to include your resume, set to true
 # and specify source (external or local).
