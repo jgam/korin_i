@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-03-01T14:18:16+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jimmy Gam</title><subtitle>A journey to dream</subtitle><entry><title type="html">tres and graphs pt.2</title><link href="http://localhost:4000/crackingthecodinginterview42/" rel="alternate" type="text/html" title="tres and graphs pt.2" /><published>2019-03-01T00:00:00+09:00</published><updated>2019-03-01T00:00:00+09:00</updated><id>http://localhost:4000/crackingthecodinginterview42</id><content type="html" xml:base="http://localhost:4000/crackingthecodinginterview42/">&lt;p&gt;&lt;strong&gt;Continuing from previous post I want to start off with finishing trees and continnue on with Graphs!&lt;/strong&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-03-01T15:48:14+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jimmy Gam</title><subtitle>A journey to dream</subtitle><entry><title type="html">tres and graphs pt.2</title><link href="http://localhost:4000/crackingthecodinginterview42/" rel="alternate" type="text/html" title="tres and graphs pt.2" /><published>2019-03-01T00:00:00+09:00</published><updated>2019-03-01T00:00:00+09:00</updated><id>http://localhost:4000/crackingthecodinginterview42</id><content type="html" xml:base="http://localhost:4000/crackingthecodinginterview42/">&lt;p&gt;&lt;strong&gt;Continuing from previous post I want to start off with finishing trees and continnue on with Graphs!&lt;/strong&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;binary-heaps-바이너리-힙-min-heaps-and-max-heaps&quot;&gt;Binary Heaps 바이너리 힙! (min heaps and max heaps)&lt;/h2&gt;
 &lt;p&gt;Max-heaps are in descending order whereas Min-heaps are in ascending order.&lt;/p&gt;
@@ -24,7 +24,95 @@
   &lt;li&gt;“fix” the tree by swapping the new element with its parent, until we find an appropriate spot for the leement&lt;/li&gt;
 &lt;/ol&gt;
 
+&lt;div class=&quot;side-by-side&quot;&gt;
+    &lt;div class=&quot;tocenter&quot;&gt;
+        &lt;img class=&quot;image&quot; src=&quot;http://localhost:4000/&quot; alt=&quot;Alt Text&quot; /&gt;
+        &lt;figcaption class=&quot;caption&quot;&gt;Photo by jgam CREDIT: cracking the coindg interview&lt;/figcaption&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;p&gt;This gives &lt;strong&gt;O(log n)&lt;/strong&gt; time where n is the number of nodes in the heap&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Extracting minimum element&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;remove the minimum element and swap it with the last element in the heap&lt;/li&gt;
+  &lt;li&gt;bubble down this element, swapping it with one of its children until the min-heap property is restored&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;side-by-side&quot;&gt;
+    &lt;div class=&quot;tocenter&quot;&gt;
+        &lt;img class=&quot;image&quot; src=&quot;http://localhost:4000/&quot; alt=&quot;Alt Text&quot; /&gt;
+        &lt;figcaption class=&quot;caption&quot;&gt;Photo by jgam CREDIT: cracking the coindg interview&lt;/figcaption&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This gives &lt;strong&gt;O(log n)&lt;/strong&gt; time where n is the number of nodes&lt;/p&gt;
+
+&lt;p&gt;##Graphs 그래프 (finally!)
+A tree is actually a type of graph, but not all graphs are trees. Simply put, a tree is a connected graph without cycles. A graph is simply a collectino of nodes with edges between them.&lt;/p&gt;
+
+&lt;p&gt;Several rules of Graph&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Graphs can be either directed or undirected. Directed edges are one way street and undirected edges are two-way street.&lt;/li&gt;
+  &lt;li&gt;The graph might consist of multiple isolated subgraphs. If there exists a path between every pair of vertices, it is called a “connected graph.”&lt;/li&gt;
+  &lt;li&gt;The graph can also contain cycles. An “acyclic graph” is one without cycles.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;side-by-side&quot;&gt;
+    &lt;div class=&quot;tocenter&quot;&gt;
+        &lt;img class=&quot;image&quot; src=&quot;http://localhost:4000/&quot; alt=&quot;Alt Text&quot; /&gt;
+        &lt;figcaption class=&quot;caption&quot;&gt;Photo by jgam CREDIT: cracking the coindg interview&lt;/figcaption&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Now how to represent these graphs in programming language?&lt;/p&gt;
+
+&lt;h2 id=&quot;adjacency-list&quot;&gt;Adjacency List&lt;/h2&gt;
+&lt;p&gt;Every vertex stores a list of adjacent vertices. In an undirected graph, an edge like (a, b) would be stored twice: once in a’s adjacent vertices and once in b’s adjacent vertices.&lt;/p&gt;
+
+&lt;h2 id=&quot;adjacency-matrices&quot;&gt;Adjacency Matrices&lt;/h2&gt;
+&lt;p&gt;An adjacency matrix is an NxN boolean matrix ( where N is the number of nodes), where a true value at matrix[i][j] indicates an edge from node i to node j.(you can also use an integer matrix with 0s and 1s.)&lt;/p&gt;
+
+&lt;p&gt;In an undirected graph, an adjacency matrix will be symmetric since there is no directions and they are all considered in bounds and out bounds while a directed graph may not be.&lt;/p&gt;
+
+&lt;p&gt;It is general to say that Adjacency matrixes are less efficient because they have to go through all the nodes to identify a node’s neighbors.&lt;/p&gt;
+
+&lt;h2 id=&quot;graph-search&quot;&gt;Graph Search&lt;/h2&gt;
+&lt;p&gt;Finally, we came to ways to methods (algorithms) of searching graph. There are &lt;strong&gt;depth-first-search&lt;/strong&gt; and &lt;strong&gt;breadth-first-search&lt;/strong&gt;. Simple implementation is described in the following picture.&lt;/p&gt;
+
+&lt;div class=&quot;side-by-side&quot;&gt;
+    &lt;div class=&quot;tocenter&quot;&gt;
+        &lt;img class=&quot;image&quot; src=&quot;http://localhost:4000/&quot; alt=&quot;Alt Text&quot; /&gt;
+        &lt;figcaption class=&quot;caption&quot;&gt;Photo by jgam CREDIT: cracking the coindg interview&lt;/figcaption&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Let’s compare them into a deeper level.&lt;/p&gt;
+
+&lt;p&gt;DFS is often preerred if we want to visit every node in the graph because DFS is a bit simpler. However, if we want to find the shortest path(or just any path) between two nodes, BFS is generally better. Consider representing all the friendships in the entire world in a graph and trying to find a path of frendhips between Ash and Vanessa.&lt;/p&gt;
+
+&lt;p&gt;Using BFS, we want to stay close to Ash as long as possible rather than going farther from Ash in case of DFS. Because these two algorithms are very important, I want to explore more on these two algorithms.&lt;/p&gt;
+
+&lt;h2 id=&quot;dfs&quot;&gt;DFS&lt;/h2&gt;
+&lt;p&gt;We visit a node a and then iterate throuh each of a’s neighbors. When visiting a node b that is a neighbor of a, we visit all of b’s neighbors before going on to a’s other neighbors. That is a exhaustively searches b’s branch before any of its other neighbors.&lt;/p&gt;
+
+&lt;h2 id=&quot;bfs&quot;&gt;BFS&lt;/h2&gt;
+&lt;p&gt;BFS is a bit less intuitive, and many interviewees struggle with the implmentation unless they are already familiar with it. The main tripping point is the assumption that BFS is recursive. It’s not. Instead it uses a queue.&lt;/p&gt;
+
+&lt;p&gt;In BFS, node a visits each of a’s neighbors before visiting any of their neighbors. You can think of this as searching level by level out from a. An iterative solution involving a queue usually works best.&lt;/p&gt;
+
+&lt;h2 id=&quot;bidirectional-search&quot;&gt;Bidirectional Search&lt;/h2&gt;
+&lt;p&gt;It is used to find the shortest path between a source and destination node. It operates by essentially running two simultaneous breadth-first searches, one from each node. When their searches collide, we have found a path.&lt;/p&gt;
+
+&lt;div class=&quot;side-by-side&quot;&gt;
+    &lt;div class=&quot;tocenter&quot;&gt;
+        &lt;img class=&quot;image&quot; src=&quot;http://localhost:4000/&quot; alt=&quot;Alt Text&quot; /&gt;
+        &lt;figcaption class=&quot;caption&quot;&gt;Photo by jgam CREDIT: cracking the coindg interview&lt;/figcaption&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The picture explains well with how to reduce the run time when we run two BFS from opposite directions. In traditional BFS, we want to find k nodes by the levels of the graph. This gives you run time of &lt;strong&gt;O(2 ^ d)&lt;/strong&gt; where d is the number of levels.&lt;/p&gt;
 
 &lt;h2 id=&quot;lists&quot;&gt;Lists&lt;/h2&gt;
 

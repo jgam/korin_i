@@ -15,6 +15,8 @@ pbt: /blog/assets/images/pbt.png
 minheap: /blog/assets/images/minheap.png
 minheap2: /blog/assets/images/minheap2.png
 minheap3: /blog/assets/images/minheap3.png
+graph: /blog/assets/images/graph.png
+graph1: /blog/assets/images/graph2.png
 
 # If you want to include your resume, set to true
 # and specify source (external or local).

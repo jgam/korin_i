@@ -1459,7 +1459,7 @@ pre {
     
 
     
-        1 min
+        5 mins
     
 </span>
 
@@ -1507,7 +1507,95 @@ pre {
   <li>“fix” the tree by swapping the new element with its parent, until we find an appropriate spot for the leement</li>
 </ol>
 
+<div class="side-by-side">
+    <div class="tocenter">
+        <img class="image" src="http://localhost:4000/" alt="Alt Text" />
+        <figcaption class="caption">Photo by jgam CREDIT: cracking the coindg interview</figcaption>
+    </div>
+</div>
+
 <p>This gives <strong>O(log n)</strong> time where n is the number of nodes in the heap</p>
+
+<p><strong>Extracting minimum element</strong></p>
+
+<ol>
+  <li>remove the minimum element and swap it with the last element in the heap</li>
+  <li>bubble down this element, swapping it with one of its children until the min-heap property is restored</li>
+</ol>
+
+<div class="side-by-side">
+    <div class="tocenter">
+        <img class="image" src="http://localhost:4000/" alt="Alt Text" />
+        <figcaption class="caption">Photo by jgam CREDIT: cracking the coindg interview</figcaption>
+    </div>
+</div>
+
+<p>This gives <strong>O(log n)</strong> time where n is the number of nodes</p>
+
+<p>##Graphs 그래프 (finally!)
+A tree is actually a type of graph, but not all graphs are trees. Simply put, a tree is a connected graph without cycles. A graph is simply a collectino of nodes with edges between them.</p>
+
+<p>Several rules of Graph</p>
+<ol>
+  <li>Graphs can be either directed or undirected. Directed edges are one way street and undirected edges are two-way street.</li>
+  <li>The graph might consist of multiple isolated subgraphs. If there exists a path between every pair of vertices, it is called a “connected graph.”</li>
+  <li>The graph can also contain cycles. An “acyclic graph” is one without cycles.</li>
+</ol>
+
+<div class="side-by-side">
+    <div class="tocenter">
+        <img class="image" src="http://localhost:4000/" alt="Alt Text" />
+        <figcaption class="caption">Photo by jgam CREDIT: cracking the coindg interview</figcaption>
+    </div>
+</div>
+
+<p>Now how to represent these graphs in programming language?</p>
+
+<h2 id="adjacency-list">Adjacency List</h2>
+<p>Every vertex stores a list of adjacent vertices. In an undirected graph, an edge like (a, b) would be stored twice: once in a’s adjacent vertices and once in b’s adjacent vertices.</p>
+
+<h2 id="adjacency-matrices">Adjacency Matrices</h2>
+<p>An adjacency matrix is an NxN boolean matrix ( where N is the number of nodes), where a true value at matrix[i][j] indicates an edge from node i to node j.(you can also use an integer matrix with 0s and 1s.)</p>
+
+<p>In an undirected graph, an adjacency matrix will be symmetric since there is no directions and they are all considered in bounds and out bounds while a directed graph may not be.</p>
+
+<p>It is general to say that Adjacency matrixes are less efficient because they have to go through all the nodes to identify a node’s neighbors.</p>
+
+<h2 id="graph-search">Graph Search</h2>
+<p>Finally, we came to ways to methods (algorithms) of searching graph. There are <strong>depth-first-search</strong> and <strong>breadth-first-search</strong>. Simple implementation is described in the following picture.</p>
+
+<div class="side-by-side">
+    <div class="tocenter">
+        <img class="image" src="http://localhost:4000/" alt="Alt Text" />
+        <figcaption class="caption">Photo by jgam CREDIT: cracking the coindg interview</figcaption>
+    </div>
+</div>
+
+<p>Let’s compare them into a deeper level.</p>
+
+<p>DFS is often preerred if we want to visit every node in the graph because DFS is a bit simpler. However, if we want to find the shortest path(or just any path) between two nodes, BFS is generally better. Consider representing all the friendships in the entire world in a graph and trying to find a path of frendhips between Ash and Vanessa.</p>
+
+<p>Using BFS, we want to stay close to Ash as long as possible rather than going farther from Ash in case of DFS. Because these two algorithms are very important, I want to explore more on these two algorithms.</p>
+
+<h2 id="dfs">DFS</h2>
+<p>We visit a node a and then iterate throuh each of a’s neighbors. When visiting a node b that is a neighbor of a, we visit all of b’s neighbors before going on to a’s other neighbors. That is a exhaustively searches b’s branch before any of its other neighbors.</p>
+
+<h2 id="bfs">BFS</h2>
+<p>BFS is a bit less intuitive, and many interviewees struggle with the implmentation unless they are already familiar with it. The main tripping point is the assumption that BFS is recursive. It’s not. Instead it uses a queue.</p>
+
+<p>In BFS, node a visits each of a’s neighbors before visiting any of their neighbors. You can think of this as searching level by level out from a. An iterative solution involving a queue usually works best.</p>
+
+<h2 id="bidirectional-search">Bidirectional Search</h2>
+<p>It is used to find the shortest path between a source and destination node. It operates by essentially running two simultaneous breadth-first searches, one from each node. When their searches collide, we have found a path.</p>
+
+<div class="side-by-side">
+    <div class="tocenter">
+        <img class="image" src="http://localhost:4000/" alt="Alt Text" />
+        <figcaption class="caption">Photo by jgam CREDIT: cracking the coindg interview</figcaption>
+    </div>
+</div>
+
+<p>The picture explains well with how to reduce the run time when we run two BFS from opposite directions. In traditional BFS, we want to find k nodes by the levels of the graph. This gives you run time of <strong>O(2 ^ d)</strong> where d is the number of levels.</p>
 
 <h2 id="lists">Lists</h2>
 
