@@ -122,30 +122,4 @@ It visits the current node before its child nodes(hence the name "pre-order".)
 It visits the current node after its child nodes
 
 
-## Lists
-
-### Ordered list
-
-1. Item 1
-2. A second item
-3. Number 3
-
-{% highlight raw %}
-1. Item 1
-2. A second item
-3. Number 3
-{% endhighlight %}
-
-### Unordered list
-
-* An item
-* Another item
-* Yet another item
-* And there's more...
-
-{% highlight raw %}
-* An item
-* Another item
-* Yet another item
-* And there's more...
-{% endhighlight %}
+This is the end of the first part of Trees and Graphs since as a python user, I do not have much exposure exploring this data structure and want to explore more graphs in details in the following part of Trees and Graphs

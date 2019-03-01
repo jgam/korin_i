@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-03-01T11:25:48+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jimmy Gam</title><subtitle>A journey to dream</subtitle><entry><title type="html">tres and graphs</title><link href="http://localhost:4000/crackingthecodinginterview4/" rel="alternate" type="text/html" title="tres and graphs" /><published>2019-02-28T00:00:00+09:00</published><updated>2019-02-28T00:00:00+09:00</updated><id>http://localhost:4000/crackingthecodinginterview4</id><content type="html" xml:base="http://localhost:4000/crackingthecodinginterview4/">&lt;h2 id=&quot;trees&quot;&gt;Trees&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-03-01T11:27:29+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jimmy Gam</title><subtitle>A journey to dream</subtitle><entry><title type="html">tres and graphs</title><link href="http://localhost:4000/crackingthecodinginterview4/" rel="alternate" type="text/html" title="tres and graphs" /><published>2019-02-28T00:00:00+09:00</published><updated>2019-02-28T00:00:00+09:00</updated><id>http://localhost:4000/crackingthecodinginterview4</id><content type="html" xml:base="http://localhost:4000/crackingthecodinginterview4/">&lt;h2 id=&quot;trees&quot;&gt;Trees&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;tree is a datastructure composed of nodes&lt;/li&gt;
   &lt;li&gt;The root node has zero or more child nodes&lt;/li&gt;
@@ -106,33 +106,7 @@ It visits the current node before its child nodes(hence the name “pre-order”
 &lt;p&gt;##Post-Order Traversal
 It visits the current node after its child nodes&lt;/p&gt;
 
-&lt;h2 id=&quot;lists&quot;&gt;Lists&lt;/h2&gt;
-
-&lt;h3 id=&quot;ordered-list&quot;&gt;Ordered list&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Item 1&lt;/li&gt;
-  &lt;li&gt;A second item&lt;/li&gt;
-  &lt;li&gt;Number 3&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-raw&quot; data-lang=&quot;raw&quot;&gt;1. Item 1
-2. A second item
-3. Number 3&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;unordered-list&quot;&gt;Unordered list&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;An item&lt;/li&gt;
-  &lt;li&gt;Another item&lt;/li&gt;
-  &lt;li&gt;Yet another item&lt;/li&gt;
-  &lt;li&gt;And there’s more…&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-raw&quot; data-lang=&quot;raw&quot;&gt;* An item
-* Another item
-* Yet another item
-* And there's more...&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name>jgam</name></author><category term="blog" /><category term="jgam" /><category term="cracking the coding interview" /><category term="trees" /><category term="graphs" /><category term="algorithm" /><summary type="html">Trees tree is a datastructure composed of nodes The root node has zero or more child nodes Each child node has zero or more child nodes, and so on A node is called a “leaf” node if it has no children</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/markdown.jpg" /></entry><entry><title type="html">Stacks and queues</title><link href="http://localhost:4000/crackingthecodinginterview3/" rel="alternate" type="text/html" title="Stacks and queues" /><published>2019-02-27T00:00:00+09:00</published><updated>2019-02-27T00:00:00+09:00</updated><id>http://localhost:4000/crackingthecodinginterview3</id><content type="html" xml:base="http://localhost:4000/crackingthecodinginterview3/">&lt;h2 id=&quot;stacks-and-queues-스택-과-큐&quot;&gt;Stacks and Queues 스택 과 큐&lt;/h2&gt;
+&lt;p&gt;This is the end of the first part of Trees and Graphs since as a python user, I do not have much exposure exploring this data structure and want to explore more graphs in details in the following part of Trees and Graphs&lt;/p&gt;</content><author><name>jgam</name></author><category term="blog" /><category term="jgam" /><category term="cracking the coding interview" /><category term="trees" /><category term="graphs" /><category term="algorithm" /><summary type="html">Trees tree is a datastructure composed of nodes The root node has zero or more child nodes Each child node has zero or more child nodes, and so on A node is called a “leaf” node if it has no children</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/markdown.jpg" /></entry><entry><title type="html">Stacks and queues</title><link href="http://localhost:4000/crackingthecodinginterview3/" rel="alternate" type="text/html" title="Stacks and queues" /><published>2019-02-27T00:00:00+09:00</published><updated>2019-02-27T00:00:00+09:00</updated><id>http://localhost:4000/crackingthecodinginterview3</id><content type="html" xml:base="http://localhost:4000/crackingthecodinginterview3/">&lt;h2 id=&quot;stacks-and-queues-스택-과-큐&quot;&gt;Stacks and Queues 스택 과 큐&lt;/h2&gt;
 &lt;p&gt;The stack data structure is precisely what it sounds like: a stack of data and uses LIFO(last in first out) ordering.&lt;/p&gt;
 
 &lt;p&gt;Stacks are useful in recursive algorithms.&lt;/p&gt;
