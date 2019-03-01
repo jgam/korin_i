@@ -14,21 +14,21 @@
     <meta property="og:type" content="profile">
 
     <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>Markdown Common Elements | Jimmy Gam</title>
+<title>Stacks and queues | Jimmy Gam</title>
 <meta name="generator" content="Jekyll v3.7.4" />
-<meta property="og:title" content="Markdown Common Elements" />
-<meta name="author" content="johndoe" />
+<meta property="og:title" content="Stacks and queues" />
+<meta name="author" content="jgam" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Markdown summary with different options" />
-<meta property="og:description" content="Markdown summary with different options" />
-<link rel="canonical" href="http://localhost:4000/markdown-common-elements/" />
-<meta property="og:url" content="http://localhost:4000/markdown-common-elements/" />
+<meta name="description" content="Stacks &amp; queues" />
+<meta property="og:description" content="Stacks &amp; queues" />
+<link rel="canonical" href="http://localhost:4000/crackingthecodinginterview3/" />
+<meta property="og:url" content="http://localhost:4000/crackingthecodinginterview3/" />
 <meta property="og:site_name" content="Jimmy Gam" />
 <meta property="og:image" content="http://localhost:4000/assets/images/markdown.jpg" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2016-02-24T22:44:00+09:00" />
+<meta property="article:published_time" content="2019-02-27T00:00:00+09:00" />
 <script type="application/ld+json">
-{"description":"Markdown summary with different options","author":{"@type":"Person","name":"johndoe"},"@type":"BlogPosting","url":"http://localhost:4000/markdown-common-elements/","image":"http://localhost:4000/assets/images/markdown.jpg","headline":"Markdown Common Elements","dateModified":"2016-02-24T22:44:00+09:00","datePublished":"2016-02-24T22:44:00+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/markdown-common-elements/"},"@context":"http://schema.org"}</script>
+{"description":"Stacks &amp; queues","author":{"@type":"Person","name":"jgam"},"@type":"BlogPosting","url":"http://localhost:4000/crackingthecodinginterview3/","image":"http://localhost:4000/assets/images/markdown.jpg","headline":"Stacks and queues","dateModified":"2019-02-27T00:00:00+09:00","datePublished":"2019-02-27T00:00:00+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/crackingthecodinginterview3/"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -54,7 +54,7 @@
 <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 
 
-    <link rel="canonical" href="http://localhost:4000/markdown-common-elements/">
+    <link rel="canonical" href="http://localhost:4000/crackingthecodinginterview3/">
     <link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000/feed.xml" />
 
     <style>
@@ -1451,15 +1451,15 @@ pre {
 
 
 
-<h1 class="title">Markdown Common Elements</h1>
+<h1 class="title">Stacks and queues</h1>
 
 <span class="date">
-    <time datetime="24-02-2016">Wednesday. February 24, 2016</time>
+    <time datetime="27-02-2019">Wednesday. February 27, 2019</time>
      - <span class="reading-time" title="Estimated read time">
     
 
     
-        3 mins
+        2 mins
     
 </span>
 
@@ -1468,178 +1468,73 @@ pre {
 
     <div class="post-tags">
         
-            <a class="item" href="http://localhost:4000/tags/#markdown">markdown</a>
+            <a class="item" href="http://localhost:4000/tags/#jgam">jgam</a>
         
-            <a class="item" href="http://localhost:4000/tags/#elements">elements</a>
+            <a class="item" href="http://localhost:4000/tags/#cracking-the-coding-interview">cracking the coding interview</a>
+        
+            <a class="item" href="http://localhost:4000/tags/#stacks">stacks</a>
+        
+            <a class="item" href="http://localhost:4000/tags/#queues">queues</a>
+        
+            <a class="item" href="http://localhost:4000/tags/#algorithm">algorithm</a>
         
     </div>
 
 
-<h2 id="basic-formatting">Basic formatting</h2>
+<h2 id="stacks-and-queues-스택-과-큐">Stacks and Queues 스택 과 큐</h2>
+<p>The stack data structure is precisely what it sounds like: a stack of data and uses LIFO(last in first out) ordering.</p>
 
-<p>This note <strong>demonstrates</strong> some of what <a href="http://daringfireball.net/projects/markdown/">Markdown</a> is <em>capable of doing</em>.</p>
+<p>Stacks are useful in recursive algorithms.</p>
 
-<p>And that’s how to do it.</p>
+<p>The queue in other hands, uses FIFO (First in First out) ordering. Items are removed in a same order that they re added.</p>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html">This note **demonstrates** some of what [Markdown][some/link] is *capable of doing*.</code></pre></figure>
+<p>Queue is useful in breadth-first search or in implementing a cache. For example, we used a queue to sort a list of note nodes that we need to process. Each time we process a node, we add its adjacent nodes to the back of the queue. This allows us to process nodes in the order in which they are viewed.</p>
 
-<hr />
+<h3 id="graph">graph</h3>
+<p>We have weighted graph and unweighted graph. Weighted means there exists directions whereas the unweighted graph exists no directions.</p>
 
-<h2 id="headings">Headings</h2>
+<p>As the graph is undirected each edge is stored in both incident node adjacent sets. Here is the code followed by:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">graph</span> <span class="o">=</span> <span class="p">{</span><span class="s">'A'</span><span class="p">:</span> <span class="nb">set</span><span class="p">([</span><span class="s">'B'</span><span class="p">,</span><span class="s">'C'</span><span class="p">]),</span>
+        <span class="s">'B'</span><span class="p">:</span> <span class="nb">set</span><span class="p">([</span><span class="s">'A'</span><span class="p">,</span><span class="s">'D'</span><span class="p">,</span><span class="s">'E'</span><span class="p">]),</span>
+        <span class="s">'C'</span><span class="p">:</span> <span class="nb">set</span><span class="p">([</span><span class="s">'A'</span><span class="p">,</span> <span class="s">'F'</span><span class="p">]),</span>
+        <span class="s">'D'</span><span class="p">:</span> <span class="nb">set</span><span class="p">([</span><span class="s">'B'</span><span class="p">]),</span>
+        <span class="s">'E'</span><span class="p">:</span> <span class="nb">set</span><span class="p">([</span><span class="s">'B'</span><span class="p">,</span><span class="s">'F'</span><span class="p">]),</span>
+        <span class="s">'F'</span><span class="p">:</span> <span class="nb">set</span><span class="p">([</span><span class="s">'C'</span><span class="p">,</span><span class="s">'E'</span><span class="p">])}</span>
+</code></pre></div></div>
+<p>The picture form of the above code is the following:</p>
 
-<p>There are six levels of headings. They correspond with the six levels of HTML headings. You’ve probably noticed them already in the page. Each level down uses one more hash character. But we are using just 4 of them.</p>
+<h3 id="depth-first-search">Depth-First Search</h3>
+<p>it explores vertices down each branch before backtracking. This property allows the algorithm to be implemented succintly in both interactive and recursive forms.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">dfs</span><span class="p">(</span><span class="n">graph</span><span class="p">,</span> <span class="n">start</span><span class="p">):</span>
+    <span class="n">visited</span><span class="p">,</span> <span class="n">stack</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(),</span> <span class="p">[</span><span class="n">start</span><span class="p">]</span>
+    <span class="k">while</span> <span class="n">stack</span><span class="p">:</span>
+        <span class="n">vertex</span> <span class="o">=</span> <span class="n">stack</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">vertex</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">visited</span><span class="p">:</span>
+            <span class="n">visited</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">vertex</span><span class="p">)</span>
+            <span class="n">stack</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">graph</span><span class="p">[</span><span class="n">vertex</span><span class="p">]</span> <span class="o">-</span> <span class="n">visited</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">visited</span>
 
-<h1 id="headings-can-be-small">Headings can be small</h1>
+<span class="n">dfs</span><span class="p">(</span><span class="n">graph</span><span class="p">,</span> <span class="s">'A'</span><span class="p">)</span><span class="c">#{E,D,F,A,C,B}</span>
+</code></pre></div></div>
 
-<h2 id="headings-can-be-small-1">Headings can be small</h2>
+<p>###Breadth First Search
+Before taking details of BFS and DFS, one of the data structures called graph needs to be gone over.</p>
 
-<h3 id="headings-can-be-small-2">Headings can be small</h3>
+<p>Now BFS uses Queue which is a FIFO.</p>
 
-<h4 id="headings-can-be-small-3">Headings can be small</h4>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">bfs</span><span class="p">(</span><span class="n">graph</span><span class="p">,</span> <span class="n">start</span><span class="p">):</span>
+    <span class="n">visited</span><span class="p">,</span> <span class="n">queue</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(),</span> <span class="p">[</span><span class="n">start</span><span class="p">]</span>
+    <span class="k">while</span> <span class="n">queue</span><span class="p">:</span>
+        <span class="n">vertex</span> <span class="o">=</span> <span class="n">queue</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">vertex</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">visited</span><span class="p">:</span>
+            <span class="n">visited</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">vertex</span><span class="p">)</span>
+            <span class="n">queue</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">graph</span><span class="p">[</span><span class="n">vertex</span><span class="p">]</span> <span class="o">-</span> <span class="n">visited</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">visited</span>
 
-<figure class="highlight"><pre><code class="language-raw" data-lang="raw"># Heading
-## Heading
-### Heading
-#### Heading</code></pre></figure>
-
-<hr />
-
-<h2 id="lists">Lists</h2>
-
-<h3 id="ordered-list">Ordered list</h3>
-
-<ol>
-  <li>Item 1</li>
-  <li>A second item</li>
-  <li>Number 3</li>
-</ol>
-
-<figure class="highlight"><pre><code class="language-raw" data-lang="raw">1. Item 1
-2. A second item
-3. Number 3</code></pre></figure>
-
-<h3 id="unordered-list">Unordered list</h3>
-
-<ul>
-  <li>An item</li>
-  <li>Another item</li>
-  <li>Yet another item</li>
-  <li>And there’s more…</li>
-</ul>
-
-<figure class="highlight"><pre><code class="language-raw" data-lang="raw">* An item
-* Another item
-* Yet another item
-* And there's more...</code></pre></figure>
-
-<hr />
-
-<h2 id="paragraph-modifiers">Paragraph modifiers</h2>
-
-<h3 id="quote">Quote</h3>
-
-<blockquote>
-  <p>Here is a quote. What this is should be self explanatory. Quotes are automatically indented when they are used.</p>
-</blockquote>
-
-<figure class="highlight"><pre><code class="language-raw" data-lang="raw">&gt; Here is a quote. What this is should be self explanatory.</code></pre></figure>
-
-<hr />
-
-<h2 id="urls">URLs</h2>
-
-<p>URLs can be made in a handful of ways:</p>
-
-<ul>
-  <li>A named link to <a href="http://www.markitdown.net/">Mark It Down</a>.</li>
-  <li>Another named link to <a href="http://markitdown.net/">Mark It Down</a></li>
-  <li>Sometimes you just want a URL like <a href="http://markitdown.net/">http://markitdown.net/</a>.</li>
-</ul>
-
-<figure class="highlight"><pre><code class="language-raw" data-lang="raw">* A named link to [MarkItDown][3].
-* Another named link to [MarkItDown](http://markitdown.net/)
-* Sometimes you just want a URL like &lt;http://markitdown.net/&gt;.</code></pre></figure>
-
-<hr />
-
-<h2 id="horizontal-rule">Horizontal rule</h2>
-
-<p>A horizontal rule is a line that goes across the middle of the page.
-It’s sometimes handy for breaking things up.</p>
-
-<figure class="highlight"><pre><code class="language-raw" data-lang="raw">---</code></pre></figure>
-
-<hr />
-
-<h2 id="images">Images</h2>
-
-<p>Markdown can also contain images. I’ll need to add something here sometime.</p>
-
-<figure class="highlight"><pre><code class="language-raw" data-lang="raw">![Markdowm Image][/image/url]</code></pre></figure>
-
-<p><img src="http://kune.fr/wp-content/uploads/2013/10/ghost-blog.jpg" alt="Markdowm Image" /></p>
-
-<p><em>Figure Caption</em>?</p>
-
-<figure class="highlight"><pre><code class="language-raw" data-lang="raw">![Markdowm Image][/image/url]
-&lt;figcaption class="caption"&gt;Photo by John Doe&lt;/figcaption&gt;</code></pre></figure>
-
-<p><img src="http://kune.fr/wp-content/uploads/2013/10/ghost-blog.jpg" alt="Markdowm Image" /></p>
-<figcaption class="caption">Photo by John Doe</figcaption>
-
-<p><em>Bigger Images</em>?</p>
-
-<figure class="highlight"><pre><code class="language-raw" data-lang="raw">![Markdowm Image][/image/url]{: class="bigger-image" }</code></pre></figure>
-
-<p><img src="http://kune.fr/wp-content/uploads/2013/10/ghost-blog.jpg" alt="Markdowm Image" class="bigger-image" /></p>
-
-<hr />
-
-<h2 id="code">Code</h2>
-
-<p>A HTML Example:</p>
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;head&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;title&gt;</span>Document<span class="nt">&lt;/title&gt;</span>
-<span class="nt">&lt;/head&gt;</span>
-<span class="nt">&lt;body&gt;</span>
-    <span class="nt">&lt;h1&gt;</span>Just a test<span class="nt">&lt;/h1&gt;</span>
-<span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span></code></pre></figure>
-
-<p>A CSS Example:</p>
-
-<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">pre</span> <span class="p">{</span>
-    <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
-    <span class="nl">font-size</span><span class="p">:</span> <span class="m">.8em</span><span class="p">;</span>
-    <span class="nl">white-space</span><span class="p">:</span> <span class="n">pre</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="nt">pre</span><span class="o">,</span> <span class="nt">table</span> <span class="p">{</span>
-    <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="nt">code</span><span class="o">,</span> <span class="nt">pre</span><span class="o">,</span> <span class="nt">tt</span> <span class="p">{</span>
-    <span class="nl">font-family</span><span class="p">:</span> <span class="n">Monaco</span><span class="p">,</span> <span class="n">Consolas</span><span class="p">,</span> <span class="n">Inconsolata</span><span class="p">,</span> <span class="nb">monospace</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
-    <span class="nl">background</span><span class="p">:</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">.05</span><span class="p">);</span>
-<span class="p">}</span></code></pre></figure>
-
-<p>A JS Example:</p>
-
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="c1">// Sticky Header</span>
-<span class="nx">$</span><span class="p">(</span><span class="nb">window</span><span class="p">).</span><span class="nx">scroll</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-
-    <span class="k">if</span> <span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="nb">window</span><span class="p">).</span><span class="nx">scrollTop</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">900</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="nx">$</span><span class="p">(</span><span class="s2">"body"</span><span class="p">).</span><span class="nx">hasClass</span><span class="p">(</span><span class="s1">'show-menu'</span><span class="p">))</span> <span class="p">{</span>
-        <span class="nx">$</span><span class="p">(</span><span class="s1">'#hamburguer__open'</span><span class="p">).</span><span class="nx">fadeOut</span><span class="p">(</span><span class="s1">'fast'</span><span class="p">);</span>
-    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">$</span><span class="p">(</span><span class="s2">"body"</span><span class="p">).</span><span class="nx">hasClass</span><span class="p">(</span><span class="s1">'show-menu'</span><span class="p">))</span> <span class="p">{</span>
-        <span class="nx">$</span><span class="p">(</span><span class="s1">'#hamburguer__open'</span><span class="p">).</span><span class="nx">fadeIn</span><span class="p">(</span><span class="s1">'fast'</span><span class="p">);</span>
-    <span class="p">}</span>
-
-<span class="p">});</span></code></pre></figure>
-
+<span class="n">bfs</span><span class="p">(</span><span class="n">graph</span><span class="p">,</span> <span class="s">'A'</span><span class="p">)</span> <span class="c"># {'B', 'C', 'A', 'F', 'D', 'E'}</span>
+</code></pre></div></div>
+<p>##Interview Questions
+<a href="https://github.com/jgam/crackingthecoding/tree/master/chpt2">Here is the answers of interview questions!</a></p>
 
 
 
@@ -1659,137 +1554,264 @@ It’s sometimes handy for breaking things up.</p>
         
             
                 
-            
-                
-            
-        
-            
-                
-            
-                
-            
-        
-            
-                
-            
-                
-            
-        
-            
-                
-            
-                
-            
-        
-            
-                
-            
-                
-            
-        
-    
-        
-        
-            
-                
-            
-                
-            
-        
-            
-                
-            
-                
-            
-        
-            
-                
-            
-                
-            
-        
-            
-                
-            
-                
-            
-        
-            
-                
-            
-                
-            
-        
-    
-        
-        
-            
-                
-            
-                
-            
-        
-            
-                
-            
-                
-            
-        
-            
-                
-            
-                
-            
-        
-            
-                
-            
-                
-            
-        
-    
-        
-        
-            
-                
-            
-                
-            
-        
-            
-                
-            
-                
-            
-        
-            
-                
-            
-                
-            
-        
-            
-                
-            
-                
-            
-        
-    
-        
-        
-            
-                
-            
-                
-            
-        
-            
-                
-            
-                
                     
                     <h4>Related Posts</h4>
                     <ul>
+                    
+                    <li class="relatedPost">
+                        <a href="http://localhost:4000/crackingthecodinginterview4/">tres and graphs
+                        
+                        </a>
+                    </li>
+                    
+                    
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+                    
+                    <li class="relatedPost">
+                        <a href="http://localhost:4000/crackingthecodinginterview2/">Linked Lists
+                        
+                        </a>
+                    </li>
+                    
+                    
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+                    
+                    <li class="relatedPost">
+                        <a href="http://localhost:4000/crackingthecodinginterview1/">Arrays and Strings
+                        
+                        </a>
+                    </li>
+                    
+                    
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
                     
                     <li class="relatedPost">
                         <a href="http://localhost:4000/introduction/">First blog
@@ -1800,20 +1822,10 @@ It’s sometimes handy for breaking things up.</p>
                     
                 
             
-        
-    
-        
-        
+                
             
                 
-                    
-                    <li class="relatedPost">
-                        <a href="http://localhost:4000/markdown-extra-components/">Markdown Extra Components
-                        
-                        </a>
-                    </li>
-                    
-                    
+            
                 
             
                 
@@ -1824,7 +1836,7 @@ It’s sometimes handy for breaking things up.</p>
             
                 
             
-        
+                
             
                 
             
@@ -1839,7 +1851,31 @@ It’s sometimes handy for breaking things up.</p>
             
                 
             
+                
+            
+                
+            
+                
+            
         
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
             
                 
             
@@ -1849,6 +1885,39 @@ It’s sometimes handy for breaking things up.</p>
     
         
         
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
             
                 
             
@@ -1866,17 +1935,17 @@ It’s sometimes handy for breaking things up.</p>
 
     <section class="author">
     <div class="toleft">
-        <img class="selfie" src="http://localhost:4000/assets/images/profile.jpg" alt="John Doe">
+        <img class="selfie" src="http://localhost:4000/" alt="">
     </div>
 
     <div class="toright">
-        <h4 class="name">John Doe</h4>
-        <p class="bio">A Man who travels the world eating noodles</p>
+        <h4 class="name"></h4>
+        <p class="bio"></p>
 
         <div class="share">
             <!-- Note: Only use three share links if your site width is set to large -->
             <!-- If site width is set to normal, you may choose any two share links -->
-            <a class="twitter" href="https://twitter.com/intent/tweet?text=http://localhost:4000/markdown-common-elements/ - Markdown Common Elements by @johndoe">
+            <a class="twitter" href="https://twitter.com/intent/tweet?text=http://localhost:4000/crackingthecodinginterview3/ - Stacks and queues by @">
                 <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg><span class="icon-twitter">Tweet</span>
             </a>
 
@@ -1884,15 +1953,15 @@ It’s sometimes handy for breaking things up.</p>
                 <svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg><span class="icon-facebook-rect">Share</span>
             </a>
 
-            <!-- <a class="google-plus" href="https://plus.google.com/share?url=http://localhost:4000/markdown-common-elements/" target="_blank">
+            <!-- <a class="google-plus" href="https://plus.google.com/share?url=http://localhost:4000/crackingthecodinginterview3/" target="_blank">
                 <svg class="icon icon-google-plus"><use xlink:href="#icon-google-plus"></use></svg><span class="icon-google-plus">Share</span>
             </a> -->
 
-            <!-- <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:4000/markdown-common-elements/&amp;title=Markdown Common Elements&amp;summary=Markdown summary with different options&amp;source=http://localhost:4000" target="_blank">
+            <!-- <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:4000/crackingthecodinginterview3/&amp;title=Stacks and queues&amp;summary=Stacks & queues&amp;source=http://localhost:4000" target="_blank">
                 <svg class="icon icon-linkedin"><use xlink:href="#icon-linkedin"></use></svg><span class="icon-linkedin">Share</span>
             </a> -->
 
-            <!-- <a class="reddit" href="https://reddit.com/submit?url=http://localhost:4000/markdown-common-elements/&amp;title=Markdown Common Elements" target="_blank">
+            <!-- <a class="reddit" href="https://reddit.com/submit?url=http://localhost:4000/crackingthecodinginterview3/&amp;title=Stacks and queues" target="_blank">
                 <svg class="icon icon-reddit"><use xlink:href="#icon-reddit"></use></svg><span class="icon-reddit">Share</span>
             </a> -->
         </div>
@@ -1907,8 +1976,8 @@ It’s sometimes handy for breaking things up.</p>
     <script type="text/javascript">
 
         var disqus_config = function () {
-            this.page.url = 'http://localhost:4000/markdown-common-elements/';
-            this.page.identifier = '/markdown-common-elements';
+            this.page.url = 'http://localhost:4000/crackingthecodinginterview3/';
+            this.page.identifier = '/crackingthecodinginterview3';
         };
         var disqus_shortname = 'mydisqus';
         var disqus_developer = 0;
