@@ -7,8 +7,9 @@ description: A journey to dream
 
 # if it's an external image, update below for true
 # better with square images
-external-image: false
+external-image: true
 picture: assets/images/bb.jpeg
+bst: asset/images/completeBT.png
 
 # If you want to include your resume, set to true
 # and specify source (external or local).
