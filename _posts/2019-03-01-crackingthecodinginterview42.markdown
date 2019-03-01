@@ -126,32 +126,4 @@ It is used to find the shortest path between a source and destination node. It o
 
 The picture explains well with how to reduce the run time when we run two BFS from opposite directions. In traditional BFS, we want to find k nodes by the levels of the graph. This gives you run time of **O(2 ^ d)** where d is the number of levels.
 
-## Lists
-
-### Ordered list
-
-1. Item 1
-2. A second item
-3. Number 3
-
-{% highlight raw %}
-1. Item 1
-2. A second item
-3. Number 3
-{% endhighlight %}
-
-### Unordered list
-
-* An item
-* Another item
-* Yet another item
-* And there's more...
-
-{% highlight raw %}
-* An item
-* Another item
-* Yet another item
-* And there's more...
-{% endhighlight %}
-
-
+Because we are doing this from two different points (the points for finding the shortest path), the run time reduces by number of levels by 2. Let's say for finding the shortest path between a and b, the levels we need to explore are 10. Since we are implementing BFS from each point, the run time is half of the level difference which is 5. Similarly, we are merely reducing the number of d(number of levels) by 2 which, in turn, gives **O(2^(d/2))**

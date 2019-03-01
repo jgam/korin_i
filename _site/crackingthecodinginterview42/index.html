@@ -1597,34 +1597,7 @@ A tree is actually a type of graph, but not all graphs are trees. Simply put, a 
 
 <p>The picture explains well with how to reduce the run time when we run two BFS from opposite directions. In traditional BFS, we want to find k nodes by the levels of the graph. This gives you run time of <strong>O(2 ^ d)</strong> where d is the number of levels.</p>
 
-<h2 id="lists">Lists</h2>
-
-<h3 id="ordered-list">Ordered list</h3>
-
-<ol>
-  <li>Item 1</li>
-  <li>A second item</li>
-  <li>Number 3</li>
-</ol>
-
-<figure class="highlight"><pre><code class="language-raw" data-lang="raw">1. Item 1
-2. A second item
-3. Number 3</code></pre></figure>
-
-<h3 id="unordered-list">Unordered list</h3>
-
-<ul>
-  <li>An item</li>
-  <li>Another item</li>
-  <li>Yet another item</li>
-  <li>And there’s more…</li>
-</ul>
-
-<figure class="highlight"><pre><code class="language-raw" data-lang="raw">* An item
-* Another item
-* Yet another item
-* And there's more...</code></pre></figure>
-
+<p>Because we are doing this from two different points (the points for finding the shortest path), the run time reduces by number of levels by 2. Let’s say for finding the shortest path between a and b, the levels we need to explore are 10. Since we are implementing BFS from each point, the run time is half of the level difference which is 5. Similarly, we are merely reducing the number of d(number of levels) by 2 which, in turn, gives <strong>O(2^(d/2))</strong></p>
 
 
 

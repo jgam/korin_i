@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-03-01T15:48:14+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jimmy Gam</title><subtitle>A journey to dream</subtitle><entry><title type="html">tres and graphs pt.2</title><link href="http://localhost:4000/crackingthecodinginterview42/" rel="alternate" type="text/html" title="tres and graphs pt.2" /><published>2019-03-01T00:00:00+09:00</published><updated>2019-03-01T00:00:00+09:00</updated><id>http://localhost:4000/crackingthecodinginterview42</id><content type="html" xml:base="http://localhost:4000/crackingthecodinginterview42/">&lt;p&gt;&lt;strong&gt;Continuing from previous post I want to start off with finishing trees and continnue on with Graphs!&lt;/strong&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-03-01T15:51:26+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jimmy Gam</title><subtitle>A journey to dream</subtitle><entry><title type="html">tres and graphs pt.2</title><link href="http://localhost:4000/crackingthecodinginterview42/" rel="alternate" type="text/html" title="tres and graphs pt.2" /><published>2019-03-01T00:00:00+09:00</published><updated>2019-03-01T00:00:00+09:00</updated><id>http://localhost:4000/crackingthecodinginterview42</id><content type="html" xml:base="http://localhost:4000/crackingthecodinginterview42/">&lt;p&gt;&lt;strong&gt;Continuing from previous post I want to start off with finishing trees and continnue on with Graphs!&lt;/strong&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;binary-heaps-바이너리-힙-min-heaps-and-max-heaps&quot;&gt;Binary Heaps 바이너리 힙! (min heaps and max heaps)&lt;/h2&gt;
 &lt;p&gt;Max-heaps are in descending order whereas Min-heaps are in ascending order.&lt;/p&gt;
@@ -114,33 +114,7 @@ A tree is actually a type of graph, but not all graphs are trees. Simply put, a 
 
 &lt;p&gt;The picture explains well with how to reduce the run time when we run two BFS from opposite directions. In traditional BFS, we want to find k nodes by the levels of the graph. This gives you run time of &lt;strong&gt;O(2 ^ d)&lt;/strong&gt; where d is the number of levels.&lt;/p&gt;
 
-&lt;h2 id=&quot;lists&quot;&gt;Lists&lt;/h2&gt;
-
-&lt;h3 id=&quot;ordered-list&quot;&gt;Ordered list&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Item 1&lt;/li&gt;
-  &lt;li&gt;A second item&lt;/li&gt;
-  &lt;li&gt;Number 3&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-raw&quot; data-lang=&quot;raw&quot;&gt;1. Item 1
-2. A second item
-3. Number 3&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;unordered-list&quot;&gt;Unordered list&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;An item&lt;/li&gt;
-  &lt;li&gt;Another item&lt;/li&gt;
-  &lt;li&gt;Yet another item&lt;/li&gt;
-  &lt;li&gt;And there’s more…&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-raw&quot; data-lang=&quot;raw&quot;&gt;* An item
-* Another item
-* Yet another item
-* And there's more...&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name>jgam</name></author><category term="blog" /><category term="jgam" /><category term="cracking the coding interview" /><category term="trees" /><category term="graphs" /><category term="algorithm" /><summary type="html">Continuing from previous post I want to start off with finishing trees and continnue on with Graphs!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/markdown.jpg" /></entry><entry><title type="html">tres and graphs</title><link href="http://localhost:4000/crackingthecodinginterview4/" rel="alternate" type="text/html" title="tres and graphs" /><published>2019-02-28T00:00:00+09:00</published><updated>2019-02-28T00:00:00+09:00</updated><id>http://localhost:4000/crackingthecodinginterview4</id><content type="html" xml:base="http://localhost:4000/crackingthecodinginterview4/">&lt;h2 id=&quot;trees&quot;&gt;Trees&lt;/h2&gt;
+&lt;p&gt;Because we are doing this from two different points (the points for finding the shortest path), the run time reduces by number of levels by 2. Let’s say for finding the shortest path between a and b, the levels we need to explore are 10. Since we are implementing BFS from each point, the run time is half of the level difference which is 5. Similarly, we are merely reducing the number of d(number of levels) by 2 which, in turn, gives &lt;strong&gt;O(2^(d/2))&lt;/strong&gt;&lt;/p&gt;</content><author><name>jgam</name></author><category term="blog" /><category term="jgam" /><category term="cracking the coding interview" /><category term="trees" /><category term="graphs" /><category term="algorithm" /><summary type="html">Continuing from previous post I want to start off with finishing trees and continnue on with Graphs!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/markdown.jpg" /></entry><entry><title type="html">tres and graphs</title><link href="http://localhost:4000/crackingthecodinginterview4/" rel="alternate" type="text/html" title="tres and graphs" /><published>2019-02-28T00:00:00+09:00</published><updated>2019-02-28T00:00:00+09:00</updated><id>http://localhost:4000/crackingthecodinginterview4</id><content type="html" xml:base="http://localhost:4000/crackingthecodinginterview4/">&lt;h2 id=&quot;trees&quot;&gt;Trees&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;tree is a datastructure composed of nodes&lt;/li&gt;
   &lt;li&gt;The root node has zero or more child nodes&lt;/li&gt;
