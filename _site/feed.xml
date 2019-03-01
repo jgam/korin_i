@@ -1,4 +1,58 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-03-01T11:27:29+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jimmy Gam</title><subtitle>A journey to dream</subtitle><entry><title type="html">tres and graphs</title><link href="http://localhost:4000/crackingthecodinginterview4/" rel="alternate" type="text/html" title="tres and graphs" /><published>2019-02-28T00:00:00+09:00</published><updated>2019-02-28T00:00:00+09:00</updated><id>http://localhost:4000/crackingthecodinginterview4</id><content type="html" xml:base="http://localhost:4000/crackingthecodinginterview4/">&lt;h2 id=&quot;trees&quot;&gt;Trees&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-03-01T14:18:16+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jimmy Gam</title><subtitle>A journey to dream</subtitle><entry><title type="html">tres and graphs pt.2</title><link href="http://localhost:4000/crackingthecodinginterview42/" rel="alternate" type="text/html" title="tres and graphs pt.2" /><published>2019-03-01T00:00:00+09:00</published><updated>2019-03-01T00:00:00+09:00</updated><id>http://localhost:4000/crackingthecodinginterview42</id><content type="html" xml:base="http://localhost:4000/crackingthecodinginterview42/">&lt;p&gt;&lt;strong&gt;Continuing from previous post I want to start off with finishing trees and continnue on with Graphs!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;binary-heaps-바이너리-힙-min-heaps-and-max-heaps&quot;&gt;Binary Heaps 바이너리 힙! (min heaps and max heaps)&lt;/h2&gt;
+&lt;p&gt;Max-heaps are in descending order whereas Min-heaps are in ascending order.&lt;/p&gt;
+
+&lt;p&gt;A min-heap is a complete binary tree (that is, totally filled other than the rightmost elements on the last level) where each node is smaller than its children. The root, is the minimum element in the tree.&lt;/p&gt;
+
+&lt;h2 id=&quot;min-heap&quot;&gt;min heap&lt;/h2&gt;
+&lt;p&gt;The picture of min heap is the following&lt;/p&gt;
+
+&lt;div class=&quot;side-by-side&quot;&gt;
+    &lt;div class=&quot;tocenter&quot;&gt;
+        &lt;img class=&quot;image&quot; src=&quot;http://localhost:4000/&quot; alt=&quot;Alt Text&quot; /&gt;
+        &lt;figcaption class=&quot;caption&quot;&gt;Photo by jgam CREDIT: cracking the coindg interview&lt;/figcaption&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Two operations we are going to take a look is &lt;strong&gt;Insert&lt;/strong&gt; and &lt;strong&gt;extract Minimum element&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Insert&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;insert the element at the rightmost spot so as to maintain the complete tree property&lt;/li&gt;
+  &lt;li&gt;“fix” the tree by swapping the new element with its parent, until we find an appropriate spot for the leement&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;This gives &lt;strong&gt;O(log n)&lt;/strong&gt; time where n is the number of nodes in the heap&lt;/p&gt;
+
+&lt;h2 id=&quot;lists&quot;&gt;Lists&lt;/h2&gt;
+
+&lt;h3 id=&quot;ordered-list&quot;&gt;Ordered list&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;A second item&lt;/li&gt;
+  &lt;li&gt;Number 3&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-raw&quot; data-lang=&quot;raw&quot;&gt;1. Item 1
+2. A second item
+3. Number 3&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;unordered-list&quot;&gt;Unordered list&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;An item&lt;/li&gt;
+  &lt;li&gt;Another item&lt;/li&gt;
+  &lt;li&gt;Yet another item&lt;/li&gt;
+  &lt;li&gt;And there’s more…&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-raw&quot; data-lang=&quot;raw&quot;&gt;* An item
+* Another item
+* Yet another item
+* And there's more...&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name>jgam</name></author><category term="blog" /><category term="jgam" /><category term="cracking the coding interview" /><category term="trees" /><category term="graphs" /><category term="algorithm" /><summary type="html">Continuing from previous post I want to start off with finishing trees and continnue on with Graphs!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/markdown.jpg" /></entry><entry><title type="html">tres and graphs</title><link href="http://localhost:4000/crackingthecodinginterview4/" rel="alternate" type="text/html" title="tres and graphs" /><published>2019-02-28T00:00:00+09:00</published><updated>2019-02-28T00:00:00+09:00</updated><id>http://localhost:4000/crackingthecodinginterview4</id><content type="html" xml:base="http://localhost:4000/crackingthecodinginterview4/">&lt;h2 id=&quot;trees&quot;&gt;Trees&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;tree is a datastructure composed of nodes&lt;/li&gt;
   &lt;li&gt;The root node has zero or more child nodes&lt;/li&gt;

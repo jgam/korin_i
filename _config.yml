@@ -12,7 +12,9 @@ picture: assets/images/profile.jpeg
 bst: /blog/assets/images/completeBT.png
 fbt: /blog/assets/images/fbt.png
 pbt: /blog/assets/images/pbt.png
-
+minheap: /blog/assets/images/minheap.png
+minheap2: /blog/assets/images/minheap2.png
+minheap3: /blog/assets/images/minheap3.png
 
 # If you want to include your resume, set to true
 # and specify source (external or local).
