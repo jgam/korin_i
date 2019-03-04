@@ -28,3 +28,8 @@ return True
 This lessens the number of loops that the logic has to go through.
 
 ## Generating a list of primes?
+The Sieve of Eratosthenes is highly efficient way to generate a list of primes. It works by recognizing that all non-prime numbers are divisible by a prime number. We start with a list of all the number up through some value max.
+
+1. cross of all numbers divisible by 2
+2. look for the next prime(the next non-crossed off number(
+3. croos off all numbers divisible by it))
