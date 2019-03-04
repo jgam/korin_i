@@ -33,3 +33,27 @@ The Sieve of Eratosthenes is highly efficient way to generate a list of primes. 
 1. cross of all numbers divisible by 2
 2. look for the next prime(the next non-crossed off number(
 3. croos off all numbers divisible by it))
+
+```python
+#list of primes
+def list_of_primes(num_list):
+	start = 4
+	ret_list = [2,3]
+	# start off with finding the number
+	for i in range(start, num_list):
+		#even number should be jumped
+		if i % 2 == 0:
+			continue
+		else:
+			#we know that the non-prime number is a divisible number by prime number
+			for v in ret_list[1:]:
+				print(i,v)
+				if i % v != 0:
+					if v == ret_list[-1]:
+						ret_list.append(i)
+					continue
+				else:
+					break
+	return ret_list
+
+```
