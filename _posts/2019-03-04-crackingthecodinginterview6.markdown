@@ -55,7 +55,6 @@ def list_of_primes(num_list):
 				else:
 					break
 	return ret_list
-
 ```
 
 ##  Brainteaser
