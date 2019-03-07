@@ -1,5 +1,5 @@
 ---
-title: "math and logic puzzles"
+title: "Math and Logic Puzzles"
 layout: post
 date: 2019-03-04
 image: /assets/images/markdown.jpg
@@ -59,9 +59,9 @@ def list_of_primes(num_list):
 
 ##  Brainteaser
 Including the primes and probabilities, we will always face brainteasers. What do we need to do when we face brainteasers?
-# Develop Rules and Patterns
+### Develop Rules and Patterns
 We have to find the ways to come up with the answers and it is totally due to the practices.
 However, more importantly, we have to think about worst-case shifting.  A useful technique is to try to balance the worst case. If an early decision results in a skewing of the worst case, we can sometimes change the decision to balance out the worst case.
 
-##Interview Questions
+## Interview Questions
 [Here is the answers of interview questions!](https://github.com/jgam/crackingthecoding/tree/master/chpt6)
