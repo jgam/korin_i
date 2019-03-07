@@ -1,4 +1,74 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-03-01T17:09:52+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jimmy Gam</title><subtitle>A journey to dream</subtitle><entry><title type="html">tres and graphs pt.2</title><link href="http://localhost:4000/crackingthecodinginterview42/" rel="alternate" type="text/html" title="tres and graphs pt.2" /><published>2019-03-01T00:00:00+09:00</published><updated>2019-03-01T00:00:00+09:00</updated><id>http://localhost:4000/crackingthecodinginterview42</id><content type="html" xml:base="http://localhost:4000/crackingthecodinginterview42/">&lt;p&gt;&lt;strong&gt;Continuing from previous post I want to start off with finishing trees and continnue on with Graphs!&lt;/strong&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-03-07T16:28:57+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jimmy Gam</title><subtitle>A journey to dream</subtitle><entry><title type="html">object-oriented design</title><link href="http://localhost:4000/crackingthecodinginterview7/" rel="alternate" type="text/html" title="object-oriented design" /><published>2019-03-05T00:00:00+09:00</published><updated>2019-03-05T00:00:00+09:00</updated><id>http://localhost:4000/crackingthecodinginterview7</id><content type="html" xml:base="http://localhost:4000/crackingthecodinginterview7/">&lt;h2 id=&quot;object-oriented-design&quot;&gt;Object Oriented Design&lt;/h2&gt;
+&lt;p&gt;Object-Oriented design question requires a candidate to sketch out the classes and methods to implement technical problems or real-life objects.&lt;/p&gt;
+
+&lt;p&gt;#How to Approach?&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Handle Ambiguity
+Object oriented design questions are often intentionally vague in order to test . When being asked an ood question, you should inquire who is going to use it and how they are going to use it.&lt;/li&gt;
+  &lt;li&gt;Define the core objevts
+After understanding what we are designing, we should consider what the core objects in a system are.&lt;/li&gt;
+  &lt;li&gt;Analyze Relationships
+Having more or less decided on our core objects, we now want to analyze the relationships between the objects. Which objects are members of which other objects?&lt;/li&gt;
+  &lt;li&gt;Investigate Actions
+At this point, you should have the basic outline of your object-oriented design. What remains is to consider the key actions that the objects will take and how they relate to each other.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;#Design Patterns&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Singleton Class&lt;/li&gt;
+  &lt;li&gt;Factory Method&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;interview-questions&quot;&gt;Interview Questions&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/jgam/crackingthecoding/tree/master/chpt7&quot;&gt;Here is the answers of interview questions!&lt;/a&gt;&lt;/p&gt;</content><author><name>jgam</name></author><category term="blog" /><category term="jgam" /><category term="cracking the coding interview" /><category term="oop" /><category term="object-oriented" /><category term="algorithm" /><summary type="html">Object Oriented Design Object-Oriented design question requires a candidate to sketch out the classes and methods to implement technical problems or real-life objects.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/markdown.jpg" /></entry><entry><title type="html">math and logic puzzles</title><link href="http://localhost:4000/crackingthecodinginterview6/" rel="alternate" type="text/html" title="math and logic puzzles" /><published>2019-03-04T00:00:00+09:00</published><updated>2019-03-04T00:00:00+09:00</updated><id>http://localhost:4000/crackingthecodinginterview6</id><content type="html" xml:base="http://localhost:4000/crackingthecodinginterview6/">&lt;h2 id=&quot;checking-if-number-is-primes&quot;&gt;Checking if number is primes?&lt;/h2&gt;
+&lt;p&gt;Rather than iterating up to the number N, we can iterate up to a square root of number N, to find any roots.&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;number&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sqrt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))):&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;N&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;number&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This lessens the number of loops that the logic has to go through.&lt;/p&gt;
+
+&lt;h2 id=&quot;generating-a-list-of-primes&quot;&gt;Generating a list of primes?&lt;/h2&gt;
+&lt;p&gt;The Sieve of Eratosthenes is highly efficient way to generate a list of primes. It works by recognizing that all non-prime numbers are divisible by a prime number. We start with a list of all the number up through some value max.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;cross of all numbers divisible by 2&lt;/li&gt;
+  &lt;li&gt;look for the next prime(the next non-crossed off number(&lt;/li&gt;
+  &lt;li&gt;croos off all numbers divisible by it))&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#list of primes&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;list_of_primes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;num_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;start&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;ret_list&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+	&lt;span class=&quot;c&quot;&gt;# start off with finding the number&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+		&lt;span class=&quot;c&quot;&gt;#even number should be jumped&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+			&lt;span class=&quot;k&quot;&gt;continue&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+			&lt;span class=&quot;c&quot;&gt;#we know that the non-prime number is a divisible number by prime number&lt;/span&gt;
+			&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ret_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:]:&lt;/span&gt;
+				&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+				&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+					&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ret_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt;
+						&lt;span class=&quot;n&quot;&gt;ret_list&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+					&lt;span class=&quot;k&quot;&gt;continue&lt;/span&gt;
+				&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+					&lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ret_list&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;brainteaser&quot;&gt;Brainteaser&lt;/h2&gt;
+&lt;p&gt;Including the primes and probabilities, we will always face brainteasers. What do we need to do when we face brainteasers?&lt;/p&gt;
+&lt;h1 id=&quot;develop-rules-and-patterns&quot;&gt;Develop Rules and Patterns&lt;/h1&gt;
+&lt;p&gt;We have to find the ways to come up with the answers and it is totally due to the practices.
+However, more importantly, we have to think about worst-case shifting.  A useful technique is to try to balance the worst case. If an early decision results in a skewing of the worst case, we can sometimes change the decision to balance out the worst case.&lt;/p&gt;
+
+&lt;p&gt;##Interview Questions
+&lt;a href=&quot;https://github.com/jgam/crackingthecoding/tree/master/chpt6&quot;&gt;Here is the answers of interview questions!&lt;/a&gt;&lt;/p&gt;</content><author><name>jgam</name></author><category term="blog" /><category term="jgam" /><category term="cracking the coding interview" /><category term="logic puzzles" /><category term="math" /><category term="algorithm" /><summary type="html">Checking if number is primes? Rather than iterating up to the number N, we can iterate up to a square root of number N, to find any roots. for number in range(int(sqrt(N))): if N % number == 0: return False return True</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/markdown.jpg" /></entry><entry><title type="html">tres and graphs pt.2</title><link href="http://localhost:4000/crackingthecodinginterview42/" rel="alternate" type="text/html" title="tres and graphs pt.2" /><published>2019-03-01T00:00:00+09:00</published><updated>2019-03-01T00:00:00+09:00</updated><id>http://localhost:4000/crackingthecodinginterview42</id><content type="html" xml:base="http://localhost:4000/crackingthecodinginterview42/">&lt;p&gt;&lt;strong&gt;Continuing from previous post I want to start off with finishing trees and continnue on with Graphs!&lt;/strong&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;binary-heaps-바이너리-힙-min-heaps-and-max-heaps&quot;&gt;Binary Heaps 바이너리 힙! (min heaps and max heaps)&lt;/h2&gt;
 &lt;p&gt;Max-heaps are in descending order whereas Min-heaps are in ascending order.&lt;/p&gt;
@@ -738,25 +808,4 @@ It’s sometimes handy for breaking things up.&lt;/p&gt;
         &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'#hamburguer__open'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fadeIn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'fast'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
     &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
-&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name>johndoe</name></author><category term="blog" /><category term="markdown" /><category term="elements" /><summary type="html">Basic formatting</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/markdown.jpg" /></entry><entry><title type="html">:ramen: Indigo, minimalist jekyll theme</title><link href="http://localhost:4000/indigo-jekyll-theme/" rel="alternate" type="text/html" title=":ramen: Indigo, minimalist jekyll theme" /><published>2016-01-23T22:10:00+09:00</published><updated>2016-01-23T22:10:00+09:00</updated><id>http://localhost:4000/indigo-jekyll-theme</id><content type="html" xml:base="http://localhost:4000/indigo-jekyll-theme/">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/sergiokopplin/indigo/gh-pages/assets/screen-shot.png&quot; alt=&quot;Screenshot&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Example of project - Indigo Minimalist Jekyll Template - &lt;a href=&quot;http://sergiokopplin.github.io/indigo/&quot;&gt;Demo&lt;/a&gt;. This is a simple and minimalist template for Jekyll for those who likes to eat noodles.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;What has inside?&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Gulp&lt;/li&gt;
-  &lt;li&gt;BrowserSync&lt;/li&gt;
-  &lt;li&gt;Stylus&lt;/li&gt;
-  &lt;li&gt;SVG&lt;/li&gt;
-  &lt;li&gt;Travis&lt;/li&gt;
-  &lt;li&gt;No JS&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fsergiokopplin.github.io%2Findigo%2F&quot;&gt;98/100&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://sergiokopplin.github.io/indigo/&quot;&gt;Check it out&lt;/a&gt; here.
-If you need some help, just &lt;a href=&quot;http://github.com/sergiokopplin/indigo/issues&quot;&gt;tell me&lt;/a&gt;.&lt;/p&gt;</content><author><name>johndoe</name></author><category term="project" /><category term="jekyll" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://koppl.in/indigo/assets/images/jekyll-logo-light-solid.png" /></entry></feed>
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name>johndoe</name></author><category term="blog" /><category term="markdown" /><category term="elements" /><summary type="html">Basic formatting</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/markdown.jpg" /></entry></feed>

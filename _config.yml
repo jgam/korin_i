@@ -62,6 +62,12 @@ github: jgam
 email: jgam@alumni.nd.edu
 
 authors:
+    jgam:
+        name: Jimmy Gam
+        bio: A man who likes coding and Japan
+        external-image: true
+        picture: assets/images/profile.jpeg
+        instagram: jgam__
     johndoe:
         name: John Doe
         bio: A Man who travels the world eating noodles
@@ -90,6 +96,7 @@ projects: true
 # if you don't need "about" or "blog", comment them out below
 about: true
 blog: true
+algorithms: true
 
 # do you want to show the "read time" of the posts?
 read-time: true
