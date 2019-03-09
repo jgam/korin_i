@@ -11,7 +11,7 @@ tag:
 - values
 - reference
 star: true
-category: blog
+category: python
 author: jgam
 description: python: call by reference or value
 ---
