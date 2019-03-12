@@ -1467,7 +1467,7 @@ pre {
     
 
     
-        1 min
+        2 mins
     
 </span>
 
@@ -1539,6 +1539,24 @@ pre {
 <h2 id="insertion-sort">Insertion Sort</h2>
 
 <ul>
+  <li>from 1 to N, set the index and go through index to place the value at right position less than index
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">insertinoSort</span><span class="p">(</span><span class="n">alist</span><span class="p">):</span>
+  <span class="n">start</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+  <span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">alist</span><span class="p">)):</span>
+      <span class="n">currentvalue</span> <span class="o">=</span> <span class="n">alist</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
+      <span class="n">position</span> <span class="o">=</span> <span class="n">index</span>
+
+      <span class="k">while</span> <span class="n">position</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">alist</span><span class="p">[</span><span class="n">position</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">currentvalue</span><span class="p">:</span>
+          <span class="n">alist</span><span class="p">[</span><span class="n">position</span><span class="p">]</span><span class="o">=</span><span class="n">alist</span><span class="p">[</span><span class="n">position</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+          <span class="n">position</span> <span class="o">=</span> <span class="n">position</span> <span class="o">-</span> <span class="mi">1</span>
+  <span class="n">alist</span><span class="p">[</span><span class="n">position</span><span class="p">]</span> <span class="o">=</span> <span class="n">currentvalue</span>
+  <span class="n">curr_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">start</span>
+  <span class="k">return</span> <span class="n">alist</span><span class="p">,</span> <span class="n">curr_time</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>time complexity : O(N), O(N^2), O(N^2)</p>
+  </li>
   <li>1~N
     <h3 id="unordered-list">Unordered list</h3>
   </li>

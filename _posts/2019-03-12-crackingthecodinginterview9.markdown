@@ -58,6 +58,23 @@ def selsectionSort(alist):
 
 ## Insertion Sort
 
+* from 1 to N, set the index and go through index to place the value at right position less than index
+```python
+def insertinoSort(alist):
+	start = time.time()
+	for index in range(1, len(alist)):
+		currentvalue = alist[index]
+		position = index
+
+		while position > 0 and alist[position-1] > currentvalue:
+			alist[position]=alist[position-1]
+			position = position - 1
+	alist[position] = currentvalue
+	curr_time = time.time() - start
+	return alist, curr_time
+```
+* time complexity : O(N), O(N^2), O(N^2)
+
 * 1~N
 ### Unordered list
 
