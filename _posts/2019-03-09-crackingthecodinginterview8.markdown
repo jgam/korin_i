@@ -10,10 +10,9 @@ tag:
 - python
 - values
 - reference
-star: true
 category: python
 author: jgam
-description: python: call by reference or value
+description: python is call by reference or value?
 ---
 
 ## Is Python a call by reference or value?
@@ -21,7 +20,7 @@ To answer this question, I want to briefly go over the definitions of call by re
 
 Examples will make images in your head!
 
-# Call by value
+### Call by value
 ```python
 a = 3
 
@@ -32,11 +31,12 @@ example()
 print(a)
 ```
 What is a, when we print it?
+
 -> a = 3
 
 This is an example of call by value because, we are not changing the value of a and merely call by a's value.
 
-# Call by reference
+### Call by reference
 ```python
 a= [1,2,3]
 
@@ -47,11 +47,12 @@ example(a)
 print(a)
 ```
 What is a, when we print it?
+
 ->a = [1, 2, 3, 4]
 
 This is an example of call by reference because we are writing over what has been written in memory reference. As you see, **a** was originally [1,2,3] and inside the function, we appended 4 to it and that memory reference has been re-written. THerefore, when we print a we are calling for the reference of a.
 
-# Conclusion
+### Conclusion
 So what is python then? Simply python has attributes of both call by reference and call by value. Why? Python has evolved from other low-level languages such as c++ or Java and thses complex OS interactinv theories hae been fixed due to more human-friendly language politics. This, while being more human-friendly, actually lessens the OS memory and other efficiencies. (There always exists ups and downs!)
 
 Therefore, we call python as call by objects. There exists **objects** in python and these objects are classified with different attributes called mutability. For example, as you saw in example, the integer value called a is immutable which means it can't be changed through other scope of functions. However, the list called a is immutable and can be changed any scope in the program.
