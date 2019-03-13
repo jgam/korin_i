@@ -87,6 +87,7 @@ about: true
 blog: true
 algorithms: true
 python: true
+linux: true
 # do you want to show the "read time" of the posts?
 read-time: true
 

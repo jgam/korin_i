@@ -75,7 +75,13 @@ def insertinoSort(alist):
 ```
 * time complexity : O(N), O(N^2), O(N^2)
 
-* 1~N
+## Heap Sort
+
+* Heap sort is a comparison based sorting technique based on Binary Heap data structure, similar to selection sort when we find the maximum element and place the maximum element at the end.
+### What is binary heap?
+Complete Binary Tree is a binary tree in which every level, except possibly the last, is completely filled, and all nodes are as far left as possible.
+
+A Binary Heap is a complete binary tree where items are sorted in a special order such that value in a parent node is greater(or smaller) than the values in its two children nodes. The former is called as max heap and the latter is called min heap. The heap can be represented by binary tree or array.
 ### Unordered list
 
 * An item

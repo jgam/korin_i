@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-03-12T16:56:03+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jimmy Gam</title><subtitle>A journey to dream</subtitle><entry><title type="html">python: call by reference or value?</title><link href="http://localhost:4000/crackingthecodinginterview8/" rel="alternate" type="text/html" title="python: call by reference or value?" /><published>2019-03-09T00:00:00+09:00</published><updated>2019-03-09T00:00:00+09:00</updated><id>http://localhost:4000/crackingthecodinginterview8</id><content type="html" xml:base="http://localhost:4000/crackingthecodinginterview8/">&lt;h2 id=&quot;is-python-a-call-by-reference-or-value&quot;&gt;Is Python a call by reference or value?&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-03-13T11:05:27+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jimmy Gam</title><subtitle>A journey to dream</subtitle><entry><title type="html">python: call by reference or value?</title><link href="http://localhost:4000/crackingthecodinginterview8/" rel="alternate" type="text/html" title="python: call by reference or value?" /><published>2019-03-09T00:00:00+09:00</published><updated>2019-03-09T00:00:00+09:00</updated><id>http://localhost:4000/crackingthecodinginterview8</id><content type="html" xml:base="http://localhost:4000/crackingthecodinginterview8/">&lt;h2 id=&quot;is-python-a-call-by-reference-or-value&quot;&gt;Is Python a call by reference or value?&lt;/h2&gt;
 &lt;p&gt;To answer this question, I want to briefly go over the definitions of call by reference and value.&lt;/p&gt;
 
 &lt;p&gt;Examples will make images in your head!&lt;/p&gt;
@@ -103,12 +103,22 @@
   &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;alist&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;curr_time&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;time complexity : O(N), O(N^2), O(N^2)&lt;/p&gt;
+  &lt;li&gt;time complexity : O(N), O(N^2), O(N^2)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;heap-sort&quot;&gt;Heap Sort&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Heap sort is a comparison based sorting technique based on Binary Heap data structure, similar to selection sort when we find the maximum element and place the maximum element at the end.
+    &lt;h3 id=&quot;what-is-binary-heap&quot;&gt;What is binary heap?&lt;/h3&gt;
+    &lt;p&gt;Complete Binary Tree is a binary tree in which every level, except possibly the last, is completely filled, and all nodes are as far left as possible.&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;1~N
-    &lt;h3 id=&quot;unordered-list&quot;&gt;Unordered list&lt;/h3&gt;
-  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A Binary Heap is a complete binary tree where items are sorted in a special order such that value in a parent node is greater(or smaller) than the values in its two children nodes. The former is called as max heap and the latter is called min heap. The heap can be represented by binary tree or array.&lt;/p&gt;
+&lt;h3 id=&quot;unordered-list&quot;&gt;Unordered list&lt;/h3&gt;
+
+&lt;ul&gt;
   &lt;li&gt;An item&lt;/li&gt;
   &lt;li&gt;Another item&lt;/li&gt;
   &lt;li&gt;Yet another item&lt;/li&gt;
