@@ -17,6 +17,14 @@ minheap2: /blog/assets/images/minheap2.png
 minheap3: /blog/assets/images/minheap3.png
 graph: /blog/assets/images/graph.png
 graph1: /blog/assets/images/graph2.png
+linux1: /linux/assets/images/linux1.png
+linux2: /linux/assets/images/linux2.png
+linux3: /linux/assets/images/linux3.png
+linux4: /linux/assets/images/linux4.png
+linux5: /linux/assets/images/linux5.png
+linux6: /linux/assets/images/linux6.png
+linux7: /linux/assets/images/linux7.png
+
 
 # If you want to include your resume, set to true
 # and specify source (external or local).

@@ -1,0 +1,30 @@
+---
+title: "Linux System Programming?"
+layout: post
+date: 2019-03-09
+image: /assets/images/markdown.jpg
+headerImage: false
+tag:
+- jgam
+- Linux
+- system programming
+- system
+- Operating system
+category: blog
+author: jgam
+description: Linux
+---
+
+##리눅스 시스템 프로그래밍이란?
+리눅스 커널이 동작하는 시스템상에서 application 이나 library routines들이 시스템콜을 통해서 linux kernel의 기능들을 이용한다.
+
+##installing Linux?
+manual 하게 install하는 방법이 있으나, 요즘은 virtual machine에  guest os를 설치한다. 이 부분은 virtual machine상에서 설정해준다.
+아래 그림 참조!
+
+<div class="side-by-side">
+    <div class="tocenter">
+        <img class="image" src="{{ site.url }}/{{ site.linux1 }}" alt="Alt Text">
+        <figcaption class="caption">Photo by jgam CREDIT: infLearn</figcaption>
+    </div>
+</div>
