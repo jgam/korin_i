@@ -1,44 +1,49 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-03-13T11:05:27+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jimmy Gam</title><subtitle>A journey to dream</subtitle><entry><title type="html">python: call by reference or value?</title><link href="http://localhost:4000/crackingthecodinginterview8/" rel="alternate" type="text/html" title="python: call by reference or value?" /><published>2019-03-09T00:00:00+09:00</published><updated>2019-03-09T00:00:00+09:00</updated><id>http://localhost:4000/crackingthecodinginterview8</id><content type="html" xml:base="http://localhost:4000/crackingthecodinginterview8/">&lt;h2 id=&quot;is-python-a-call-by-reference-or-value&quot;&gt;Is Python a call by reference or value?&lt;/h2&gt;
-&lt;p&gt;To answer this question, I want to briefly go over the definitions of call by reference and value.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-03-13T16:10:48+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jimmy Gam</title><subtitle>A journey to dream</subtitle><entry><title type="html">Linux System Programming?</title><link href="http://localhost:4000/linux1/" rel="alternate" type="text/html" title="Linux System Programming?" /><published>2019-03-09T00:00:00+09:00</published><updated>2019-03-09T00:00:00+09:00</updated><id>http://localhost:4000/linux1</id><content type="html" xml:base="http://localhost:4000/linux1/">&lt;h2 id=&quot;리눅스-시스템-프로그래밍이란&quot;&gt;리눅스 시스템 프로그래밍이란?&lt;/h2&gt;
+&lt;p&gt;리눅스 커널이 동작하는 시스템상에서 application 이나 library routines들이 시스템콜을 통해서 linux kernel의 기능들을 이용한다.&lt;/p&gt;
 
-&lt;p&gt;Examples will make images in your head!&lt;/p&gt;
+&lt;div class=&quot;side-by-side&quot;&gt;
+    &lt;div class=&quot;tocenter&quot;&gt;
+        &lt;img class=&quot;image&quot; src=&quot;http://localhost:4000//linux/assets/images/linux1.png&quot; alt=&quot;Alt Text&quot; /&gt;
+        &lt;figcaption class=&quot;caption&quot;&gt;Photo by jgam CREDIT: infLearn&lt;/figcaption&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;h3 id=&quot;call-by-value&quot;&gt;Call by value&lt;/h3&gt;
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;
+&lt;p&gt;위에 나와 있다싶이, application(프로그램)들이나 library routines들이 linux kernel과 소통하기위해 시스템콜을 이용해서 linux kernel의 기능들을 사용한다.&lt;/p&gt;
 
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;example&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;h2 id=&quot;installing-linux&quot;&gt;Installing Linux?&lt;/h2&gt;
+&lt;p&gt;manual 하게 install하는 방법이 있으나, 요즘은 virtual machine에  guest os를 설치한다. 이 부분은 virtual machine상에서 설정해준다.&lt;/p&gt;
 
-&lt;span class=&quot;n&quot;&gt;example&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;What is a, when we print it?&lt;/p&gt;
+&lt;p&gt;아래 그림 참조!&lt;/p&gt;
 
-&lt;p&gt;-&amp;gt; a = 3&lt;/p&gt;
+&lt;div class=&quot;side-by-side&quot;&gt;
+    &lt;div class=&quot;tocenter&quot;&gt;
+        &lt;img class=&quot;image&quot; src=&quot;http://localhost:4000//linux/assets/images/linux3.png&quot; alt=&quot;Alt Text&quot; /&gt;
+        &lt;figcaption class=&quot;caption&quot;&gt;Photo by jgam CREDIT: infLearn&lt;/figcaption&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;p&gt;This is an example of call by value because, we are not changing the value of a and merely call by a’s value.&lt;/p&gt;
+&lt;h3 id=&quot;설치방법&quot;&gt;설치방법&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.virtualbox.org/wiki/Downloads&quot;&gt;virtual box 설치&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;유저의 os에 맞게 선택. 필자는 OS  hosts&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.ubuntu.com/#download&quot;&gt;우분투 설치&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;18.04 LTS 다운로드…LTS stands for Long Term Service.&lt;/li&gt;
+  &lt;li&gt;virtual box 실행하고 새로운 virtual machine 생성(환경은 linux!)&lt;/li&gt;
+  &lt;li&gt;optical drive (광학 드라이브) 를 클릭&lt;/li&gt;
+  &lt;li&gt;설치했던 ubuntu~~~.iso파일을 넣어준다 (image 파일임)&lt;/li&gt;
+  &lt;li&gt;설치한 vm을 시작하면 리눅스가 시작됨!&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;h3 id=&quot;call-by-reference&quot;&gt;Call by reference&lt;/h3&gt;
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;div class=&quot;side-by-side&quot;&gt;
+    &lt;div class=&quot;tocenter&quot;&gt;
+        &lt;img class=&quot;image&quot; src=&quot;http://localhost:4000//linux/assets/images/linux7.png&quot; alt=&quot;Alt Text&quot; /&gt;
+        &lt;figcaption class=&quot;caption&quot;&gt;Photo by jgam CREDIT: infLearn&lt;/figcaption&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;example&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;p&gt;위에서 보시다 싶이, 정말 아무 것도 없습니다. (당연한 소리죠, 새로운 환경을 설치했으니) 다시 말하면, vim 부터 gcc(컴파일러)까지 모든것을 설치해 줍니다. 참 apt install을 이용해서 gcc 와 vim을 설치했습니다. 위 그림은, 테스트를 위해서 test.c를 컴파일 후 실행하는 모습을 담았습니다.&lt;/p&gt;
 
-&lt;span class=&quot;n&quot;&gt;example&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;What is a, when we print it?&lt;/p&gt;
-
-&lt;p&gt;-&amp;gt;a = [1, 2, 3, 4]&lt;/p&gt;
-
-&lt;p&gt;This is an example of call by reference because we are writing over what has been written in memory reference. As you see, &lt;strong&gt;a&lt;/strong&gt; was originally [1,2,3] and inside the function, we appended 4 to it and that memory reference has been re-written. THerefore, when we print a we are calling for the reference of a.&lt;/p&gt;
-
-&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
-&lt;p&gt;So what is python then? Simply python has attributes of both call by reference and call by value. Why? Python has evolved from other low-level languages such as c++ or Java and thses complex OS interactinv theories hae been fixed due to more human-friendly language politics. This, while being more human-friendly, actually lessens the OS memory and other efficiencies. (There always exists ups and downs!)&lt;/p&gt;
-
-&lt;p&gt;Therefore, we call python as call by objects. There exists &lt;strong&gt;objects&lt;/strong&gt; in python and these objects are classified with different attributes called mutability. For example, as you saw in example, the integer value called a is immutable which means it can’t be changed through other scope of functions. However, the list called a is immutable and can be changed any scope in the program.&lt;/p&gt;
-
-&lt;p&gt;This difference makes python so special but then alleviates efficiencies.&lt;/p&gt;</content><author><name>jgam</name></author><category term="python" /><category term="jgam" /><category term="cracking the coding interview" /><category term="python" /><category term="values" /><category term="reference" /><summary type="html">Is Python a call by reference or value? To answer this question, I want to briefly go over the definitions of call by reference and value.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/markdown.jpg" /></entry><entry><title type="html">Sorting?</title><link href="http://localhost:4000/crackingthecodinginterview9/" rel="alternate" type="text/html" title="Sorting?" /><published>2019-03-09T00:00:00+09:00</published><updated>2019-03-09T00:00:00+09:00</updated><id>http://localhost:4000/crackingthecodinginterview9</id><content type="html" xml:base="http://localhost:4000/crackingthecodinginterview9/">&lt;h2 id=&quot;sorting-&quot;&gt;Sorting ?&lt;/h2&gt;
+&lt;p&gt;To be continued!&lt;/p&gt;</content><author><name>jgam</name></author><category term="blog" /><category term="jgam" /><category term="Linux" /><category term="system programming" /><category term="system" /><category term="Operating system" /><summary type="html">리눅스 시스템 프로그래밍이란? 리눅스 커널이 동작하는 시스템상에서 application 이나 library routines들이 시스템콜을 통해서 linux kernel의 기능들을 이용한다.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/markdown.jpg" /></entry><entry><title type="html">Sorting?</title><link href="http://localhost:4000/crackingthecodinginterview9/" rel="alternate" type="text/html" title="Sorting?" /><published>2019-03-09T00:00:00+09:00</published><updated>2019-03-09T00:00:00+09:00</updated><id>http://localhost:4000/crackingthecodinginterview9</id><content type="html" xml:base="http://localhost:4000/crackingthecodinginterview9/">&lt;h2 id=&quot;sorting-&quot;&gt;Sorting ?&lt;/h2&gt;
 &lt;p&gt;정렬은 (개인적으로) 알고리즘 중에 가장 큰 부분을 차지하는 알고리즘 기법 중 하나이다. 필자가 python을 주 언어로 쓰면서, 느꼈던 점이 array라는 data type을 굉장히 유연하게 사용한다는 점이다.&lt;/p&gt;
 
 &lt;p&gt;활용 기법도, 여러가지로 다양한데, 이를테면 array를 이용해서 hash map을 간편하게 생성한다 던지, array에 값들을 넣고 빼기에 아주 적합하고, 원하는 부분만 fetch하기에도 매우 용이하다.&lt;/p&gt;
@@ -128,7 +133,72 @@
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-raw&quot; data-lang=&quot;raw&quot;&gt;* An item
 * Another item
 * Yet another item
-* And there's more...&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name>jgam</name></author><category term="blog" /><category term="jgam" /><category term="cracking the coding interview" /><category term="python" /><category term="algorithm" /><category term="sorting" /><summary type="html">Sorting ? 정렬은 (개인적으로) 알고리즘 중에 가장 큰 부분을 차지하는 알고리즘 기법 중 하나이다. 필자가 python을 주 언어로 쓰면서, 느꼈던 점이 array라는 data type을 굉장히 유연하게 사용한다는 점이다.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/markdown.jpg" /></entry><entry><title type="html">object-oriented design</title><link href="http://localhost:4000/crackingthecodinginterview7/" rel="alternate" type="text/html" title="object-oriented design" /><published>2019-03-05T00:00:00+09:00</published><updated>2019-03-05T00:00:00+09:00</updated><id>http://localhost:4000/crackingthecodinginterview7</id><content type="html" xml:base="http://localhost:4000/crackingthecodinginterview7/">&lt;h2 id=&quot;object-oriented-design&quot;&gt;Object Oriented Design&lt;/h2&gt;
+* And there's more...&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name>jgam</name></author><category term="blog" /><category term="jgam" /><category term="cracking the coding interview" /><category term="python" /><category term="algorithm" /><category term="sorting" /><summary type="html">Sorting ? 정렬은 (개인적으로) 알고리즘 중에 가장 큰 부분을 차지하는 알고리즘 기법 중 하나이다. 필자가 python을 주 언어로 쓰면서, 느꼈던 점이 array라는 data type을 굉장히 유연하게 사용한다는 점이다.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/markdown.jpg" /></entry><entry><title type="html">python: call by reference or value?</title><link href="http://localhost:4000/crackingthecodinginterview8/" rel="alternate" type="text/html" title="python: call by reference or value?" /><published>2019-03-09T00:00:00+09:00</published><updated>2019-03-09T00:00:00+09:00</updated><id>http://localhost:4000/crackingthecodinginterview8</id><content type="html" xml:base="http://localhost:4000/crackingthecodinginterview8/">&lt;h2 id=&quot;is-python-a-call-by-reference-or-value&quot;&gt;Is Python a call by reference or value?&lt;/h2&gt;
+&lt;p&gt;To answer this question, I want to briefly go over the definitions of call by reference and value.&lt;/p&gt;
+
+&lt;p&gt;Examples will make images in your head!&lt;/p&gt;
+
+&lt;h3 id=&quot;call-by-value&quot;&gt;Call by value&lt;/h3&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;example&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;example&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;What is a, when we print it?&lt;/p&gt;
+
+&lt;p&gt;-&amp;gt; a = 3&lt;/p&gt;
+
+&lt;p&gt;This is an example of call by value because, we are not changing the value of a and merely call by a’s value.&lt;/p&gt;
+
+&lt;h3 id=&quot;call-by-reference&quot;&gt;Call by reference&lt;/h3&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;example&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;example&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;What is a, when we print it?&lt;/p&gt;
+
+&lt;p&gt;-&amp;gt;a = [1, 2, 3, 4]&lt;/p&gt;
+
+&lt;p&gt;This is an example of call by reference because we are writing over what has been written in memory reference. As you see, &lt;strong&gt;a&lt;/strong&gt; was originally [1,2,3] and inside the function, we appended 4 to it and that memory reference has been re-written. THerefore, when we print a we are calling for the reference of a.&lt;/p&gt;
+
+&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;So what is python then? Simply python has attributes of both call by reference and call by value. Why? Python has evolved from other low-level languages such as c++ or Java and thses complex OS interactinv theories hae been fixed due to more human-friendly language politics. This, while being more human-friendly, actually lessens the OS memory and other efficiencies. (There always exists ups and downs!)&lt;/p&gt;
+
+&lt;p&gt;Therefore, we call python as call by objects. There exists &lt;strong&gt;objects&lt;/strong&gt; in python and these objects are classified with different attributes called mutability. For example, as you saw in example, the integer value called a is immutable which means it can’t be changed through other scope of functions. However, the list called a is immutable and can be changed any scope in the program.&lt;/p&gt;
+
+&lt;p&gt;This difference makes python so special but then alleviates efficiencies.&lt;/p&gt;</content><author><name>jgam</name></author><category term="python" /><category term="jgam" /><category term="cracking the coding interview" /><category term="python" /><category term="values" /><category term="reference" /><summary type="html">Is Python a call by reference or value? To answer this question, I want to briefly go over the definitions of call by reference and value.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/markdown.jpg" /></entry><entry><title type="html">Handling files on Linux?</title><link href="http://localhost:4000/linux2/" rel="alternate" type="text/html" title="Handling files on Linux?" /><published>2019-03-09T00:00:00+09:00</published><updated>2019-03-09T00:00:00+09:00</updated><id>http://localhost:4000/linux2</id><content type="html" xml:base="http://localhost:4000/linux2/">&lt;h2 id=&quot;opening-the-file&quot;&gt;Opening the file?&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-C++&quot;&gt;FILE *fopen(const char *pathname, const char *mode);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;*fopen is an API and takes in two parameters - (pathname, mode)&lt;/p&gt;
+
+&lt;p&gt;It returns file pointer(stream) and Null when it fails.&lt;/p&gt;
+
+&lt;h3 id=&quot;mode&quot;&gt;Mode&lt;/h3&gt;
+&lt;p&gt;위에 언급한 2가지의 인풋중에 2번째인, mode에 관한 정보를 표로 나타낼려고 합니다.&lt;/p&gt;
+&lt;div class=&quot;side-by-side&quot;&gt;
+    &lt;div class=&quot;tocenter&quot;&gt;
+        &lt;img class=&quot;image&quot; src=&quot;http://localhost:4000/&quot; alt=&quot;Alt Text&quot; /&gt;
+        &lt;figcaption class=&quot;caption&quot;&gt;Photo by jgam CREDIT: infLearn&lt;/figcaption&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;조금 더 설명을 하자면, 각 모드 마다 권한 (읽기 혹은 쓰기) 에 대한 판단을 해주고, 파일 존재와 부재시에 어떠한 액션이 리턴되는지도 간단히 봐주시면 굉장히 쉬움!&lt;/p&gt;
+
+&lt;h2 id=&quot;closing-the-file&quot;&gt;Closing the file?&lt;/h2&gt;
+&lt;p&gt;파일을 열고 작업을 했다면, 항상 닫아야 합니다.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-C&quot;&gt;int fclose(FILE *stream);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;인풋은 stream으로 열린 파일 포인터 입니다. 리턴값은 성공시 0 이고 실패시 EOF(end of line)!&lt;/p&gt;</content><author><name>jgam</name></author><category term="blog" /><category term="jgam" /><category term="Linux" /><category term="system programming" /><category term="system" /><category term="Operating system" /><summary type="html">Opening the file? FILE *fopen(const char *pathname, const char *mode);</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/markdown.jpg" /></entry><entry><title type="html">object-oriented design</title><link href="http://localhost:4000/crackingthecodinginterview7/" rel="alternate" type="text/html" title="object-oriented design" /><published>2019-03-05T00:00:00+09:00</published><updated>2019-03-05T00:00:00+09:00</updated><id>http://localhost:4000/crackingthecodinginterview7</id><content type="html" xml:base="http://localhost:4000/crackingthecodinginterview7/">&lt;h2 id=&quot;object-oriented-design&quot;&gt;Object Oriented Design&lt;/h2&gt;
 &lt;p&gt;Object-Oriented design question requires a candidate to sketch out the classes and methods to implement technical problems or real-life objects.&lt;/p&gt;
 
 &lt;p&gt;#How to Approach?&lt;/p&gt;
@@ -548,64 +618,4 @@ a1 -&amp;gt; b1 -&amp;gt; a2 -&amp;gt; b2 -&amp;gt; a3 -&amp;gt; b3 …. -&amp;g
 &lt;p&gt;You play with two pointers in a linked list. One pointer p1 move every two element while p2 moves every single element. Once P1 reaches the end of the list, p2 is at half of the linked list and move p1 to the front and start “weaving” the elements to get the likely output.&lt;/p&gt;
 
 &lt;p&gt;##Interview Questions
-&lt;a href=&quot;https://github.com/jgam/crackingthecoding/tree/master/chpt2&quot;&gt;Here is the answers of interview questions!&lt;/a&gt;&lt;/p&gt;</content><author><name>jgam</name></author><category term="blog" /><category term="jgam" /><category term="cracking the coding interview" /><category term="Linked Lists" /><category term="algorithm" /><summary type="html">Linked Lists 링크드 리스트 A linked list is a data structure that represents a sequence of nodes. Each node points to the next node in the linked list. A doubly linked list gives each node pointers to both the next node and the previous node.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/markdown.jpg" /></entry><entry><title type="html">Arrays and Strings</title><link href="http://localhost:4000/crackingthecodinginterview1/" rel="alternate" type="text/html" title="Arrays and Strings" /><published>2019-02-25T00:00:00+09:00</published><updated>2019-02-25T00:00:00+09:00</updated><id>http://localhost:4000/crackingthecodinginterview1</id><content type="html" xml:base="http://localhost:4000/crackingthecodinginterview1/">&lt;h2 id=&quot;해쉬-테이블-hash-tables&quot;&gt;해쉬 테이블 Hash Tables&lt;/h2&gt;
-&lt;p&gt;A datastructure that maps keys to values for highly efficient lookup. To retrive the value pair by its key, you find the key then compute the run time to find the value in a key(if it is a list, the runtime is N.)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Worst Case Runtime&lt;/strong&gt; O(N)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;average Runtime&lt;/strong&gt; O(1)&lt;/p&gt;
-
-&lt;h2 id=&quot;arraylist--resizable-arrays&quot;&gt;ArrayList &amp;amp; Resizable Arrays&lt;/h2&gt;
-&lt;p&gt;I use python and in python, the size of array is automatically resized whereas in Java, arrays are fixed length. &lt;strong&gt;The size is defined when you create the array&lt;/strong&gt;
-Let’s take a look at details of the resizing!&lt;/p&gt;
-
-&lt;p&gt;When the array is full, the array doubles in size is the conventional way of resizing. This doubling takes O(n) time, but happens so rarely that its amortized inserition time is still O(1)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Why amortized insertion gives O(1) rather than O(n)?&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;For example, after resized, we have an array of size N. Let’s see how this array became to have a size of N&lt;/p&gt;
-
-&lt;p&gt;final capacity increaes -&amp;gt; n/2 elements to copy&lt;/p&gt;
-
-&lt;p&gt;previous capacity increase -&amp;gt; n/4 elements to copy&lt;/p&gt;
-
-&lt;p&gt;previous capacity increase -&amp;gt; n/8 elements to copy&lt;/p&gt;
-
-&lt;p&gt;.&lt;/p&gt;
-
-&lt;p&gt;.&lt;/p&gt;
-
-&lt;p&gt;.&lt;/p&gt;
-
-&lt;p&gt;second capacity increase -&amp;gt; 2 elements to copy&lt;/p&gt;
-
-&lt;p&gt;first capacity increase -&amp;gt; 1 element to copy&lt;/p&gt;
-
-&lt;p&gt;Therefore, we only have 1 + 2 + … + N/4 + N/2 which is less than N.&lt;/p&gt;
-
-&lt;p&gt;This is less than O(N)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;worst case runtime&lt;/strong&gt; O(N)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;average case runtime&lt;/strong&gt; O(1)&lt;/p&gt;
-
-&lt;h2 id=&quot;interview-questions&quot;&gt;Interview Questions&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/jgam/crackingthecoding/tree/master/chpt1&quot;&gt;Here is the answers of interview questions!&lt;/a&gt;&lt;/p&gt;</content><author><name>jgam</name></author><category term="blog" /><category term="jgam" /><category term="cracking the coding interview" /><category term="arrays" /><category term="strings" /><summary type="html">해쉬 테이블 Hash Tables A datastructure that maps keys to values for highly efficient lookup. To retrive the value pair by its key, you find the key then compute the run time to find the value in a key(if it is a list, the runtime is N.)</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/markdown.jpg" /></entry><entry><title type="html">First blog</title><link href="http://localhost:4000/introduction/" rel="alternate" type="text/html" title="First blog" /><published>2019-02-23T00:00:00+09:00</published><updated>2019-02-23T00:00:00+09:00</updated><id>http://localhost:4000/introduction</id><content type="html" xml:base="http://localhost:4000/introduction/">&lt;h2 id=&quot;why-blog&quot;&gt;Why Blog?&lt;/h2&gt;
-
-&lt;p&gt;I have a dream and I feel like this blog can be my &lt;strong&gt;drawings of my dream&lt;/strong&gt; in many ways.&lt;/p&gt;
-
-&lt;p&gt;More importantly, I hope this blog can deliver messages to people just like I did receive one from those of others.&lt;/p&gt;
-
-&lt;h2 id=&quot;what-to-include&quot;&gt;What to include?&lt;/h2&gt;
-
-&lt;p&gt;Mostly Algorithms. I want to publish not only the concepts but also problems in more details so I can actually implement them in my projects or thought processes.&lt;/p&gt;
-
-&lt;p&gt;While exploring algorithmic approaches, I want to dig deeper into the interactions between language and operating system.&lt;/p&gt;
-
-&lt;h2 id=&quot;what-to-expect&quot;&gt;What to expect?&lt;/h2&gt;
-
-&lt;p&gt;Hopefully, I can engage other people (in a humble way) and develop myself as a systematic developer.&lt;/p&gt;
-
-&lt;h2 id=&quot;finishing&quot;&gt;Finishing…&lt;/h2&gt;
-
-&lt;p&gt;Thank you so much for reading and approach me through any means as you will find my contacts in homepage.&lt;/p&gt;</content><author><name>jgam</name></author><category term="blog" /><category term="jgam" /><category term="elements" /><summary type="html">Why Blog?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/markdown.jpg" /></entry></feed>
+&lt;a href=&quot;https://github.com/jgam/crackingthecoding/tree/master/chpt2&quot;&gt;Here is the answers of interview questions!&lt;/a&gt;&lt;/p&gt;</content><author><name>jgam</name></author><category term="blog" /><category term="jgam" /><category term="cracking the coding interview" /><category term="Linked Lists" /><category term="algorithm" /><summary type="html">Linked Lists 링크드 리스트 A linked list is a data structure that represents a sequence of nodes. Each node points to the next node in the linked list. A doubly linked list gives each node pointers to both the next node and the previous node.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/markdown.jpg" /></entry></feed>

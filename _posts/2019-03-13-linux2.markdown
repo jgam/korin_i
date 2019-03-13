@@ -1,0 +1,47 @@
+---
+title: "Handling files on Linux?"
+layout: post
+date: 2019-03-09
+image: /assets/images/markdown.jpg
+headerImage: false
+tag:
+- jgam
+- Linux
+- system programming
+- system
+- Operating system
+category: blog
+author: jgam
+description: Linux
+---
+
+## Opening the file?
+```C++
+FILE *fopen(const char *pathname, const char *mode);
+```
+
+*fopen is an API and takes in two parameters - (pathname, mode)
+
+It returns file pointer(stream) and Null when it fails.
+
+### Mode
+위에 언급한 2가지의 인풋중에 2번째인, mode에 관한 정보를 표로 나타낼려고 합니다.
+<div class="side-by-side">
+    <div class="tocenter">
+        <img class="image" src="{{ site.url }}/{{ site.linux8 }}" alt="Alt Text">
+        <figcaption class="caption">Photo by jgam CREDIT: infLearn</figcaption>
+    </div>
+</div>
+
+조금 더 설명을 하자면, 각 모드 마다 권한 (읽기 혹은 쓰기) 에 대한 판단을 해주고, 파일 존재와 부재시에 어떠한 액션이 리턴되는지도 간단히 봐주시면 굉장히 쉬움!
+
+## Closing the file?
+파일을 열고 작업을 했다면, 항상 닫아야 합니다.
+
+```C
+int fclose(FILE *stream);
+```
+
+인풋은 stream으로 열린 파일 포인터 입니다. 리턴값은 성공시 0 이고 실패시 EOF(end of line)!
+
+
