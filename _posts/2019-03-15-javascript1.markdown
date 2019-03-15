@@ -61,6 +61,13 @@ When the stack grows too big, the computer will return messages like "out of sta
 
 ## Optional Arguments
 
+Javascript is extremely broad-minded about the number of arguments you pass to a function. If you pass too many, the extra ones are ignored. If you pass too few, the missing parameters get assigned the value undefined.
+
+The downside of this is that it is possible-likely, even-that you will accidentally pass the wrong number of arguments to functions. And no one will tell you about it.
+
+The upside is that this behavior can be used to allow a function to be called with different numbers of arguments. For example, this minus function tries to imitate the - operator by acting on either one or two arguments.
+
+## Closure
 
 
 
