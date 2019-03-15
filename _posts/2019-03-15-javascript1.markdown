@@ -67,8 +67,19 @@ The downside of this is that it is possible-likely, even-that you will accidenta
 
 The upside is that this behavior can be used to allow a function to be called with different numbers of arguments. For example, this minus function tries to imitate the - operator by acting on either one or two arguments.
 
-## Closure
+## Execution Context
 
+When you run a program, global context is crteated and this **global context** is an environment that takes care of all the other contexts and it is closed when the program ends.
+
+There is a **function context** which is created whenever the functions are called.
+
+There are four rules of context.
+1. global context is created then function context is created every time the funcion is called
+2. when context is being created, variable objects(arguments, variables, scope chain, this) are created
+3. After context is being created, the function gets executed. The variables used by functions find their values within the functions and outer side of scopes following the **scope chain**.
+4. After the function exection is finished, the specific context vanishes(except for closures.) When page ends, the global context vanishes.
+
+Let's explore more on contexts and closure in the following post!
 
 
 ## Chapter1 Exercises
