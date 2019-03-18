@@ -193,3 +193,40 @@ console.log(kim.age);//-> undefined
 ```
 
 The error occurs because values of type string, number, and Boolean are not objects, and though the language doesn't complain if you try to set new properties on them, it doesn't actually store those properties. As mentioned earlier, such values are immutable and cannot be changed.
+
+### Several built-in properties and their methods
+1. string.slice(4,7) -> returns string's 5th character to 7th character
+2. string.indexOf("a") -> returns integer index of character "a" in string.
+3. string.trim() -> removes whitespaces(spaces, newlines, tabs, and similar characters) from the start and end of a string.
+4. String(6).padStart(3, "0"); -> "006"
+5. string.split(" ") -> splits a string by spaces and make a list
+6. array.join(". "); ->join the list as a single string replacing separators as ". "
+7. string.repeat(3); -> stringstringstring
+
+
+## Reset Parameters
+
+It can be useful for a function to accept any number of arguments. For example, Math.max computes the maximum of all the arguments it is given.
+
+To write such a function, you put three dots before the function's last parameter.
+
+```javascript
+function max(...numbers){
+    let results = -Infinity;
+    for (let number of numbers){
+        if (number > result) result = number;
+    }
+    return result;
+}
+console.log(max(4,1,9,-2));//9
+```
+
+*Rest parameter* is bount to an array containing all further arguments. If there are other parameters before it, their values aren't part of that array. When, as in max, it is the only parameter, it will hold all arguments.
+
+You can also spread out the array into the function call, passing its elements as seaprate arguments.
+
+```javascript
+let numbers = [5,1,7];
+console.log(max(...numbers));//-> console.log(max(5,1,7));
+```
+
