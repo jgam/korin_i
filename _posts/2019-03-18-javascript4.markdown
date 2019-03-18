@@ -225,3 +225,34 @@ console.log(SCRIPTS.reduce((a, b) => {
 The characterCount function redsuces the ranges assigned to a script by summing their sizes. Note the use of destructuring in the parameter list of the reducer function. The second call to reduce then uses this to find the largest script by repeatedly comparing two scripts and returning the larger one.
 
 The Han script has more than 89,000 characters assigned to it in the Unicode standard, making it  by far the biggest writing system in the data set. Han is a script(sometimes) used for Chinese, Japanese, and Korean text. Those languages share a lot of characters, though they tend to write them differently. The (U.S.-based) Unicode Consortium decided to treat them as a single writing system to save character codes. This is called *Han unification* and still makes some people very angry.
+
+
+## Composability
+
+Previous example gave a script that had the largest sum of range differencies. Higher-order functions start to shine when you need to compose operations. Here is to find the average year of origin for living and dead scripts in the data set.
+
+```javascript
+function average(array){
+    return array.reduce((a,b) => a+b) / array.length;
+}
+
+console.log(Math.round(average(
+    SCRIPTS.filter(s => s.living).map(s => s.year)))); //-> 1188
+
+console.log(Math.round(average(SCRIPTS.filter(s => !s.living).map(s => s.year))));
+
+```
+
+Here is the tip: as a pipeline, we start with all scripts, filter out the living (or dead) ones, take the years from those, average them, and round the result. The following code is using a one big loop:
+
+```javascript
+let total = 0, count = 0;
+for (let script of SCRIPTS){
+    if (script.living){
+        total += script.year;
+        count += 1;
+    }
+}
+```
+
+Above is the same code but is harder to see what is  actuall being done. (for me it is easier... but I guess, just for one time glance, it should be a little harder to interpret.) In terms of what the computer is doing, these two approaches are also quite different. The first will build up new arrays when running filter and map, whereas the second computes only some numbers, doing less work. You can usually afford the readable approach, but if you are processing huge arrays, and doing so many times, the less abstract style might be worth the extra speed.
