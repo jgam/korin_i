@@ -204,7 +204,7 @@ The error occurs because values of type string, number, and Boolean are not obje
 7. string.repeat(3); -> stringstringstring
 
 
-## Reset Parameters
+## Rest Parameters
 
 It can be useful for a function to accept any number of arguments. For example, Math.max computes the maximum of all the arguments it is given.
 
@@ -229,4 +229,8 @@ You can also spread out the array into the function call, passing its elements a
 let numbers = [5,1,7];
 console.log(max(...numbers));//-> console.log(max(5,1,7));
 ```
+
+## Finishing
+
+Objects and arrays provide ways to group several values into a single value. Most values in JavaScript have properties, the exceptions being null and undefgined. There are some named properties in arrays, such as length and a number of methods. There existss a different way of looping the array or objects(personally similar to python.)
 
