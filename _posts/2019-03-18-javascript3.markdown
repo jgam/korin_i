@@ -234,3 +234,5 @@ console.log(max(...numbers));//-> console.log(max(5,1,7));
 
 Objects and arrays provide ways to group several values into a single value. Most values in JavaScript have properties, the exceptions being null and undefgined. There are some named properties in arrays, such as length and a number of methods. There existss a different way of looping the array or objects(personally similar to python.)
 
+## Chapter4 Exercises
+[Chapter4 exercises](https://github.com/jgam/EloquentJavascript)
