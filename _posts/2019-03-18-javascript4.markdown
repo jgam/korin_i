@@ -222,6 +222,6 @@ console.log(SCRIPTS.reduce((a, b) => {
 
 ```
 
-The characterCount cunction redsuces the ranges assigned to a script by summing their sizes. Note the use of destructuring in the parameter list of the reducer function. The second call to reduce then uses this to find the largest script by repeatedly comparing two scripts and returning the larger one.
+The characterCount function redsuces the ranges assigned to a script by summing their sizes. Note the use of destructuring in the parameter list of the reducer function. The second call to reduce then uses this to find the largest script by repeatedly comparing two scripts and returning the larger one.
 
 The Han script has more than 89,000 characters assigned to it in the Unicode standard, making it  by far the biggest writing system in the data set. Han is a script(sometimes) used for Chinese, Japanese, and Korean text. Those languages share a lot of characters, though they tend to write them differently. The (U.S.-based) Unicode Consortium decided to treat them as a single writing system to save character codes. This is called *Han unification* and still makes some people very angry.
