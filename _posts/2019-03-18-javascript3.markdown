@@ -115,3 +115,81 @@ The object1 and object2 bindings grasp the same object, which is why changing ob
 When comparing objects with JavaScript's == operator, it compares by identity: it will produce true only if both objects are precisely the same value. Comparing different objects will return false, even if they have identitcal properties. There is no "deep" comparison operation built into JavaScript, which compares objects by contents.
 
 ## The Lycanthrope's Log
+
+Correlation is a measure of dependence between statistical variables. A statistical variable is not quite the same as a programming variable. In statistics you typically have a set of measurements, and each variable is measured for every measurement. Correlation between variables is usually expressed as a value that ranges from -1 to 1. Zero correlation means the variables are not related. Positive one means they are identical and negative one means they are opposites. However, both cases demonstrate perfectly relevent cases.(one is true while the other is false.)
+
+To compute the measure of correlation between two Boolean variables, we can use the *phi coefficient.* This is a formula whose input is a frequency table containing the number of times the different combinations of the variables were observed. The output of the formula is a number between -1 and 1 that describes the correlation.
+
+<div class="side-by-side">
+    <div class="tocenter">
+        <img class="image" src="{{ site.url }}/{{ site.formula}}" alt="Alt Text">
+        <figcaption class="caption">Photo by jgam CREDIT: Eloquent Javascript</figcaption>
+    </div>
+</div>
+
+Using this formula, we can safely say that because the phi coefficient is about 0.069, eating pizza does not appear to have influence on the transformations. (this was an example)
+
+```javascript
+function tableFor(event, journal){
+    let table = [0,0,0,0];
+    for (let i = 0; i < journal.length; i++){
+        let entry = jounrnal[i], index = 0;
+        if (entry.events.includes(event)) index += 1;
+        if (entry.squirrel) index += 2;
+        table[index] += 1;
+    }
+    return table;
+}
+
+console.log(tableFor("pizza", JOURNAL));
+```
+
+## Array Loops
+
+Simpler form of looping the array is the following:
+
+```javascript
+for (let entry of JOURNAL){
+    console.log('${entry.events.length} events.');
+}
+```
+When a for loop looks like this, with the word of after a variable definition, it will loop over the elements of the value given after of. This works not only for arrays but also for strings and some other data structures.
+
+## Further Arrayology
+
+The corresponding methods for adding and removing things at the start of an array are called *unshift* and *shift.*
+
+```javascript
+let todoList = [];
+function remember(task){
+    todoList.push(task);
+}
+function getTask(){
+    return todoList.shift();
+}
+function rememberUrgently(task){
+    todoList.unshift(task);
+}
+
+console.log([0,1,2,3,4].indexOf(2));//-> 1
+console.log([1,2,3,2,1].lastIndexOf(2));//-> 3
+console.log([0,1,2,3,4].slice(2,4));//-> [2,3]
+console.log([0,1,2,3,4].slice(2));//->[2,3,4]
+
+function remove(array, index){
+    return array.slice(0, index).concat(array.slice(index+1));
+}
+console.log(remove([1,2,3,4,5],2)); //-> [1,2,4,5]
+```
+
+## Strings and their properties
+
+Take a look at the following code:
+
+```javascript
+let kim = "kim";
+kim.age = 88;
+console.log(kim.age);//-> undefined
+```
+
+The error occurs because values of type string, number, and Boolean are not objects, and though the language doesn't complain if you try to set new properties on them, it doesn't actually store those properties. As mentioned earlier, such values are immutable and cannot be changed.
