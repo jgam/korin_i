@@ -100,5 +100,17 @@ console.log(wrap2());
 // → 2
 ```
 
+## Recursion
 
+Recursion is probably somewhat easy definition for most of the people. In javascript, Recursion usually takes 3 times longer than a for loop.
+
+Why do we use recursion then?
+
+Developers should not just look for efficiency. Also, most of the time efficiency does not matter too much since computers are just fast enough.
+
+On top of that, the good reason is the code becomes more striaght forward and clean. Therefore we talked about recursion here and refreshed my mind a little bit.
+
+
+## Chapter3 Exercises
+[Chapter3 exercises](https://github.com/jgam/EloquentJavascript)
 

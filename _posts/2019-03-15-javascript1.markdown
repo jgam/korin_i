@@ -83,4 +83,4 @@ Let's explore more on contexts and closure in the following post!
 
 
 ## Chapter1 Exercises
-[Chapter1 exercises](https://github.com/jgam/EloquentJavascript/chpt1/)
+[Chapter1 exercises](https://github.com/jgam/EloquentJavascript)
