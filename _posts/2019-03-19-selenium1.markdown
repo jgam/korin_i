@@ -1,0 +1,36 @@
+---
+title: "Ubuntu Selenium?"
+layout: post
+date: 2019-03-19
+image: /assets/images/markdown.jpg
+headerImage: false
+tag:
+- jgam
+- bs4
+- python
+- selenium
+- Crawling
+category: blog
+author: jgam
+description: Crawling
+---
+
+# VM에 우분투설치후, selenium
+
+셀레니움은 간단하게 말하면, 인간이 웹에 들어가는 전반적인 행위들을 컴퓨터로 보이게끔 하는 것이다. 예를들어 내가 이메일을 체크하는 것도, 셀레니움을 통해서 구현 가능하다. 이유는, 셀레니움의 웹드라이버가 웹을 실행시키고, 다른 여러가지 기술들 (beautifulsoup, scrapy, html parsing) 등을 이용해서 그 웹사이트에서 원하는 정보만 발췌하면 되기 때문. . .
+
+자 그러면 리눅스에서 돌아가는 셀레니움은 어떨지 한번 살펴보자 . . !
+
+밑 그림을 보면, 우분투를 통해 리툭스에 들어간 부분이다. (사실 처음에 이렇게 들어가보고, 드디어 vm의 놀라움을 다시 한번 느꼈다...)
+
+#그림
+
+그 다음 깃클론 (깃 세팅이 귀찮아서 그냥 download zip) 해서 얻은 파일로 원래 실행되던 키워드 순위를 갖고오는 프로그램을 다운받는다.
+
+테스트삼아 이 프로그램을 돌려보았다.
+
+```python
+python serp2.py
+```
+
+결과는 python이 없다... 아무것도 깔려있지 않기 때문에, 우리는 다시 처음부터 모든것을 깔아야한다.
