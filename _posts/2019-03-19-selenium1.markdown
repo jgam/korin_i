@@ -23,9 +23,22 @@ description: Crawling
 
 밑 그림을 보면, 우분투를 통해 리툭스에 들어간 부분이다. (사실 처음에 이렇게 들어가보고, 드디어 vm의 놀라움을 다시 한번 느꼈다...)
 
-#그림
+<div class="side-by-side">
+    <div class="tocenter">
+        <img class="image" src="{{ site.url }}/{{ site.crawling1}}" alt="Alt Text">
+        <figcaption class="caption">Photo by jgam CREDIT: mysource</figcaption>
+    </div>
+</div>
 
 그 다음 깃클론 (깃 세팅이 귀찮아서 그냥 download zip) 해서 얻은 파일로 원래 실행되던 키워드 순위를 갖고오는 프로그램을 다운받는다.
+
+
+<div class="side-by-side">
+    <div class="tocenter">
+        <img class="image" src="{{ site.url }}/{{ site.crawling2}}" alt="Alt Text">
+        <figcaption class="caption">Photo by jgam CREDIT: mysource</figcaption>
+    </div>
+</div>
 
 테스트삼아 이 프로그램을 돌려보았다.
 
@@ -34,3 +47,46 @@ python serp2.py
 ```
 
 결과는 python이 없다... 아무것도 깔려있지 않기 때문에, 우리는 다시 처음부터 모든것을 깔아야한다.
+
+## 환경세팅
+
+셀레니움을 돌리기 위해 필요한 libraries & packages들을 순차적으로 정리해보면서, 왜 이부분에서 막혔는지 다시한번 확인해보자.
+
+### 첫번째 방법 (되지않음)
+1. sudo apt install python
+2. sudo apt install python-pip
+3. pip install selenium
+4. pip install bs4
+5. pip install chromedriver
+6. vim serp2.py -> '/usr/bin/chromedriver'로 경로 바꿔줌
+
+결과는 실패이다. 이유는 ascii codec cannot be loaded... 그렇다, 한글을 지원하지 않기 때문이다. 한참 에러를 찾다가, 문득 든 생각은 굳이 어차피 python3을 이용할 것인데, python3 으로 재설치를 해보아야겠다.
+
+### 두번째 방법 (성공)
+1. sudo apt install python3
+2. sudo apt install python3-pip
+3. sudo python3 -m pip install -U selenium
+4. sudo python3 -m pip install -U bs4
+5. python3 serp2.py
+
+결과는 성공이다. python3는 자동적으로 codec을 처리하고 있기 때문이다.
+
+
+<div class="side-by-side">
+    <div class="tocenter">
+        <img class="image" src="{{ site.url }}/{{ site.crawling3}}" alt="Alt Text">
+        <figcaption class="caption">Photo by jgam CREDIT: mysource</figcaption>
+    </div>
+</div>
+
+아웃풋 파일을 열면, 이런식으로 되있다.
+
+
+<div class="side-by-side">
+    <div class="tocenter">
+        <img class="image" src="{{ site.url }}/{{ site.crawling4}}" alt="Alt Text">
+        <figcaption class="caption">Photo by jgam CREDIT: mysource</figcaption>
+    </div>
+</div>
+
+간단한 기술을 vm에 올리면서, 성능 문제도 해결할 수 있겠다는 생각이 들었다. (어차피 같은 리소스를 스니 상관이 없겠지만...)
