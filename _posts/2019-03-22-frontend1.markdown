@@ -20,5 +20,48 @@ description: Frontend
 다시 본래로 돌아가서, 프론트엔드를 공부하다보면 공통적인 개념 3가지가 나오는데 그 부분에 대해서 정리해보자한다.
 
 1. Component
+    component란 set of web platform API인데, 새로운 html 태그를 웹 페이지나 웹 앱에서 만들어 줄 수 있다. 웹 컴포넌트를 좀더 자세하게 정의 하면 다음 4가지로도 정의가 된다.
+###웹 컴포넌트
+1. custom elements
+2. shadow DOM
+3. HTML Imports
+4. HTML Templates
+ 
+custom elements는 용어 그래도 새로운 HTML tag를 만들수 있게 해준다.
+```javascript
+<drop-down></drop-down>
+```
+물론 네이밍 룰이 있으나, 굳이 설명안해도 찾아보면서 고칠 수 있을 것이다.
+
+shadow DOM은 markup 과 custom element들을 숨길때 용이하다. 예제는 이렇다.
+
+```javascript
+window.customElements.define('test-shadow', class extends HTMLElement {
+  constructor() {
+    super();
+    var shadowRoot = this.attachShadow({mode: 'open'});
+    shadowRoot.innerHTML = `<strong>Shadow encapsulation!</strong>`;
+  }
+})
+```
+위 코드를 브라우저에 실행시킨다면 이런식으로 render될것이다.
+
+```javascript
+<test-shadow>
+    <strong>Shadow encapsulation!</strong>
+</test-shadow>
+```
+
+HTML Imports는 html documents들을 하나로 묶을 수 있다. 예제를 보면 편할것이다.
+```javascript
+<link rel="import" href="drop-down.html">
+
+<drop-down>
+    now available
+</drop-down>
+```
+보다싶이, html파일을 link태그에서 가져오는 것이 용이하다.
+
+HTML Template element는 markup을 페이지로드에 선언할때 사용된다. 다른 말로 하자며느 template tag가 markup 자체를 페이지에 저장하고, 이것을 유저들은 나중에 다시 재사용 할수있다. <template> 태그를 쓰면 쉽게 접근 할 수 있다.
 2. Routing
 3. Managing Site
