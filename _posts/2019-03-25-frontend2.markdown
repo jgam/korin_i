@@ -1,0 +1,26 @@
+---
+title: "Learning Frontend: what is web app?"
+layout: post
+date: 2019-03-25
+image: /assets/images/markdown.jpg
+headerImage: false
+tag:
+- jgam
+- php
+- webdevelopment
+- my-sql
+- webapp
+category: blog
+author: jgam
+description: web app
+---
+
+##How to create web app?
+
+1. 구상
+2. 기획(계획)
+3. 디자인
+4. 개발_development
+5. 테스트
+
+**"START SMALL"**
