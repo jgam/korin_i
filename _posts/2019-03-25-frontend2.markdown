@@ -38,3 +38,25 @@ Now, we usually call web-browsers and web-server communicate with each other! So
 Apache Nginx -> Open Source
 
 IIS -> Microsoft
+
+The trend is that Apache is the number one that has never lost its throne of King.　We will go for Apache! We not only need the webserver(Apache) but also databases and sever side languages. It is very hard to download and install those manually. The server-side softwares are really complex which direct that installing is very trouble shooting. (So please have your understanding and keep patient!) Possibler solution is a "bitnami" which is an application that easily installs server softwares! There exists other such as APM set up and other tools.
+
+## How to control PHP, mysql, Apache?
+
+Through bitnami!
+
+## HTML
+
+What is Hypertext? It is a link. Through the links, we can make a huge chunk of Hyper textx that become the origin of web pages. How does that work? Linkes make up the origins of HTML and HTMLs make up the origins of web.  So what is a HTML (Hyper text markup language）? It is a language that humans and web-browsers both can understand.
+
+## Markup?
+
+First, we need to understand TAGs. The information about something is called "Tag" as we can see it when we buy clothes.
+
+```HTML
+Hello, this is <strong>jgam's</strong> blog!
+```
+
+Here, the strong tags indicate jgam to be bolded. Now let's go for actual HTML example.
+
+[here is the link!][https://github.com/jgam/javascript_web/fundamentals/HTML/]
