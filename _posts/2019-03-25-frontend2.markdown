@@ -24,3 +24,11 @@ description: web app
 5. 테스트
 
 **"START SMALL"**
+
+Computers are connected by a huge network and this network is called an "Internet." A communication between computers is held by transferring HTML(Hyper text markup Language) which is the client's side code. Tim Burnersly created a web browser and a web server. These two are critical in terms for users because users can easily get access to web pages such as google, yahoo, and etc. Also, Tim created a communication protocol which was a HTTP and a language called "HTML" to make this means of communication a lot smoother and user-friendlier.
+
+## Server & Client?
+
+Say we have two computers. One is called as a "computer" and the other is called as a "server." What is the difference between them? Typically, a server tends to be more stable by having a little more pricy hardwares. However, that really does not make the official difference. The real difference comes that web-browser is installed on client(computer) and web-server is installed on a server. Now how they interact? The client asks for a **request** and server has a web-server that stores web-pages and reads them to give a **respons** back to the client.
+
+Now, we usually call web-browsers and web-server communicate with each other! So, we need to install a web-server. People may be thinking "if we are the web-server, who is the client?" Yes, we are the client. We can be both client and server, because we can direct the response from server to our own which we typically call as a "localhost" or "127.0.0"
