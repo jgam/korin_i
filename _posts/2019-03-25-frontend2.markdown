@@ -66,4 +66,21 @@ Here, the strong tags indicate jgam to be bolded. Now let's go for actual HTML e
 What is <nav>?
 Demonstrates a navigation and does not have a specific functionalities. However, as promised, using <nav> we know that this tag demonstrates the information about searching through this website.
 
+Similarly, we have articles and headers that each demonstrate contents of the web page and titles of the web page. Thus, HTML tags should be designed as useful informatino both to humans and computers.
+
+
+## CSS
+
+What is CSS? Cascading Style Sheet!
+
+CSS is created just to decorate HTML's limitations. Usually in HTML code, we write a tag called "style" and list the CSS part.
+
+```javascript
+<style>
+    h1 {color:red}
+</style>
+```
+
+Above code represents that h1 tag's color is red. In terminologies, we call h1 as **selector** and {color:red} as **description**.
+
 [here is the link!][https://github.com/jgam/javascript_web/fundamentals/HTML/]
