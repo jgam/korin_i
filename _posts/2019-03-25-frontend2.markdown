@@ -83,4 +83,12 @@ CSS is created just to decorate HTML's limitations. Usually in HTML code, we wri
 
 Above code represents that h1 tag's color is red. In terminologies, we call h1 as **selector** and {color:red} as **description**.
 
+Now You can easily take this style out and create style.css to have all those designs in one file. What you do next? Simply in your HTML file, just add the following line!
+
+```javascript
+	<link rel="stylesheet" href="http://localhost:8080/style.css" type="text/css">
+```
+
+Through this, HTML is able to link the style sheet to the style.css and have the webpage display nice and neat!
+
 [here is the link!][https://github.com/jgam/javascript_web/fundamentals/HTML/]
