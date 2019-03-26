@@ -10,7 +10,7 @@ tag:
 - system programming
 - system
 - Operating system
-category: blog
+category: linux
 author: jgam
 description: Linux
 ---

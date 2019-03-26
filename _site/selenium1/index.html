@@ -14,17 +14,21 @@
     <meta property="og:type" content="profile">
 
     <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>Home | Jimmy Gam</title>
+<title>Ubuntu Selenium? | Jimmy Gam</title>
 <meta name="generator" content="Jekyll v3.7.4" />
-<meta property="og:title" content="Home" />
+<meta property="og:title" content="Ubuntu Selenium?" />
+<meta name="author" content="jgam" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="A journey to dream" />
-<meta property="og:description" content="A journey to dream" />
-<link rel="canonical" href="http://localhost:4000/" />
-<meta property="og:url" content="http://localhost:4000/" />
+<meta name="description" content="Crawling" />
+<meta property="og:description" content="Crawling" />
+<link rel="canonical" href="http://localhost:4000/selenium1/" />
+<meta property="og:url" content="http://localhost:4000/selenium1/" />
 <meta property="og:site_name" content="Jimmy Gam" />
+<meta property="og:image" content="http://localhost:4000/assets/images/markdown.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-03-19T00:00:00+09:00" />
 <script type="application/ld+json">
-{"name":"Jimmy Gam","description":"A journey to dream","@type":"WebSite","url":"http://localhost:4000/","headline":"Home","@context":"http://schema.org"}</script>
+{"description":"Crawling","author":{"@type":"Person","name":"jgam"},"@type":"BlogPosting","url":"http://localhost:4000/selenium1/","image":"http://localhost:4000/assets/images/markdown.jpg","headline":"Ubuntu Selenium?","dateModified":"2019-03-19T00:00:00+09:00","datePublished":"2019-03-19T00:00:00+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/selenium1/"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -50,7 +54,7 @@
 <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 
 
-    <link rel="canonical" href="http://localhost:4000/">
+    <link rel="canonical" href="http://localhost:4000/selenium1/">
     <link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000/feed.xml" />
 
     <style>
@@ -1405,87 +1409,19 @@ pre {
 
     <div class="wrapper-normal">
         
-            
-                <div class="page home">
-            
+            <div class="post">
         
 
             
 
 
-    <header class="header-home animated">
-        
-            <a class="link" href="http://localhost:4000/about">
-                <img class="selfie" alt="Jimmy Gam" src="assets/images/profile.jpeg" />
-            </a>
-        
 
-        <h1 class="title">Jimmy Gam</h1>
-        <h2 class="description">A coder in Japan, struggling to learn a language(Japanese)</h2>
-
-        <div class="social-links">
-    
-        <a class="link" data-title="facebook.com/jgam1333" href="http://facebook.com/jgam1333" target="_blank">
-            <svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg>
-        </a>
-    
-
-    
-
-    
-
-    
-        <a class="link" data-title="instagram.com/jgam__" href="http://instagram.com/jgam__" target="_blank">
-            <svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg>
-        </a>
-    
-
-    
-
-    
-        <a class="link" data-title="linkedin.com/in/jeonghan-jimmy-gam-67726b127" href="http://linkedin.com/in/jeonghan-jimmy-gam-67726b127" target="_blank">
-            <svg class="icon icon-linkedin"><use xlink:href="#icon-linkedin"></use></svg>
-        </a>
-    
-
-    
-
-    
-
-    
-
-    
-        <a class="link" data-title="github.com/jgam" href="https://github.com/jgam" target="_blank">
-            <svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg>
-        </a>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <a class="link" data-title="jgam@alumni.nd.edu" href="mailto:jgam@alumni.nd.edu">
-            <svg class="icon icon-mail"><use xlink:href="#icon-mail"></use></svg>
-        </a>
-    
-</div>
-
-    </header>
-
-
-<nav class="nav-home">
+<nav class="nav">
     <ul class="list">
+        
+            <li class="item">
+                <a class="link" href="http://localhost:4000/">Home</a>
+            </li>
         
 
         
@@ -1544,6 +1480,1524 @@ pre {
     </ul>
 </nav>
 
+
+
+
+
+<h1 class="title">Ubuntu Selenium?</h1>
+
+<span class="date">
+    <time datetime="19-03-2019">Tuesday. March 19, 2019</time>
+     - <span class="reading-time" title="Estimated read time">
+    
+
+    
+        1 min
+    
+</span>
+
+</span>
+
+
+    <div class="post-tags">
+        
+            <a class="item" href="http://localhost:4000/tags/#jgam">jgam</a>
+        
+            <a class="item" href="http://localhost:4000/tags/#bs4">bs4</a>
+        
+            <a class="item" href="http://localhost:4000/tags/#python">python</a>
+        
+            <a class="item" href="http://localhost:4000/tags/#selenium">selenium</a>
+        
+            <a class="item" href="http://localhost:4000/tags/#crawling">Crawling</a>
+        
+    </div>
+
+
+<h1 id="vm에-우분투설치후-selenium">VM에 우분투설치후, selenium</h1>
+
+<p>셀레니움은 간단하게 말하면, 인간이 웹에 들어가는 전반적인 행위들을 컴퓨터로 보이게끔 하는 것이다. 예를들어 내가 이메일을 체크하는 것도, 셀레니움을 통해서 구현 가능하다. 이유는, 셀레니움의 웹드라이버가 웹을 실행시키고, 다른 여러가지 기술들 (beautifulsoup, scrapy, html parsing) 등을 이용해서 그 웹사이트에서 원하는 정보만 발췌하면 되기 때문. . .</p>
+
+<p>자 그러면 리눅스에서 돌아가는 셀레니움은 어떨지 한번 살펴보자 . . !</p>
+
+<p>밑 그림을 보면, 우분투를 통해 리툭스에 들어간 부분이다. (사실 처음에 이렇게 들어가보고, 드디어 vm의 놀라움을 다시 한번 느꼈다…)</p>
+
+<div class="side-by-side">
+    <div class="tocenter">
+        <img class="image" src="http://localhost:4000//blog/assets/images/crawling1.png" alt="Alt Text" />
+        <figcaption class="caption">Photo by jgam CREDIT: mysource</figcaption>
+    </div>
+</div>
+
+<p>그 다음 깃클론 (깃 세팅이 귀찮아서 그냥 download zip) 해서 얻은 파일로 원래 실행되던 키워드 순위를 갖고오는 프로그램을 다운받는다.</p>
+
+<div class="side-by-side">
+    <div class="tocenter">
+        <img class="image" src="http://localhost:4000//blog/assets/images/crawling2.png" alt="Alt Text" />
+        <figcaption class="caption">Photo by jgam CREDIT: mysource</figcaption>
+    </div>
+</div>
+
+<p>테스트삼아 이 프로그램을 돌려보았다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">python</span> <span class="n">serp2</span><span class="o">.</span><span class="n">py</span>
+</code></pre></div></div>
+
+<p>결과는 python이 없다… 아무것도 깔려있지 않기 때문에, 우리는 다시 처음부터 모든것을 깔아야한다.</p>
+
+<h2 id="환경세팅">환경세팅</h2>
+
+<p>셀레니움을 돌리기 위해 필요한 libraries &amp; packages들을 순차적으로 정리해보면서, 왜 이부분에서 막혔는지 다시한번 확인해보자.</p>
+
+<h3 id="첫번째-방법-되지않음">첫번째 방법 (되지않음)</h3>
+<ol>
+  <li>sudo apt install python</li>
+  <li>sudo apt install python-pip</li>
+  <li>pip install selenium</li>
+  <li>pip install bs4</li>
+  <li>pip install chromedriver</li>
+  <li>vim serp2.py -&gt; ‘/usr/bin/chromedriver’로 경로 바꿔줌</li>
+</ol>
+
+<p>결과는 실패이다. 이유는 ascii codec cannot be loaded… 그렇다, 한글을 지원하지 않기 때문이다. 한참 에러를 찾다가, 문득 든 생각은 굳이 어차피 python3을 이용할 것인데, python3 으로 재설치를 해보아야겠다.</p>
+
+<h3 id="두번째-방법-성공">두번째 방법 (성공)</h3>
+<ol>
+  <li>sudo apt install python3</li>
+  <li>sudo apt install python3-pip</li>
+  <li>sudo python3 -m pip install -U selenium</li>
+  <li>sudo python3 -m pip install -U bs4</li>
+  <li>python3 serp2.py</li>
+</ol>
+
+<p>결과는 성공이다. python3는 자동적으로 codec을 처리하고 있기 때문이다.</p>
+
+<div class="side-by-side">
+    <div class="tocenter">
+        <img class="image" src="http://localhost:4000//blog/assets/images/crawling3.png" alt="Alt Text" />
+        <figcaption class="caption">Photo by jgam CREDIT: mysource</figcaption>
+    </div>
+</div>
+
+<p>아웃풋 파일을 열면, 이런식으로 되있다.</p>
+
+<div class="side-by-side">
+    <div class="tocenter">
+        <img class="image" src="http://localhost:4000//blog/assets/images/crawling4.png" alt="Alt Text" />
+        <figcaption class="caption">Photo by jgam CREDIT: mysource</figcaption>
+    </div>
+</div>
+
+<p>간단한 기술을 vm에 올리면서, 성능 문제도 해결할 수 있겠다는 생각이 들었다. (어차피 같은 리소스를 스니 상관이 없겠지만…)</p>
+
+
+
+    <div class="blog-navigation">
+        
+            <a class="prev"></a>
+        
+        
+    </div>
+
+
+
+    <div class="related">
+    
+    
+        
+        
+            
+                
+                    
+                    <h4>Related Posts</h4>
+                    <ul>
+                    
+                    <li class="relatedPost">
+                        <a href="http://localhost:4000/frontend2/">Learning Frontend: what is web app?
+                        
+                        </a>
+                    </li>
+                    
+                    
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+                    
+                    <li class="relatedPost">
+                        <a href="http://localhost:4000/frontend1/">Learning Frontend
+                        
+                        </a>
+                    </li>
+                    
+                    
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+                    
+                    <li class="relatedPost">
+                        <a href="http://localhost:4000/webjavascript1/">Web javascript
+                        
+                        </a>
+                    </li>
+                    
+                    
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+                    
+                    <li class="relatedPost">
+                        <a href="http://localhost:4000/javascript4/">Objects and arrays?
+                        
+                        </a>
+                    </li>
+                    
+                    
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+                    
+                    <li class="relatedPost">
+                        <a href="http://localhost:4000/javascript3/">Objects and arrays?
+                        
+                        </a>
+                    </li>
+                    
+                    
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+    
+        </ul>
+    
+</div>
+
+
+
+
+    <section class="author">
+    <div class="toleft">
+        <img class="selfie" src="../assets/images/profile.jpeg" alt="Jimmy Gam"><!-- "./assets/images/profile.jpeg"site.authors[page.author].picture-->
+    </div>
+
+    <div class="toright">
+        <h4 class="name">Jimmy Gam</h4>
+        <p class="bio">A man who likes coding and Japan</p>
+
+        <div class="share">
+            <!-- Note: Only use three share links if your site width is set to large -->
+            <!-- If site width is set to normal, you may choose any two share links -->
+            <a class="twitter" href="https://twitter.com/intent/tweet?text=http://localhost:4000/selenium1/ - Ubuntu Selenium? by @">
+                <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg><span class="icon-twitter">Tweet</span>
+            </a>
+
+            <a class="facebook" href="javascript:void(0)" onclick="window.open('https://facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 'facebook-share-dialog', 'width=626,height=436'); return false;">
+                <svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg><span class="icon-facebook-rect">Share</span>
+            </a>
+
+            <!-- <a class="google-plus" href="https://plus.google.com/share?url=http://localhost:4000/selenium1/" target="_blank">
+                <svg class="icon icon-google-plus"><use xlink:href="#icon-google-plus"></use></svg><span class="icon-google-plus">Share</span>
+            </a> -->
+
+            <!-- <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:4000/selenium1/&amp;title=Ubuntu Selenium?&amp;summary=Crawling&amp;source=http://localhost:4000" target="_blank">
+                <svg class="icon icon-linkedin"><use xlink:href="#icon-linkedin"></use></svg><span class="icon-linkedin">Share</span>
+            </a> -->
+
+            <!-- <a class="reddit" href="https://reddit.com/submit?url=http://localhost:4000/selenium1/&amp;title=Ubuntu Selenium?" target="_blank">
+                <svg class="icon icon-reddit"><use xlink:href="#icon-reddit"></use></svg><span class="icon-reddit">Share</span>
+            </a> -->
+        </div>
+    </div>
+</section>
+
+
+
+
+    <section class="disqus">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+
+        var disqus_config = function () {
+            this.page.url = 'http://localhost:4000/selenium1/';
+            this.page.identifier = '/selenium1';
+        };
+        var disqus_shortname = 'mydisqus';
+        var disqus_developer = 0;
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
 
 
 

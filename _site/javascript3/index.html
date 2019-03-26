@@ -14,21 +14,21 @@
     <meta property="og:type" content="profile">
 
     <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>Arrays and Strings | Jimmy Gam</title>
+<title>Objects and arrays? | Jimmy Gam</title>
 <meta name="generator" content="Jekyll v3.7.4" />
-<meta property="og:title" content="Arrays and Strings" />
+<meta property="og:title" content="Objects and arrays?" />
 <meta name="author" content="jgam" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Arrays and Strings" />
-<meta property="og:description" content="Arrays and Strings" />
-<link rel="canonical" href="http://localhost:4000/crackingthecodinginterview1/" />
-<meta property="og:url" content="http://localhost:4000/crackingthecodinginterview1/" />
+<meta name="description" content="javascript" />
+<meta property="og:description" content="javascript" />
+<link rel="canonical" href="http://localhost:4000/javascript3/" />
+<meta property="og:url" content="http://localhost:4000/javascript3/" />
 <meta property="og:site_name" content="Jimmy Gam" />
 <meta property="og:image" content="http://localhost:4000/assets/images/markdown.jpg" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-02-25T00:00:00+09:00" />
+<meta property="article:published_time" content="2019-03-18T00:00:00+09:00" />
 <script type="application/ld+json">
-{"description":"Arrays and Strings","author":{"@type":"Person","name":"jgam"},"@type":"BlogPosting","url":"http://localhost:4000/crackingthecodinginterview1/","image":"http://localhost:4000/assets/images/markdown.jpg","headline":"Arrays and Strings","dateModified":"2019-02-25T00:00:00+09:00","datePublished":"2019-02-25T00:00:00+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/crackingthecodinginterview1/"},"@context":"http://schema.org"}</script>
+{"description":"javascript","author":{"@type":"Person","name":"jgam"},"@type":"BlogPosting","url":"http://localhost:4000/javascript3/","image":"http://localhost:4000/assets/images/markdown.jpg","headline":"Objects and arrays?","dateModified":"2019-03-18T00:00:00+09:00","datePublished":"2019-03-18T00:00:00+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/javascript3/"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -54,7 +54,7 @@
 <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 
 
-    <link rel="canonical" href="http://localhost:4000/crackingthecodinginterview1/">
+    <link rel="canonical" href="http://localhost:4000/javascript3/">
     <link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000/feed.xml" />
 
     <style>
@@ -1484,15 +1484,15 @@ pre {
 
 
 
-<h1 class="title">Arrays and Strings</h1>
+<h1 class="title">Objects and arrays?</h1>
 
 <span class="date">
-    <time datetime="25-02-2019">Monday. February 25, 2019</time>
+    <time datetime="18-03-2019">Monday. March 18, 2019</time>
      - <span class="reading-time" title="Estimated read time">
     
 
     
-        1 min
+        11 mins
     
 </span>
 
@@ -1503,58 +1503,226 @@ pre {
         
             <a class="item" href="http://localhost:4000/tags/#jgam">jgam</a>
         
-            <a class="item" href="http://localhost:4000/tags/#cracking-the-coding-interview">cracking the coding interview</a>
+            <a class="item" href="http://localhost:4000/tags/#linux">Linux</a>
         
-            <a class="item" href="http://localhost:4000/tags/#arrays">arrays</a>
+            <a class="item" href="http://localhost:4000/tags/#java-script">Java script</a>
         
-            <a class="item" href="http://localhost:4000/tags/#strings">strings</a>
+            <a class="item" href="http://localhost:4000/tags/#full-stack">full stack</a>
+        
+            <a class="item" href="http://localhost:4000/tags/#low-level">Low level</a>
         
     </div>
 
 
-<h2 id="해쉬-테이블-hash-tables">해쉬 테이블 Hash Tables</h2>
-<p>A datastructure that maps keys to values for highly efficient lookup. To retrive the value pair by its key, you find the key then compute the run time to find the value in a key(if it is a list, the runtime is N.)</p>
+<h1 id="data-structures-objects-and-arrays">Data Structures: Objects and arrays</h1>
 
-<p><strong>Worst Case Runtime</strong> O(N)</p>
+<p>Objects and arrays are coming in handy because we want to group data.</p>
 
-<p><strong>average Runtime</strong> O(1)</p>
+<h2 id="arrays">Arrays</h2>
 
-<h2 id="arraylist--resizable-arrays">ArrayList &amp; Resizable Arrays</h2>
-<p>I use python and in python, the size of array is automatically resized whereas in Java, arrays are fixed length. <strong>The size is defined when you create the array</strong>
-Let’s take a look at details of the resizing!</p>
+<p>We know what arrays are. And Javascript format of arrays are the following:</p>
 
-<p>When the array is full, the array doubles in size is the conventional way of resizing. This doubling takes O(n) time, but happens so rarely that its amortized inserition time is still O(1)</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">listOfNumbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">11</span><span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">listOfNumbers</span><span class="p">[</span><span class="mi">2</span><span class="p">]);</span><span class="c1">//5</span>
+</code></pre></div></div>
 
-<p><strong>Why amortized insertion gives O(1) rather than O(n)?</strong></p>
+<h2 id="properties">Properties</h2>
 
-<p>For example, after resized, we have an array of size N. Let’s see how this array became to have a size of N</p>
+<p>Some expressions such as myString.length and Math.max are called <strong>properties</strong> For the first case, we accessed the length property of the value in myString. In the second case, we accessed the property named max in the Math object. (which is a collection of mathematics-related constants and functions.)</p>
 
-<p>final capacity increaes -&gt; n/2 elements to copy</p>
+<p>Almost all JavaScript values have properties. The exceptions are null and undefined. You will get an error when accessing a proprty of these values.</p>
 
-<p>previous capacity increase -&gt; n/4 elements to copy</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kc">null</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="c1">//TypeError: null has no properties</span>
+</code></pre></div></div>
 
-<p>previous capacity increase -&gt; n/8 elements to copy</p>
+<h2 id="methods">Methods</h2>
 
-<p>.</p>
+<p>Both string and array objects contain, in addition to the length property, a number of properties that hold function values.</p>
 
-<p>.</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">doh</span> <span class="o">=</span> <span class="s2">"Doh"</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">typeof</span> <span class="nx">doh</span><span class="p">.</span><span class="nx">toUpperCase</span><span class="p">);</span><span class="c1">//-&gt; function</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">doh</span><span class="p">.</span><span class="nx">toUpperCase</span><span class="p">());</span><span class="c1">//-&gt; DOH</span>
+</code></pre></div></div>
 
-<p>.</p>
+<p>Every string has a toUpperCase property. When called, it will return a copy of the string in which all letters have been converted to uppercase. There exists toLowerCase, which acts in vice-versa.</p>
 
-<p>second capacity increase -&gt; 2 elements to copy</p>
+<p>Properties that contain functions are generally called <strong>methods</strong> of the value they belong to, as in “toUpperCase is a method of a string.” The example below demonstrates two methods you can use to manipulate arrays:</p>
 
-<p>first capacity increase -&gt; 1 element to copy</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">sequence</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">];</span>
+<span class="nx">sequence</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="mi">4</span><span class="p">);</span>
+<span class="nx">sequence</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sequence</span><span class="p">.</span><span class="nx">pop</span><span class="p">());</span><span class="c1">//-&gt;5</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sequence</span><span class="p">)</span><span class="c1">// -&gt; [1,2,3,4]</span>
+</code></pre></div></div>
 
-<p>Therefore, we only have 1 + 2 + … + N/4 + N/2 which is less than N.</p>
+<p>These methods represent how to represent one of the data structures called, <strong>“stack.”</strong></p>
 
-<p>This is less than O(N)</p>
+<h2 id="objects">Objects</h2>
 
-<p><strong>worst case runtime</strong> O(N)</p>
+<p>Values of the type object are arbitrary collections of properties. One way to create an object is by using braces as an expression.</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">day1</span> <span class="o">=</span><span class="p">{</span>
+    <span class="na">squirrel</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="na">events</span><span class="p">:</span> <span class="p">[</span><span class="s2">"work"</span><span class="p">,</span> <span class="s2">"touched tree"</span><span class="p">,</span> <span class="s2">"pizza"</span><span class="p">,</span> <span class="s2">"running"</span><span class="p">]</span>
+<span class="p">};</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">day1</span><span class="p">.</span><span class="nx">squirrel</span><span class="p">);</span><span class="c1">//-&gt; false</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">day1</span><span class="p">.</span><span class="nx">wolf</span><span class="p">);</span><span class="c1">//-&gt; undefined</span>
+<span class="nx">day1</span><span class="p">.</span><span class="nx">wolf</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">day1</span><span class="p">.</span><span class="nx">wolf</span><span class="p">);</span><span class="c1">//-&gt; false</span>
+</code></pre></div></div>
 
-<p><strong>average case runtime</strong> O(1)</p>
+<p>Inside the braces, there is a list of properties separated by commas. Each property has a name followed by a colon and a value. When an object is written over multiple lines, indenting it like in the example helps with readability. properties whose names aren’t valid binding names or valid numbers have to be quoted.</p>
 
-<h2 id="interview-questions">Interview Questions</h2>
-<p><a href="https://github.com/jgam/crackingthecoding/tree/master/chpt1">Here is the answers of interview questions!</a></p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">descriptions</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">work</span><span class="p">:</span> <span class="s2">"Went to work"</span><span class="p">,</span>
+    <span class="s2">"touched tree"</span><span class="p">:</span> <span class="s2">"Touched a tree"</span>
+<span class="p">};</span>
+
+</code></pre></div></div>
+
+<p>This means that braces have two meanings in javascrip. At the start of a statement, they start a block of statements. In any other position, they describe an object. Fortunately, it is rarely useful to start a statement with an object in braces, so the ambiguity between these two is not much of a problem.</p>
+
+<p>Briefly, objects grasp values but other bindings and properties might be holding onto those same values. You may think of objects as octopuses with any number of tentacles, each of which has a name tattooed on it.</p>
+
+<h2 id="mutability">Mutability</h2>
+
+<p>We saw that object values can be modified. The types of values such as numbers, strings, and booleans, are all immutable-it is impossible to change values of those types. You can combine them and derive new values from them, but when you take a specific string value, that value will always remain the same. The text inside it cannot be changed. If you have a string that contains “cat”, it is not possible for other code to change a character in your string to make it spell “rat”.</p>
+
+<p>Objects, however, are mutable, causing a single object value to have different content at different times.</p>
+
+<p>When we have two numbers, 120 and 120, we cna consider them precisely the same number, whether or not they refer to the same physical bits. With objects, there is a difference between having two references to the smae object and having two different objects that contain the same properties. Consider the following code:</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">object1</span> <span class="o">=</span> <span class="p">{</span><span class="na">value</span><span class="p">:</span> <span class="mi">10</span><span class="p">};</span>
+<span class="kd">let</span> <span class="nx">object2</span> <span class="o">=</span> <span class="nx">object1</span><span class="p">;</span>
+<span class="kd">let</span> <span class="nx">object3</span> <span class="o">=</span> <span class="p">{</span><span class="na">value</span><span class="p">:</span> <span class="mi">10</span><span class="p">};</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">object1</span> <span class="o">==</span> <span class="nx">object2</span><span class="p">);</span><span class="c1">//true</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">object1</span> <span class="o">==</span> <span class="nx">object3</span><span class="p">);</span><span class="c1">//false</span>
+
+<span class="nx">object1</span><span class="p">.</span><span class="nx">value</span> <span class="o">=</span> <span class="mi">15</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">object2</span><span class="p">.</span><span class="nx">value</span><span class="p">);</span><span class="c1">//-&gt; 15</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">object3</span><span class="p">.</span><span class="nx">value</span><span class="p">);</span><span class="c1">//-&gt;10</span>
+</code></pre></div></div>
+
+<p>The object1 and object2 bindings grasp the same object, which is why changing object1 also changes the value of object2. They are said to have the same identity. The binding object3 points to a different object, which initially contains the same properties as object1 but lives a separate life.</p>
+
+<p>When comparing objects with JavaScript’s == operator, it compares by identity: it will produce true only if both objects are precisely the same value. Comparing different objects will return false, even if they have identitcal properties. There is no “deep” comparison operation built into JavaScript, which compares objects by contents.</p>
+
+<h2 id="the-lycanthropes-log">The Lycanthrope’s Log</h2>
+
+<p>Correlation is a measure of dependence between statistical variables. A statistical variable is not quite the same as a programming variable. In statistics you typically have a set of measurements, and each variable is measured for every measurement. Correlation between variables is usually expressed as a value that ranges from -1 to 1. Zero correlation means the variables are not related. Positive one means they are identical and negative one means they are opposites. However, both cases demonstrate perfectly relevent cases.(one is true while the other is false.)</p>
+
+<p>To compute the measure of correlation between two Boolean variables, we can use the <em>phi coefficient.</em> This is a formula whose input is a frequency table containing the number of times the different combinations of the variables were observed. The output of the formula is a number between -1 and 1 that describes the correlation.</p>
+
+<div class="side-by-side">
+    <div class="tocenter">
+        <img class="image" src="http://localhost:4000//blog/assets/images/formula.png" alt="Alt Text" />
+        <figcaption class="caption">Photo by jgam CREDIT: Eloquent Javascript</figcaption>
+    </div>
+</div>
+
+<p>Using this formula, we can safely say that because the phi coefficient is about 0.069, eating pizza does not appear to have influence on the transformations. (this was an example)</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">tableFor</span><span class="p">(</span><span class="nx">event</span><span class="p">,</span> <span class="nx">journal</span><span class="p">){</span>
+    <span class="kd">let</span> <span class="nx">table</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">];</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">journal</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+        <span class="kd">let</span> <span class="nx">entry</span> <span class="o">=</span> <span class="nx">jounrnal</span><span class="p">[</span><span class="nx">i</span><span class="p">],</span> <span class="nx">index</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">entry</span><span class="p">.</span><span class="nx">events</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="nx">event</span><span class="p">))</span> <span class="nx">index</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">entry</span><span class="p">.</span><span class="nx">squirrel</span><span class="p">)</span> <span class="nx">index</span> <span class="o">+=</span> <span class="mi">2</span><span class="p">;</span>
+        <span class="nx">table</span><span class="p">[</span><span class="nx">index</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nx">table</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">tableFor</span><span class="p">(</span><span class="s2">"pizza"</span><span class="p">,</span> <span class="nx">JOURNAL</span><span class="p">));</span>
+</code></pre></div></div>
+
+<h2 id="array-loops">Array Loops</h2>
+
+<p>Simpler form of looping the array is the following:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">entry</span> <span class="k">of</span> <span class="nx">JOURNAL</span><span class="p">){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'${entry.events.length} events.'</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>When a for loop looks like this, with the word of after a variable definition, it will loop over the elements of the value given after of. This works not only for arrays but also for strings and some other data structures.</p>
+
+<h2 id="further-arrayology">Further Arrayology</h2>
+
+<p>The corresponding methods for adding and removing things at the start of an array are called <em>unshift</em> and <em>shift.</em></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">todoList</span> <span class="o">=</span> <span class="p">[];</span>
+<span class="kd">function</span> <span class="nx">remember</span><span class="p">(</span><span class="nx">task</span><span class="p">){</span>
+    <span class="nx">todoList</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">task</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kd">function</span> <span class="nx">getTask</span><span class="p">(){</span>
+    <span class="k">return</span> <span class="nx">todoList</span><span class="p">.</span><span class="nx">shift</span><span class="p">();</span>
+<span class="p">}</span>
+<span class="kd">function</span> <span class="nx">rememberUrgently</span><span class="p">(</span><span class="nx">task</span><span class="p">){</span>
+    <span class="nx">todoList</span><span class="p">.</span><span class="nx">unshift</span><span class="p">(</span><span class="nx">task</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">].</span><span class="nx">indexOf</span><span class="p">(</span><span class="mi">2</span><span class="p">));</span><span class="c1">//-&gt; 1</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">].</span><span class="nx">lastIndexOf</span><span class="p">(</span><span class="mi">2</span><span class="p">));</span><span class="c1">//-&gt; 3</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">].</span><span class="nx">slice</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">));</span><span class="c1">//-&gt; [2,3]</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">].</span><span class="nx">slice</span><span class="p">(</span><span class="mi">2</span><span class="p">));</span><span class="c1">//-&gt;[2,3,4]</span>
+
+<span class="kd">function</span> <span class="nx">remove</span><span class="p">(</span><span class="nx">array</span><span class="p">,</span> <span class="nx">index</span><span class="p">){</span>
+    <span class="k">return</span> <span class="nx">array</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nx">index</span><span class="p">).</span><span class="nx">concat</span><span class="p">(</span><span class="nx">array</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="nx">index</span><span class="o">+</span><span class="mi">1</span><span class="p">));</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">remove</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">],</span><span class="mi">2</span><span class="p">));</span> <span class="c1">//-&gt; [1,2,4,5]</span>
+</code></pre></div></div>
+
+<h2 id="strings-and-their-properties">Strings and their properties</h2>
+
+<p>Take a look at the following code:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">kim</span> <span class="o">=</span> <span class="s2">"kim"</span><span class="p">;</span>
+<span class="nx">kim</span><span class="p">.</span><span class="nx">age</span> <span class="o">=</span> <span class="mi">88</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">kim</span><span class="p">.</span><span class="nx">age</span><span class="p">);</span><span class="c1">//-&gt; undefined</span>
+</code></pre></div></div>
+
+<p>The error occurs because values of type string, number, and Boolean are not objects, and though the language doesn’t complain if you try to set new properties on them, it doesn’t actually store those properties. As mentioned earlier, such values are immutable and cannot be changed.</p>
+
+<h3 id="several-built-in-properties-and-their-methods">Several built-in properties and their methods</h3>
+<ol>
+  <li>string.slice(4,7) -&gt; returns string’s 5th character to 7th character</li>
+  <li>string.indexOf(“a”) -&gt; returns integer index of character “a” in string.</li>
+  <li>string.trim() -&gt; removes whitespaces(spaces, newlines, tabs, and similar characters) from the start and end of a string.</li>
+  <li>String(6).padStart(3, “0”); -&gt; “006”</li>
+  <li>string.split(“ “) -&gt; splits a string by spaces and make a list</li>
+  <li>array.join(“. “); -&gt;join the list as a single string replacing separators as “. “</li>
+  <li>string.repeat(3); -&gt; stringstringstring</li>
+</ol>
+
+<h2 id="rest-parameters">Rest Parameters</h2>
+
+<p>It can be useful for a function to accept any number of arguments. For example, Math.max computes the maximum of all the arguments it is given.</p>
+
+<p>To write such a function, you put three dots before the function’s last parameter.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">max</span><span class="p">(...</span><span class="nx">numbers</span><span class="p">){</span>
+    <span class="kd">let</span> <span class="nx">results</span> <span class="o">=</span> <span class="o">-</span><span class="kc">Infinity</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">number</span> <span class="k">of</span> <span class="nx">numbers</span><span class="p">){</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">number</span> <span class="o">&gt;</span> <span class="nx">result</span><span class="p">)</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">number</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nx">result</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">max</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="p">));</span><span class="c1">//9</span>
+</code></pre></div></div>
+
+<p><em>Rest parameter</em> is bount to an array containing all further arguments. If there are other parameters before it, their values aren’t part of that array. When, as in max, it is the only parameter, it will hold all arguments.</p>
+
+<p>You can also spread out the array into the function call, passing its elements as seaprate arguments.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">7</span><span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">max</span><span class="p">(...</span><span class="nx">numbers</span><span class="p">));</span><span class="c1">//-&gt; console.log(max(5,1,7));</span>
+</code></pre></div></div>
+
+<h2 id="finishing">Finishing</h2>
+
+<p>Objects and arrays provide ways to group several values into a single value. Most values in JavaScript have properties, the exceptions being null and undefgined. There are some named properties in arrays, such as length and a number of methods. There existss a different way of looping the array or objects(personally similar to python.)</p>
+
+<h2 id="chapter4-exercises">Chapter4 Exercises</h2>
+<p><a href="https://github.com/jgam/EloquentJavascript">Chapter4 exercises</a></p>
 
 
 
@@ -1593,14 +1761,6 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
@@ -1613,6 +1773,20 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
         
             
                 
@@ -1623,7 +1797,11 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
+                
+            
         
+            
+                
             
                 
             
@@ -1655,14 +1833,6 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
@@ -1675,6 +1845,20 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
         
             
                 
@@ -1685,7 +1869,11 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
+                
+            
         
+            
+                
             
                 
             
@@ -1717,14 +1905,6 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
@@ -1737,6 +1917,20 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
         
             
                 
@@ -1747,7 +1941,11 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
+                
+            
         
+            
+                
             
                 
             
@@ -1779,14 +1977,6 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
@@ -1799,6 +1989,20 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
         
             
                 
@@ -1809,7 +2013,11 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
+                
+            
         
+            
+                
             
                 
             
@@ -1841,27 +2049,11 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
             
                 
-            
-                
-            
-                
-            
-                
-            
-        
             
                 
             
@@ -1881,17 +2073,6 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-    
-        
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
@@ -1904,27 +2085,11 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
             
                 
-            
-                
-            
-                
-            
-                
-            
-        
             
                 
             
@@ -1947,27 +2112,11 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
             
                 
-            
-                
-            
-                
-            
-                
-            
-        
             
                 
             
@@ -1987,17 +2136,6 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-    
-        
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
@@ -2010,27 +2148,11 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
             
                 
-            
-                
-            
-                
-            
-                
-            
-        
             
                 
             
@@ -2053,27 +2175,11 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
             
                 
-            
-                
-            
-                
-            
-                
-            
-        
             
                 
             
@@ -2093,17 +2199,6 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-    
-        
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
@@ -2116,27 +2211,11 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
             
                 
-            
-                
-            
-                
-            
-                
-            
-        
             
                 
             
@@ -2159,27 +2238,11 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
             
                 
-            
-                
-            
-                
-            
-                
-            
-        
             
                 
             
@@ -2199,17 +2262,6 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-    
-        
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
@@ -2222,27 +2274,11 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
             
                 
-            
-                
-            
-                
-            
-                
-            
-        
             
                 
             
@@ -2265,27 +2301,11 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
             
                 
-            
-                
-            
-                
-            
-                
-            
-        
             
                 
             
@@ -2305,17 +2325,6 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-    
-        
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
@@ -2328,27 +2337,11 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
             
                 
-            
-                
-            
-                
-            
-                
-            
-        
             
                 
             
@@ -2371,27 +2364,11 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
             
                 
-            
-                
-            
-                
-            
-                
-            
-        
             
                 
             
@@ -2411,17 +2388,6 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-    
-        
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
@@ -2434,27 +2400,11 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
             
                 
-            
-                
-            
-                
-            
-                
-            
-        
             
                 
             
@@ -2477,27 +2427,11 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
             
                 
-            
-                
-            
-                
-            
-                
-            
-        
             
                 
             
@@ -2517,17 +2451,6 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-    
-        
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
@@ -2540,17 +2463,11 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
+            
+                
             
                 
             
@@ -2573,14 +2490,6 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
@@ -2593,6 +2502,20 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
         
             
                 
@@ -2603,20 +2526,11 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-    
-        
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
+            
+                
             
                 
             
@@ -2639,6 +2553,20 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
         
             
                 
@@ -2649,7 +2577,23 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
+                
+            
         
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
             
                 
             
@@ -2672,7 +2616,47 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
+                
+            
         
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
             
                 
             
@@ -2686,6 +2670,392 @@ Let’s take a look at details of the resizing!</p>
     
         
         
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
             
                 
             
@@ -2717,7 +3087,7 @@ Let’s take a look at details of the resizing!</p>
         <div class="share">
             <!-- Note: Only use three share links if your site width is set to large -->
             <!-- If site width is set to normal, you may choose any two share links -->
-            <a class="twitter" href="https://twitter.com/intent/tweet?text=http://localhost:4000/crackingthecodinginterview1/ - Arrays and Strings by @">
+            <a class="twitter" href="https://twitter.com/intent/tweet?text=http://localhost:4000/javascript3/ - Objects and arrays? by @">
                 <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg><span class="icon-twitter">Tweet</span>
             </a>
 
@@ -2725,15 +3095,15 @@ Let’s take a look at details of the resizing!</p>
                 <svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg><span class="icon-facebook-rect">Share</span>
             </a>
 
-            <!-- <a class="google-plus" href="https://plus.google.com/share?url=http://localhost:4000/crackingthecodinginterview1/" target="_blank">
+            <!-- <a class="google-plus" href="https://plus.google.com/share?url=http://localhost:4000/javascript3/" target="_blank">
                 <svg class="icon icon-google-plus"><use xlink:href="#icon-google-plus"></use></svg><span class="icon-google-plus">Share</span>
             </a> -->
 
-            <!-- <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:4000/crackingthecodinginterview1/&amp;title=Arrays and Strings&amp;summary=Arrays and Strings&amp;source=http://localhost:4000" target="_blank">
+            <!-- <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:4000/javascript3/&amp;title=Objects and arrays?&amp;summary=javascript&amp;source=http://localhost:4000" target="_blank">
                 <svg class="icon icon-linkedin"><use xlink:href="#icon-linkedin"></use></svg><span class="icon-linkedin">Share</span>
             </a> -->
 
-            <!-- <a class="reddit" href="https://reddit.com/submit?url=http://localhost:4000/crackingthecodinginterview1/&amp;title=Arrays and Strings" target="_blank">
+            <!-- <a class="reddit" href="https://reddit.com/submit?url=http://localhost:4000/javascript3/&amp;title=Objects and arrays?" target="_blank">
                 <svg class="icon icon-reddit"><use xlink:href="#icon-reddit"></use></svg><span class="icon-reddit">Share</span>
             </a> -->
         </div>
@@ -2748,8 +3118,8 @@ Let’s take a look at details of the resizing!</p>
     <script type="text/javascript">
 
         var disqus_config = function () {
-            this.page.url = 'http://localhost:4000/crackingthecodinginterview1/';
-            this.page.identifier = '/crackingthecodinginterview1';
+            this.page.url = 'http://localhost:4000/javascript3/';
+            this.page.identifier = '/javascript3';
         };
         var disqus_shortname = 'mydisqus';
         var disqus_developer = 0;

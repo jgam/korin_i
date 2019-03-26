@@ -14,21 +14,21 @@
     <meta property="og:type" content="profile">
 
     <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>Arrays and Strings | Jimmy Gam</title>
+<title>Objects and arrays? | Jimmy Gam</title>
 <meta name="generator" content="Jekyll v3.7.4" />
-<meta property="og:title" content="Arrays and Strings" />
+<meta property="og:title" content="Objects and arrays?" />
 <meta name="author" content="jgam" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Arrays and Strings" />
-<meta property="og:description" content="Arrays and Strings" />
-<link rel="canonical" href="http://localhost:4000/crackingthecodinginterview1/" />
-<meta property="og:url" content="http://localhost:4000/crackingthecodinginterview1/" />
+<meta name="description" content="javascript" />
+<meta property="og:description" content="javascript" />
+<link rel="canonical" href="http://localhost:4000/javascript4/" />
+<meta property="og:url" content="http://localhost:4000/javascript4/" />
 <meta property="og:site_name" content="Jimmy Gam" />
 <meta property="og:image" content="http://localhost:4000/assets/images/markdown.jpg" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-02-25T00:00:00+09:00" />
+<meta property="article:published_time" content="2019-03-18T00:00:00+09:00" />
 <script type="application/ld+json">
-{"description":"Arrays and Strings","author":{"@type":"Person","name":"jgam"},"@type":"BlogPosting","url":"http://localhost:4000/crackingthecodinginterview1/","image":"http://localhost:4000/assets/images/markdown.jpg","headline":"Arrays and Strings","dateModified":"2019-02-25T00:00:00+09:00","datePublished":"2019-02-25T00:00:00+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/crackingthecodinginterview1/"},"@context":"http://schema.org"}</script>
+{"description":"javascript","author":{"@type":"Person","name":"jgam"},"@type":"BlogPosting","url":"http://localhost:4000/javascript4/","image":"http://localhost:4000/assets/images/markdown.jpg","headline":"Objects and arrays?","dateModified":"2019-03-18T00:00:00+09:00","datePublished":"2019-03-18T00:00:00+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/javascript4/"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -54,7 +54,7 @@
 <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 
 
-    <link rel="canonical" href="http://localhost:4000/crackingthecodinginterview1/">
+    <link rel="canonical" href="http://localhost:4000/javascript4/">
     <link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000/feed.xml" />
 
     <style>
@@ -1484,15 +1484,15 @@ pre {
 
 
 
-<h1 class="title">Arrays and Strings</h1>
+<h1 class="title">Objects and arrays?</h1>
 
 <span class="date">
-    <time datetime="25-02-2019">Monday. February 25, 2019</time>
+    <time datetime="18-03-2019">Monday. March 18, 2019</time>
      - <span class="reading-time" title="Estimated read time">
     
 
     
-        1 min
+        13 mins
     
 </span>
 
@@ -1503,58 +1503,241 @@ pre {
         
             <a class="item" href="http://localhost:4000/tags/#jgam">jgam</a>
         
-            <a class="item" href="http://localhost:4000/tags/#cracking-the-coding-interview">cracking the coding interview</a>
+            <a class="item" href="http://localhost:4000/tags/#linux">Linux</a>
         
-            <a class="item" href="http://localhost:4000/tags/#arrays">arrays</a>
+            <a class="item" href="http://localhost:4000/tags/#java-script">Java script</a>
         
-            <a class="item" href="http://localhost:4000/tags/#strings">strings</a>
+            <a class="item" href="http://localhost:4000/tags/#full-stack">full stack</a>
+        
+            <a class="item" href="http://localhost:4000/tags/#low-level">Low level</a>
         
     </div>
 
 
-<h2 id="해쉬-테이블-hash-tables">해쉬 테이블 Hash Tables</h2>
-<p>A datastructure that maps keys to values for highly efficient lookup. To retrive the value pair by its key, you find the key then compute the run time to find the value in a key(if it is a list, the runtime is N.)</p>
+<h1 id="higher-order-functions">Higher Order Functions</h1>
 
-<p><strong>Worst Case Runtime</strong> O(N)</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sum</span><span class="p">(</span><span class="nx">range</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">)));</span>
+</code></pre></div></div>
 
-<p><strong>average Runtime</strong> O(1)</p>
+<p>When looking at the above code, one can easily guess what each of those methods do. (Ofcourse, it will take some time to compute the actual number unless you are genius!)</p>
 
-<h2 id="arraylist--resizable-arrays">ArrayList &amp; Resizable Arrays</h2>
-<p>I use python and in python, the size of array is automatically resized whereas in Java, arrays are fixed length. <strong>The size is defined when you create the array</strong>
-Let’s take a look at details of the resizing!</p>
+<p>The defintion of this vocabulary (the functions sum and range) will still involve loops, counters, and other incidental details. But because they are expressing simpler concepts than the program as a whole, they are easier to get right.</p>
 
-<p>When the array is full, the array doubles in size is the conventional way of resizing. This doubling takes O(n) time, but happens so rarely that its amortized inserition time is still O(1)</p>
+<h2 id="abstraction">Abstraction</h2>
 
-<p><strong>Why amortized insertion gives O(1) rather than O(n)?</strong></p>
+<p>In the context of programming, these kinds of vocabularies are called <em>abstractions.</em> Abstractions hide details and give us the ability to talk about problems at a higher level. When programming, we can’t rely on all the words we need to be waiting for us in the dictionary. Thus, we might fall into the pattern of the first recipe-work out the precise steps the computer has to perform, one by one, blind to the higher-level concepts that they express.</p>
 
-<p>For example, after resized, we have an array of size N. Let’s see how this array became to have a size of N</p>
+<p>It is useful skill, in programming, to notice when you are working at too low a level of abstraction.</p>
 
-<p>final capacity increaes -&gt; n/2 elements to copy</p>
+<h2 id="abstracting-repetition">Abstracting Repetition</h2>
 
-<p>previous capacity increase -&gt; n/4 elements to copy</p>
+<p>Plain functions, as we’ve seen them so far, are a good way to build abstractions. It is common for a program to do something a given number of times.</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
-<p>previous capacity increase -&gt; n/8 elements to copy</p>
+<p>Can we abstract “doing something N times” as a function? Well, it’s easy to write a function that calls console.log N times.</p>
 
-<p>.</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">repeatLog</span><span class="p">(</span><span class="nx">n</span><span class="p">){</span>
+    <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">n</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
-<p>.</p>
+<p><strong>BUT</strong> what if we do something other than loggin the numbers? since doing something can be represented as a function and functions are just values, we can pass our action as a function value.</p>
 
-<p>.</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">repeat</span><span class="p">(</span><span class="nx">n</span><span class="p">,</span> <span class="nx">action</span><span class="p">){</span>
+    <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">n</span><span class="p">;</span> <span class="nx">i</span> <span class="o">++</span><span class="p">){</span>
+        <span class="nx">action</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
 
-<p>second capacity increase -&gt; 2 elements to copy</p>
 
-<p>first capacity increase -&gt; 1 element to copy</p>
+<span class="nx">repeat</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">);</span>
+<span class="c1">// -&gt;0</span>
+<span class="c1">// -&gt;1</span>
+<span class="c1">// -&gt;2</span>
+</code></pre></div></div>
 
-<p>Therefore, we only have 1 + 2 + … + N/4 + N/2 which is less than N.</p>
+<p>Similar to this, we don’t have to pass a predefined function to repeat. Often, it is easier to create a funtion value on the spot instead.</p>
 
-<p>This is less than O(N)</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">labels</span> <span class="o">=</span> <span class="p">[];</span>
+<span class="nx">repeat</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="nx">i</span><span class="o">=&gt;</span><span class="p">{</span><span class="c1">//this part is creating a function value on the spot!</span>
+    <span class="nx">labels</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s1">'Unit ${i+1}'</span><span class="p">);</span><span class="c1">//function value</span>
+<span class="p">});</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">labels</span><span class="p">);</span><span class="c1">// -&gt; ["unit 1", "unit 2", "unit 3", "unit 4", "unit 5"]</span>
+</code></pre></div></div>
 
-<p><strong>worst case runtime</strong> O(N)</p>
+<p>Above is: it describes the kind of loop and then provides a body. However, the body is now written as a function value, which is wrapped in the parentheses of the call to repeat. This is why it has to be closed with the closing brace and closing parenthesis.</p>
 
-<p><strong>average case runtime</strong> O(1)</p>
+<h2 id="higer---order-functions">HIGER - ORDER FUNCTIONS</h2>
 
-<h2 id="interview-questions">Interview Questions</h2>
-<p><a href="https://github.com/jgam/crackingthecoding/tree/master/chpt1">Here is the answers of interview questions!</a></p>
+<p>The reason I bolded this part is because it is integral concept in javascript and I am still having troubles understanding them :(</p>
+
+<p>Functions that operate on other functions, either by taking them as arguments or by returning them, are called <em>higher-order functions.</em> Since we have already seen that functions are regular values, there is nothing particularly remarkable about the fact that such functions exist. The term comes from mathematics, where the distinction between functions and other values is taken more seriously.</p>
+
+<p>Higher-order functions allow us to abstract over <em>actions</em>, not just values. They come in several forms. For example, we can have functions that create new functions.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">greaterThan</span><span class="p">(</span><span class="nx">n</span><span class="p">){</span>
+    <span class="k">return</span> <span class="nx">m</span> <span class="o">=&gt;</span> <span class="nx">m</span> <span class="o">&gt;</span> <span class="nx">n</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kd">let</span> <span class="nx">greaterThan10</span> <span class="o">=</span> <span class="nx">greaterThan</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span><span class="c1">//function that creates new function</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">greaterThan10</span><span class="p">(</span><span class="mi">11</span><span class="p">));</span><span class="c1">//true</span>
+</code></pre></div></div>
+
+<p>And we can have functions that change other functions.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">noisy</span><span class="p">(</span><span class="nx">f</span><span class="p">){</span>
+    <span class="k">return</span> <span class="p">(...</span><span class="nx">args</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"calling with"</span><span class="p">,</span> <span class="nx">args</span><span class="p">);</span>
+        <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">f</span><span class="p">(...</span><span class="nx">args</span><span class="p">);</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"called with"</span><span class="p">,</span> <span class="nx">args</span><span class="p">,</span> <span class="s2">", returned"</span><span class="p">,</span> <span class="nx">result</span><span class="p">);</span>
+        <span class="k">return</span> <span class="nx">result</span><span class="p">;</span>
+    <span class="p">};</span>
+<span class="p">}</span>
+<span class="nx">noisy</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">min</span><span class="p">)(</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span><span class="c1">//calling with [3,2,1]</span>
+<span class="c1">//called with [3,2,1], returned 1</span>
+</code></pre></div></div>
+
+<p>There is a built-in array method, forEach, that provides something like a for/of loop as a higher-order function.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="s2">"A"</span><span class="p">,</span> <span class="s2">"B"</span><span class="p">].</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">l</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">l</span><span class="p">));</span>
+</code></pre></div></div>
+
+<h2 id="script-data-set">Script Data Set</h2>
+
+<p>One area higher-order functions shine is data processing. The example data set contains some pieces of information about the 140 scripts defined in Unicode. The binding contains an array of objects, each of which describes a script.</p>
+
+<p>Here is an example of binding.</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span>
+    <span class="nl">name</span><span class="p">:</span> <span class="s2">"Coptic"</span><span class="p">,</span>
+    <span class="nx">ranges</span><span class="p">:</span> <span class="p">[[</span><span class="mi">994</span><span class="p">,</span> <span class="mi">1008</span><span class="p">],</span> <span class="p">[</span><span class="mi">11392</span><span class="p">,</span> <span class="mi">11508</span><span class="p">],</span> <span class="p">[</span><span class="mi">11513</span><span class="p">,</span> <span class="mi">11520</span><span class="p">]],</span>
+    <span class="nx">direction</span><span class="p">:</span> <span class="s2">"ltr"</span><span class="p">,</span>
+    <span class="nx">year</span><span class="p">:</span> <span class="o">-</span><span class="mi">200</span><span class="p">,</span>
+    <span class="nx">living</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nx">link</span><span class="p">:</span> <span class="s2">"https://en.wikipedia.org/wiki/Coptic_alphabet"</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Such an object tells us the name of the script, the Unicode ranges assigned to it, the direction in which it is written, hte origin time, whether it is still in use, and a link to more information. The direction may be “ltr” for left to right, “rtl” for right to left, or “ttb” for top to bottom.</p>
+
+<p>The ranges property contains an array of Unicode character ranges, each of which is a two-element array containing a lower bound and an upper bound. Any character codes within these ranges are assigned to the script. The lower bound is inclusive (code 994 is a Coptic chatacter), and the upper bound is non-inclusive (code 1008 isn’t)</p>
+
+<h2 id="filtering-arrays">Filtering Arrays</h2>
+
+<p>To find the scripts in the data set that are still in use, the following function might be helpful. It filters out the elements in an array that don’t pass a test.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">filter</span><span class="p">(</span><span class="nx">array</span><span class="p">,</span> <span class="nx">test</span><span class="p">){</span>
+    <span class="kd">let</span> <span class="nx">passed</span> <span class="o">=</span> <span class="p">[];</span>
+    <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">element</span> <span class="k">of</span> <span class="nx">array</span><span class="p">){</span>
+        <span class="k">if</span><span class="p">(</span><span class="nx">test</span><span class="p">(</span><span class="nx">element</span><span class="p">)){</span>
+            <span class="nx">passed</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">element</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nx">passed</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">filter</span><span class="p">(</span><span class="nx">SCRIPTS</span><span class="p">,</span> <span class="nx">script</span> <span class="o">=&gt;</span> <span class="nx">script</span><span class="p">.</span><span class="nx">living</span><span class="p">));</span><span class="c1">//-&gt; [{name: "Adlam", ...}, ...]</span>
+</code></pre></div></div>
+
+<p>The function uses the argument named test, a function value, to fill a “gap” in the computation-the process of deciding which elements to collect.</p>
+
+<p>Note how the filter function, rather than deleting elements from the existing array, builds up a new array with only the elements that pass the test. This function is pure. It does not modify the array it is given. Like forEach, filter is a standard array method. The example defined the function only to show what it does internally. From now on, we will use it like this instead:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">SCRIPTS</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">s</span><span class="o">=&gt;</span> <span class="nx">s</span><span class="p">.</span><span class="nx">direction</span> <span class="o">==</span> <span class="s2">"ttb"</span><span class="p">));</span>
+<span class="c1">// -&gt; [{name: "Mongolian", ...}, ...]</span>
+</code></pre></div></div>
+
+<h2 id="transforming-with-map">Transforming with Map</h2>
+
+<p>The map method transforms an array by applying a function to all of its elements and building a new array rom the returned values. the new array will have the same length as the input array, but its content will have been mapped to a new form by the function.</p>
+
+<p>Say that we wnat a SCRIPTS filtered with names only:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">map</span><span class="p">(</span><span class="nx">array</span><span class="p">,</span> <span class="nx">transform</span><span class="p">){</span>
+    <span class="kd">let</span> <span class="nx">mapped</span> <span class="o">=</span> <span class="p">[];</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">element</span> <span class="k">of</span> <span class="nx">array</span><span class="p">){</span>
+        <span class="nx">mapped</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">transform</span><span class="p">(</span><span class="nx">element</span><span class="p">));</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nx">mapped</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kd">let</span> <span class="nx">rtlScripts</span> <span class="o">=</span> <span class="nx">SCRIPTS</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">s</span> <span class="o">=&gt;</span> <span class="nx">s</span><span class="p">.</span><span class="nx">direction</span> <span class="o">==</span> <span class="s2">"rtl"</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">map</span><span class="p">(</span><span class="nx">rtlScripts</span><span class="p">,</span> <span class="nx">s</span><span class="o">=&gt;</span> <span class="nx">s</span><span class="p">.</span><span class="nx">name</span><span class="p">));</span>
+<span class="c1">//-&gt; ["Adlam", "Arabic", "Imperial Aramaic", ...]</span>
+</code></pre></div></div>
+<p>Like forEach and filter, map is a standard array method.</p>
+
+<h2 id="summarizing-with-reduce">Summarizing with Reduce</h2>
+
+<p>Another things is to compute a single value from an array. Our recurring example, summing a collection of numbers, is an instance of this. Another example is finding the script with the most characters.</p>
+
+<p>The higher-order operation that represents this pattern is called <em>reduce</em>(sometimes also called <em>fold</em>). It builds a value by repeatedly taking a single element from the array and combining it with the current value. When summing numbers, you’d start with the number zero and, for each element, add that to the sum.</p>
+
+<p>The parameters to reduce are, apart from the array, a combining function and a start value. This function is a little less straightforward than filter and map, so take a close look at it:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">reduce</span><span class="p">(</span><span class="nx">array</span><span class="p">,</span> <span class="nx">combine</span><span class="p">,</span> <span class="nx">start</span><span class="p">){</span>
+    <span class="kd">let</span> <span class="nx">current</span> <span class="o">=</span> <span class="nx">start</span><span class="p">;</span>
+    <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">element</span> <span class="k">of</span> <span class="nx">array</span><span class="p">){</span>
+        <span class="nx">current</span> <span class="o">=</span> <span class="nx">combine</span><span class="p">(</span><span class="nx">current</span><span class="p">,</span> <span class="nx">element</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nx">current</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">reduce</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">],</span> <span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="nx">b</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">a</span><span class="o">+</span><span class="nx">b</span><span class="p">,</span> <span class="mi">0</span><span class="p">));</span><span class="c1">//-&gt; 10</span>
+
+</code></pre></div></div>
+
+<p>Note that the standard array method reduce has an added convenience. If your array contains at least one element, yo uare allowed to leave off the start argument. The method will take the first element of the array as its start value and start reducing at the second element.</p>
+
+<p>To use reduce (twice) to find the script with the most characters, we can write something like this:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">characterCount</span><span class="p">(</span><span class="nx">script</span><span class="p">){</span>
+    <span class="k">return</span> <span class="nx">script</span><span class="p">.</span><span class="nx">ranges</span><span class="p">.</span><span class="nx">reduce</span><span class="p">((</span><span class="nx">count</span><span class="p">,</span> <span class="p">[</span><span class="k">from</span><span class="p">,</span> <span class="nx">to</span><span class="p">])</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nx">count</span> <span class="o">+</span> <span class="p">(</span><span class="nx">to</span> <span class="o">-</span> <span class="k">from</span><span class="p">);</span>
+    <span class="p">},</span> <span class="mi">0</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">SCRIPTS</span><span class="p">.</span><span class="nx">reduce</span><span class="p">((</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">characterCount</span><span class="p">(</span><span class="nx">a</span><span class="p">)</span> <span class="o">&lt;</span> <span class="nx">characterCount</span><span class="p">(</span><span class="nx">b</span><span class="p">)</span> <span class="p">?</span> <span class="nx">b</span> <span class="p">:</span> <span class="nx">a</span><span class="p">;</span>
+<span class="p">}));</span><span class="c1">// -&gt; {name: "Han"}</span>
+
+</code></pre></div></div>
+
+<p>The characterCount function redsuces the ranges assigned to a script by summing their sizes. Note the use of destructuring in the parameter list of the reducer function. The second call to reduce then uses this to find the largest script by repeatedly comparing two scripts and returning the larger one.</p>
+
+<p>The Han script has more than 89,000 characters assigned to it in the Unicode standard, making it  by far the biggest writing system in the data set. Han is a script(sometimes) used for Chinese, Japanese, and Korean text. Those languages share a lot of characters, though they tend to write them differently. The (U.S.-based) Unicode Consortium decided to treat them as a single writing system to save character codes. This is called <em>Han unification</em> and still makes some people very angry.</p>
+
+<h2 id="composability">Composability</h2>
+
+<p>Previous example gave a script that had the largest sum of range differencies. Higher-order functions start to shine when you need to compose operations. Here is to find the average year of origin for living and dead scripts in the data set.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">average</span><span class="p">(</span><span class="nx">array</span><span class="p">){</span>
+    <span class="k">return</span> <span class="nx">array</span><span class="p">.</span><span class="nx">reduce</span><span class="p">((</span><span class="nx">a</span><span class="p">,</span><span class="nx">b</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">a</span><span class="o">+</span><span class="nx">b</span><span class="p">)</span> <span class="o">/</span> <span class="nx">array</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">round</span><span class="p">(</span><span class="nx">average</span><span class="p">(</span>
+    <span class="nx">SCRIPTS</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">s</span> <span class="o">=&gt;</span> <span class="nx">s</span><span class="p">.</span><span class="nx">living</span><span class="p">).</span><span class="nx">map</span><span class="p">(</span><span class="nx">s</span> <span class="o">=&gt;</span> <span class="nx">s</span><span class="p">.</span><span class="nx">year</span><span class="p">))));</span> <span class="c1">//-&gt; 1188</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">round</span><span class="p">(</span><span class="nx">average</span><span class="p">(</span><span class="nx">SCRIPTS</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">s</span> <span class="o">=&gt;</span> <span class="o">!</span><span class="nx">s</span><span class="p">.</span><span class="nx">living</span><span class="p">).</span><span class="nx">map</span><span class="p">(</span><span class="nx">s</span> <span class="o">=&gt;</span> <span class="nx">s</span><span class="p">.</span><span class="nx">year</span><span class="p">))));</span>
+
+</code></pre></div></div>
+
+<p>Here is the tip: as a pipeline, we start with all scripts, filter out the living (or dead) ones, take the years from those, average them, and round the result. The following code is using a one big loop:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">total</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">script</span> <span class="k">of</span> <span class="nx">SCRIPTS</span><span class="p">){</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">script</span><span class="p">.</span><span class="nx">living</span><span class="p">){</span>
+        <span class="nx">total</span> <span class="o">+=</span> <span class="nx">script</span><span class="p">.</span><span class="nx">year</span><span class="p">;</span>
+        <span class="nx">count</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Above is the same code but is harder to see what is  actuall being done. (for me it is easier… but I guess, just for one time glance, it should be a little harder to interpret.) In terms of what the computer is doing, these two approaches are also quite different. The first will build up new arrays when running filter and map, whereas the second computes only some numbers, doing less work. You can usually afford the readable approach, but if you are processing huge arrays, and doing so many times, the less abstract style might be worth the extra speed.</p>
 
 
 
@@ -1593,14 +1776,6 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
@@ -1613,6 +1788,20 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
         
             
                 
@@ -1623,7 +1812,11 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
+                
+            
         
+            
+                
             
                 
             
@@ -1655,14 +1848,6 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
@@ -1675,6 +1860,20 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
         
             
                 
@@ -1685,7 +1884,11 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
+                
+            
         
+            
+                
             
                 
             
@@ -1717,14 +1920,6 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
@@ -1737,6 +1932,20 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
         
             
                 
@@ -1747,7 +1956,11 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
+                
+            
         
+            
+                
             
                 
             
@@ -1779,14 +1992,6 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
@@ -1799,6 +2004,20 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
         
             
                 
@@ -1809,7 +2028,74 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
+                
+            
         
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
             
                 
             
@@ -1827,7 +2113,7 @@ Let’s take a look at details of the resizing!</p>
                 
                     
                     <li class="relatedPost">
-                        <a href="http://localhost:4000/javascript4/">Objects and arrays?
+                        <a href="http://localhost:4000/javascript3/">Objects and arrays?
                         
                         </a>
                     </li>
@@ -1841,27 +2127,11 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
             
                 
-            
-                
-            
-                
-            
-                
-            
-        
             
                 
             
@@ -1881,17 +2151,6 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-    
-        
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
@@ -1904,27 +2163,11 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
             
                 
-            
-                
-            
-                
-            
-                
-            
-        
             
                 
             
@@ -1947,27 +2190,11 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
             
                 
-            
-                
-            
-                
-            
-                
-            
-        
             
                 
             
@@ -1987,17 +2214,6 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-    
-        
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
@@ -2010,27 +2226,11 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
             
                 
-            
-                
-            
-                
-            
-                
-            
-        
             
                 
             
@@ -2053,27 +2253,11 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
             
                 
-            
-                
-            
-                
-            
-                
-            
-        
             
                 
             
@@ -2093,17 +2277,6 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-    
-        
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
@@ -2116,27 +2289,11 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
             
                 
-            
-                
-            
-                
-            
-                
-            
-        
             
                 
             
@@ -2159,27 +2316,11 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
             
                 
-            
-                
-            
-                
-            
-                
-            
-        
             
                 
             
@@ -2199,17 +2340,6 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-    
-        
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
@@ -2222,27 +2352,11 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
             
                 
-            
-                
-            
-                
-            
-                
-            
-        
             
                 
             
@@ -2265,27 +2379,11 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
             
                 
-            
-                
-            
-                
-            
-                
-            
-        
             
                 
             
@@ -2305,17 +2403,6 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-    
-        
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
@@ -2328,27 +2415,11 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
             
                 
-            
-                
-            
-                
-            
-                
-            
-        
             
                 
             
@@ -2371,27 +2442,11 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
             
                 
-            
-                
-            
-                
-            
-                
-            
-        
             
                 
             
@@ -2411,17 +2466,6 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-    
-        
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
@@ -2434,27 +2478,11 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
             
                 
-            
-                
-            
-                
-            
-                
-            
-        
             
                 
             
@@ -2477,27 +2505,11 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
             
                 
-            
-                
-            
-                
-            
-                
-            
-        
             
                 
             
@@ -2517,17 +2529,6 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-    
-        
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
@@ -2540,17 +2541,11 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
+            
+                
             
                 
             
@@ -2573,14 +2568,6 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
@@ -2593,6 +2580,20 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
         
             
                 
@@ -2603,20 +2604,11 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
-        
-    
-        
-        
-            
-                
-            
-                
-            
-                
-            
                 
             
         
+            
+                
             
                 
             
@@ -2639,6 +2631,20 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
         
             
                 
@@ -2649,7 +2655,23 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
+                
+            
         
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
             
                 
             
@@ -2672,7 +2694,47 @@ Let’s take a look at details of the resizing!</p>
             
                 
             
+                
+            
         
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
             
                 
             
@@ -2686,6 +2748,329 @@ Let’s take a look at details of the resizing!</p>
     
         
         
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
             
                 
             
@@ -2717,7 +3102,7 @@ Let’s take a look at details of the resizing!</p>
         <div class="share">
             <!-- Note: Only use three share links if your site width is set to large -->
             <!-- If site width is set to normal, you may choose any two share links -->
-            <a class="twitter" href="https://twitter.com/intent/tweet?text=http://localhost:4000/crackingthecodinginterview1/ - Arrays and Strings by @">
+            <a class="twitter" href="https://twitter.com/intent/tweet?text=http://localhost:4000/javascript4/ - Objects and arrays? by @">
                 <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg><span class="icon-twitter">Tweet</span>
             </a>
 
@@ -2725,15 +3110,15 @@ Let’s take a look at details of the resizing!</p>
                 <svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg><span class="icon-facebook-rect">Share</span>
             </a>
 
-            <!-- <a class="google-plus" href="https://plus.google.com/share?url=http://localhost:4000/crackingthecodinginterview1/" target="_blank">
+            <!-- <a class="google-plus" href="https://plus.google.com/share?url=http://localhost:4000/javascript4/" target="_blank">
                 <svg class="icon icon-google-plus"><use xlink:href="#icon-google-plus"></use></svg><span class="icon-google-plus">Share</span>
             </a> -->
 
-            <!-- <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:4000/crackingthecodinginterview1/&amp;title=Arrays and Strings&amp;summary=Arrays and Strings&amp;source=http://localhost:4000" target="_blank">
+            <!-- <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:4000/javascript4/&amp;title=Objects and arrays?&amp;summary=javascript&amp;source=http://localhost:4000" target="_blank">
                 <svg class="icon icon-linkedin"><use xlink:href="#icon-linkedin"></use></svg><span class="icon-linkedin">Share</span>
             </a> -->
 
-            <!-- <a class="reddit" href="https://reddit.com/submit?url=http://localhost:4000/crackingthecodinginterview1/&amp;title=Arrays and Strings" target="_blank">
+            <!-- <a class="reddit" href="https://reddit.com/submit?url=http://localhost:4000/javascript4/&amp;title=Objects and arrays?" target="_blank">
                 <svg class="icon icon-reddit"><use xlink:href="#icon-reddit"></use></svg><span class="icon-reddit">Share</span>
             </a> -->
         </div>
@@ -2748,8 +3133,8 @@ Let’s take a look at details of the resizing!</p>
     <script type="text/javascript">
 
         var disqus_config = function () {
-            this.page.url = 'http://localhost:4000/crackingthecodinginterview1/';
-            this.page.identifier = '/crackingthecodinginterview1';
+            this.page.url = 'http://localhost:4000/javascript4/';
+            this.page.identifier = '/javascript4';
         };
         var disqus_shortname = 'mydisqus';
         var disqus_developer = 0;

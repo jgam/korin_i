@@ -4,13 +4,14 @@ layout: post
 date: 2019-03-09
 image: /assets/images/markdown.jpg
 headerImage: false
+python: true
 tag:
 - jgam
 - cracking the coding interview
 - python
 - algorithm
 - sorting
-category: blog
+category: python
 author: jgam
 description: sorting
 ---
