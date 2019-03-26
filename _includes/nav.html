@@ -30,10 +30,18 @@
             {% endif %}
         {% endif %}
 
-        {% if site.python == true %}
-            {% if page.title != "Python" %}
+        {% if site.linux == true %}
+            {% if page.title != "Linux" %}
                 <li class="item">
                     <a class="link" href="{{ site.url }}/linux">Linux</a>
+                </li>
+            {% endif %}
+        {% endif %}
+
+        {% if site.algorithms == true %}
+            {% if page.title != "Algorithms" %}
+                <li class="item">
+                    <a class="link" href="{{ site.url }}/algorithms">Algorithms</a>
                 </li>
             {% endif %}
         {% endif %}
