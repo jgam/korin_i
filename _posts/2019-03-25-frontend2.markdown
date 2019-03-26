@@ -49,6 +49,8 @@ Through bitnami!
 
 What is Hypertext? It is a link. Through the links, we can make a huge chunk of Hyper textx that become the origin of web pages. How does that work? Linkes make up the origins of HTML and HTMLs make up the origins of web.  So what is a HTML (Hyper text markup language）? It is a language that humans and web-browsers both can understand.
 
+In web application, HTML is an information. By means "information", this HTML tells users what the web is about. (without decorations!) This basically creates a structure of a human (bones) and enlists information in a certain way that the HTML wants the information to be displayed.
+
 ## Markup?
 
 First, we need to understand TAGs. The information about something is called "Tag" as we can see it when we buy clothes.
@@ -58,5 +60,10 @@ Hello, this is <strong>jgam's</strong> blog!
 ```
 
 Here, the strong tags indicate jgam to be bolded. Now let's go for actual HTML example.
+
+## HTML tags
+
+What is <nav>?
+Demonstrates a navigation and does not have a specific functionalities. However, as promised, using <nav> we know that this tag demonstrates the information about searching through this website.
 
 [here is the link!][https://github.com/jgam/javascript_web/fundamentals/HTML/]
