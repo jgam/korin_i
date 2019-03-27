@@ -33,3 +33,33 @@ SO far HTML & CSS are static languages where we just display info to the users w
 </div>
 
 Now, left is a picture of web browser and the right is a picture of web server. You can note that the php code part on the right picture is translated into 20 while script tag remains the same. This is because the PHP is a server side language and the php interpreter already translates the php code into a returned value and sends the resulting HTML page to web browser. Now web browser has the value, 20 and translates the script(javascript) part and views it on the HTMl file. Therefore, what we see is just mere 20 on the top followed by "Javascript" and 20 again.
+
+## Grammars
+
+### Following are the data types and their usages:
+1. string : "Emma"
+2. integer: 10
+
+###Javascript
+name = "jimmy";
+
+#### conditional statements:
+
+if(true/false){
+    //do some
+}
+else{
+
+}
+
+###PHP
+$name = "jimmy";
+
+#### conditional statements:
+
+if(true/false){
+
+}
+else{
+    
+}
