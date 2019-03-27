@@ -17,7 +17,7 @@ description: web app
 
 ## Actual programming! (JAVASCRIPT or PHP)
 
-What happens when we call a php file to webserver such as **https://~~~.com/a.php**?
+What happens when we call a php file to webserver such as https://~~~.com/a.php?
 
 Since this is not a markup language, the webeserver will call an *interpreter* that can translate the php file. (so called "php engine") Now, the php engine will translate the .php file. When translating, the engine skips familiar HTML tags until it sees **<?php?>**. Then, the information we fetched from such php file is now passed on to the HTML file which we can be displayed on the web browser.
 
@@ -25,3 +25,11 @@ Since this is not a markup language, the webeserver will call an *interpreter* t
 
 SO far HTML & CSS are static languages where we just display info to the users while Javascript and PHP are rather dynamic languages because they can bascically create different myriads number of ways to create those static representations. The two languages are similar in a way that they are dynamic but they differ in that Javascript is web-browser language and PHP is a web server language. This might be a little harder concept to understand and looking at the picture below will make your understanding WAYYYY easier.
 
+<div class="side-by-side">
+    <div class="tocenter">
+        <img class="image" src="{{ site.url }}/{{ site.frontend}}" alt="Alt Text">
+        <figcaption class="caption">Photo by jgam CREDIT: OpenTutorials</figcaption>
+    </div>
+</div>
+
+Now, left is a picture of web browser and the right is a picture of web server. You can note that the php code part on the right picture is translated into 20 while script tag remains the same. This is because the PHP is a server side language and the php interpreter already translates the php code into a returned value and sends the resulting HTML page to web browser. Now web browser has the value, 20 and translates the script(javascript) part and views it on the HTMl file. Therefore, what we see is just mere 20 on the top followed by "Javascript" and 20 again.
