@@ -39,9 +39,17 @@ Now, left is a picture of web browser and the right is a picture of web server. 
 ### Following are the data types and their usages:
 1. string : "Emma"
 2. integer: 10
+3. array : [1,2,3]
 
 ###Javascript
 name = "jimmy";
+list = new Array("one", "two", "three");
+function function_name(){
+
+}
+
+function_name();
+
 
 #### conditional statements:
 
@@ -87,6 +95,11 @@ Looking at the above code, the form tag indicates that whenever if there exists 
 
 ###PHP
 $name = "jimmy";
+$list = array("one", "two", "three");
+function function_name(){
+}
+
+function_name();
 
 #### conditional statements:
 
@@ -98,6 +111,7 @@ else{
 }
 
 #### login functionality
+
 ```php
   <h1>PHP</h1>
   <?php
@@ -111,6 +125,8 @@ else{
     }
   ?>
 ```
+Above is the simple conditional statement to represent the login functionality!
+
 
 #### Javascript to PHP communication
 
