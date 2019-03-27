@@ -16,3 +16,11 @@ description: web app
 ---
 
 ## Actual programming! (JAVASCRIPT or PHP)
+
+What happens when we call a php file to webserver such as **https://~~~.com/a.php**?
+
+Since this is not a markup language, the webeserver will call an *interpreter* that can translate the php file. (so called "php engine") Now, the php engine will translate the .php file. When translating, the engine skips familiar HTML tags until it sees **<?php?>**. Then, the information we fetched from such php file is now passed on to the HTML file which we can be displayed on the web browser.
+
+## Learn Javascript and PHP together!
+
+They are similar in a way because Javascript is web-browser language and PHP is a web server language. SO far HTML & CSS are static languages where we just display info to the users while Javascript and PHP are rather dynamic languages.
