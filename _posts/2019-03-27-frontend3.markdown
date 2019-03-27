@@ -1,0 +1,18 @@
+---
+title: "Learning Frontend: what is web app coding?"
+layout: post
+date: 2019-03-27
+image: /assets/images/markdown.jpg
+headerImage: false
+tag:
+- jgam
+- php
+- javascript
+- my-sql
+- webapp
+category: blog
+author: jgam
+description: web app
+---
+
+## Actual programming! (JAVASCRIPT or PHP)
