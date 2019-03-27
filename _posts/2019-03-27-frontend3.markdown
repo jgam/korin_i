@@ -23,4 +23,5 @@ Since this is not a markup language, the webeserver will call an *interpreter* t
 
 ## Learn Javascript and PHP together!
 
-They are similar in a way because Javascript is web-browser language and PHP is a web server language. SO far HTML & CSS are static languages where we just display info to the users while Javascript and PHP are rather dynamic languages.
+SO far HTML & CSS are static languages where we just display info to the users while Javascript and PHP are rather dynamic languages because they can bascically create different myriads number of ways to create those static representations. The two languages are similar in a way that they are dynamic but they differ in that Javascript is web-browser language and PHP is a web server language. This might be a little harder concept to understand and looking at the picture below will make your understanding WAYYYY easier.
+
