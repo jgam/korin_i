@@ -52,6 +52,39 @@ else{
 
 }
 
+#### login functionality
+```javascript
+<script>
+    password = prompt("password?");
+    document.write(password);
+    if(password==1111){
+        document.write("login successful!");
+    }
+    else{
+        document.write("login failed!");
+    }
+</script>
+```
+
+#### Javascript to PHP communication
+```javascript
+<!DOCTYPE html>
+＜html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <form action="8-2.php">
+    <p>enter your password.</p>
+    <input type="text" name="password">
+    <input type="submit">
+  </form>
+</body>
+</html>
+```
+Looking at the above code, the form tag indicates that whenever if there exists a type="submit" inside of the form tag and is pressed, it transmits the input data to action(destination.) In other words, whatever the user types in as an input password will be transmitted to 8-2.php as a variable called name(in this case "password") when submit button is being pressed. To find how this communication ends please scroll below to PHP and find Javascript to PHP communication part to see how PHP receives this password.
+
+
 ###PHP
 $name = "jimmy";
 
@@ -61,5 +94,46 @@ if(true/false){
 
 }
 else{
-    
+
 }
+
+#### login functionality
+```php
+  <h1>PHP</h1>
+  <?php
+    var_dump(1==1);
+    $result = (2==2);
+    if($result){
+      echo "trueeeee";
+    }
+    else{
+      echo "falseeee";
+    }
+  ?>
+```
+
+#### Javascript to PHP communication
+
+Now let's continue on the way to receive variable on php file.
+
+```php
+<!DOCTYPE html>
+＜html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <?php
+    $password = $_GET["password"];
+    if($password=="1111"){
+      echo "welcome!";
+    }
+    else{
+      echo "who is this!!!";
+    }
+   ?>
+</body>
+</html>
+```
+
+As you can see, the important part is **$password = $_GET["password"]**. Through this, the php file receives password variable from javascript and uses such information from there.
