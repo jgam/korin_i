@@ -1,0 +1,52 @@
+---
+title: "Learning Frontend: A little detail on Php"
+layout: post
+date: 2019-03-28
+image: /assets/images/markdown.jpg
+headerImage: false
+tag:
+- jgam
+- javascript
+- webdevelopment
+- php
+- webapp
+category: blog
+author: jgam
+description: web app
+---
+
+## PHP
+
+Before going onto more about PHP, let's review some what PHP is. PHP is a server-side language which means when receiving request, the webserver uses PHP engine or interpreter to translate any php part of the request, ex) <? php ?> to an output and to return the results.
+
+Now, let's review some of the simple grammars of PHP.
+
+```javascript
+<?php
+    echo $_GET['name'].",".$_GET['id'];
+?>
+```
+
+Above php code will return one line output of name, id
+
+Now, where are those variables?
+
+We can simply pass them when we call the php file! -> "localhost/php/1.php?name=jimmy&id=1"
+
+Here, I am passing Jimmy and 1 as my name and id. The php file then automatically takes those values and echo them. The question mark is there to distinguish file and variables. The & is there to distinguish different variables. We can then, apply this logic to a more complicated syntax.
+
+```javascript
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<?php
+    echo file_get_contents("1.txt");
+?>
+</body>
+</html>
+```
+
+Above code, as you expected, will print out 1.txt. Therefore, we can easily assume that text files or even, other files can be called through php.
+
