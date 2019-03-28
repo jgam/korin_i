@@ -30,6 +30,7 @@ linux5: /linux/assets/images/linux5.png
 linux6: /linux/assets/images/linux6.png
 linux7: /linux/assets/images/linux7.png
 frontend: /blog/assets/images/frontend.png
+frontend1: /blog/assets/images/frontend1.png
 
 
 # If you want to include your resume, set to true

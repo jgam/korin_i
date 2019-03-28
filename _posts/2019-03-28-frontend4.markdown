@@ -14,3 +14,30 @@ category: blog
 author: jgam
 description: web app
 ---
+
+## A little dtail on Javascript
+
+Let us start with a simple HTML code and see one of the most important concepts of javascript that it is  **Event Driven** language.
+
+```javascript
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <input type="button" value="white" onclick="alert('Hello World')"/>
+  <input type="text" onfocus="alert('focus')" onblur="alert('blur')"/>
+</body>
+</html>
+
+```
+
+The following command will be shown on the broswer as this:
+
+<div class="side-by-side">
+    <div class="tocenter">
+        <img class="image" src="{{ site.url }}/{{ site.frontend1}}" alt="Alt Text">
+        <figcaption class="caption">Photo by jgam CREDIT: jgam</figcaption>
+    </div>
+</div>
