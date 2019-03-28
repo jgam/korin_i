@@ -61,4 +61,39 @@ Great Let's move a little forward.
 
 As you can see here, we have a text box and its id is "user_input". The next line, onclick event directs to an alert of the value we inserted on previous text box. The way we did that is document.getElementById('user_input').value
 
-I used .value because what we took out in document.getElementById is an object and in that object, I wanted to extract value which is the actual input of the textbox.
+I used .value because what we took out in document.getElementById is an object and in that object, I wanted to extract value which is the actual input of the textbox. Here is another example!
+
+```javascript
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    ul li{
+      font-size:40px;
+    }
+    .em{
+      text-decoration:underline;
+    }
+  </style>
+</head>
+<body>
+  <ol id="target">
+    <li class="em">html</li>
+    <li>css</li>
+    <li>javascript</li>
+  </ol>
+
+  <ul>
+    <li>maoto</li>
+    <li class="em">jimmy</li>
+    <li>donata</li>
+    <li>hiro</li>
+  </ul>
+  <input type="button" value="emphasis" onclick="document.getElementById('target').className='em'"/>
+</body>
+</html>
+```
+
+This snippet of the code looks pretty awful but when we go through it carefully, it is actually not. The style part is a basic css where we want to make element of unordered list to have font size to be 40 pixel and .em class to be underlined. In your body, we have two lists: ordered and unordered. Lastly, we have a input type button that gets element ID of target and sets its class name to em. You can see whatis going on here. class Name 'em' is supposed to be underlined since we mentioned that in style tag. So, we can assume that when we click the button called "emphasis", the tag with id of 'target' becomes underlined. if it is an element, just that element but if it is a list, then the whole list becomes underlined.
+
