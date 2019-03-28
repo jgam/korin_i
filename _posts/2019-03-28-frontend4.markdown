@@ -96,4 +96,3 @@ I used .value because what we took out in document.getElementById is an object a
 ```
 
 This snippet of the code looks pretty awful but when we go through it carefully, it is actually not. The style part is a basic css where we want to make element of unordered list to have font size to be 40 pixel and .em class to be underlined. In your body, we have two lists: ordered and unordered. Lastly, we have a input type button that gets element ID of target and sets its class name to em. You can see whatis going on here. class Name 'em' is supposed to be underlined since we mentioned that in style tag. So, we can assume that when we click the button called "emphasis", the tag with id of 'target' becomes underlined. if it is an element, just that element but if it is a list, then the whole list becomes underlined.
-
