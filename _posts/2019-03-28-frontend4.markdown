@@ -43,3 +43,22 @@ The following command will be shown on the broswer as this:
 </div>
 
 What happends when you click the white button? Yes, as you can see it in the code of onclick action, you will see alert API of Hello World. Similar to onclick, there exist several actions which are onfocus and onblur. These actions also advocate how Javascript is a event-driven language.
+
+Great Let's move a little forward.
+
+```javascript
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <input type="text" id="user_input"/>
+  <input type="button" value="white" onclick="alert(document.getElementById('user_input').value)"/>
+</body>
+</html>
+```
+
+As you can see here, we have a text box and its id is "user_input". The next line, onclick event directs to an alert of the value we inserted on previous text box. The way we did that is document.getElementById('user_input').value
+
+I used .value because what we took out in document.getElementById is an object and in that object, I wanted to extract value which is the actual input of the textbox.
