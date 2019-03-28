@@ -41,3 +41,5 @@ The following command will be shown on the broswer as this:
         <figcaption class="caption">Photo by jgam CREDIT: jgam</figcaption>
     </div>
 </div>
+
+What happends when you click the white button? Yes, as you can see it in the code of onclick action, you will see alert API of Hello World. Similar to onclick, there exist several actions which are onfocus and onblur. These actions also advocate how Javascript is a event-driven language.
