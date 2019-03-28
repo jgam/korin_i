@@ -1,0 +1,16 @@
+---
+title: "Learning Frontend: A little detail on Javascript"
+layout: post
+date: 2019-03-28
+image: /assets/images/markdown.jpg
+headerImage: false
+tag:
+- jgam
+- javascript
+- webdevelopment
+- php
+- webapp
+category: blog
+author: jgam
+description: web app
+---
