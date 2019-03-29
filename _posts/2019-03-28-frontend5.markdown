@@ -50,3 +50,4 @@ Here, I am passing Jimmy and 1 as my name and id. The php file then automaticall
 
 Above code, as you expected, will print out 1.txt. Therefore, we can easily assume that text files or even, other files can be called through php.
 
+PHP was a very similar representation of javascript(HTML). The only difference fo PHP from Javascript is that 
