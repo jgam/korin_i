@@ -107,5 +107,60 @@ function noisy(f){
 }
 
 noisy(Math.min)(3,2,1);
+// -> calling with [3,2,1]
+// -> called with [3,2,1], returned 1
 ```
-What happened with this part of code? We know that Math.min returns the minimum of object which is a group of numbers.
+
+What happened with this part of code? We know that Math.min returns the minimum of object which is a group of numbers. However, we got other nice logs with Math.min. This is what Higher order functions play in. Because, noisy wraps math.min with the input(object), we can write new functions with ...args and add any other actions while applying the original actions on the ...args. Now, let's take a look at new types of control flow!
+
+```javascript
+function unless(test, then){
+    if (!test) then();
+}
+
+repeat(3, n => {
+    unless(n%2 == 1, () => {
+        console.log(n, "is even");
+    });
+});
+
+//-> 0 is even
+//-> 2 is even
+```
+
+The repeat function was declared earlier and was simply looping over number(first argument) of times and does actions(second argument). When calling repeat, we called new function called unless which checks for the condition and runs the second argument (function).
+
+Another simple note is that there exists a built-in array method, **forEach**, that provides something like a for/of loop as a higher-order function.
+
+```javascript
+["A", "B"].forEach(l => console.log(l));
+// -> A
+// -> B
+```
+
+## Filtering Arrays
+
+To find the scripts in the data set that are still in use, the following function might be helpful. It filters out the elements in an array that don't pass a test.
+
+```javascript
+function filter(array, test){
+    let passed = [];
+    for (let element of array){
+        if(test(element)){
+            passed.push(element);
+        }
+    }
+    return passed;
+}
+
+console.log(filter(SCRIPTS, script => script.living));
+
+```
+
+The function uses the argument named test, a function value, to fill a "gap" in the computation-the process of deciding which elements to collect.
+
+Note how the filter function, rather than deleting elements from the existing array, builds up a new array with only the elements that pass the test. This function is pure. It does not modify the array it is given. Likf forEach, filter is a standard array method. The example defined the function only to show what it does internally. From now on, we will use it like this instead:
+
+```javascript
+console.log(SCRIPTS.filter(s => s.direction == "ttb"))//this creates a new array that has its direction is equal to "ttb"
+```
