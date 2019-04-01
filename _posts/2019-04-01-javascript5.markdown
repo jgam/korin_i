@@ -164,3 +164,24 @@ Note how the filter function, rather than deleting elements from the existing ar
 ```javascript
 console.log(SCRIPTS.filter(s => s.direction == "ttb"))//this creates a new array that has its direction is equal to "ttb"
 ```
+
+##Transforming with Mamp
+
+Say for example, we want to filter SCRIPTS with certain conditions but produce only the names of it which makes it a lot simpler to inspect. The new array will have the same length as the input array, but its content will have been mapped to a new form by the function.
+
+```javascript
+function map(array, transform){
+    let mapped = [];
+    for (let element of array){
+        mapped.push(transform(element));
+    }
+    return mapped;
+}
+
+let rtlScripts = SCRIPTS.filter(s => s.direction == "rtl");
+console.log(map(rtlScripts, s => s.name));
+// -> ["Adlam", "Arabic", "Imperial Aramaic", ...]
+
+```
+
+Like *forEach* and *filter, map* is a standard array method. I will continue with higher-order functions!
