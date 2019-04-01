@@ -55,4 +55,17 @@ function repeatLog(N){
 }
 ```
 
-Above function called "repeatLog" is an abstraction of calling something N times.
+Above function called "repeatLog" is an abstraction of calling something N times. Now, what if we want to do something other than printing numbers? Because doing something can be represented as a function(data type) and funtions are just values, we can pass our action as a function value.
+
+```javascript
+function repeat(n, action){
+    for (let i = 0; i < n; i++){
+        action(i);
+    }
+}
+
+repeat(3, console.log);
+//0
+//1
+//2
+```
