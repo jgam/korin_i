@@ -108,4 +108,4 @@ function noisy(f){
 
 noisy(Math.min)(3,2,1);
 ```
-
+What happened with this part of code? We know that Math.min returns the minimum of object which is a group of numbers.
