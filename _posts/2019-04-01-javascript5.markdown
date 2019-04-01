@@ -87,9 +87,25 @@ Higher order functions allow us to abstract over actions, not just values. They 
 
 ```javascript
 function greterThan(n){
-    return m => m>n;
+    return m => m>n;// here is the HOF where we created new action of comparing m to n where m is the input of the function.
 }
 let greaterThan10 = greaterThan(10);
 console.log(greaterThan10(11));
 // -> true
 ```
+
+Now, we can have functions that change other functions.
+
+```javascript
+function noisy(f){
+    return (...args) => {
+        console.log("calling with", args);
+        let result = f(...args);
+        console.log("called with", args, ", returned", result);
+        return result;
+    };
+}
+
+noisy(Math.min)(3,2,1);
+```
+
