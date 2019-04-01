@@ -69,3 +69,27 @@ repeat(3, console.log);
 //1
 //2
 ```
+
+Here we passed in console.log as an action but we can simply create a function with a different way of writing function!
+
+```javascript
+let labels = [];
+repeat(5, i => labels.push('Unit ${i+1}'));// this is calling the function and a variation from repeat(3, console.log); from above.
+```
+
+This is structured a little like a for loop - it first describes the kind of loop and then provides a body. However, the body is now written as a function value, which is wrapped in the parenthese of the call to repeat. This is why it has to be closed with the closing brace and closing parenthesis. In cases like this example, where the body is a single small expression, you could also omit the braces and write the loop on a single line.
+
+## Higher-Order Functions
+
+Functions that operate on other functions, either by taking them as arguments or by returning them, are called *higher order functions*. Since we have already seen that functions are regular values, there is nothing particularly remarkable about the fact that such functions exist. The term comes from mathemtacis, where the distinction between functions and other values is taken more seriously.
+
+Higher order functions allow us to abstract over actions, not just values. They come in several forms. For example, we can have functions that create new functions. This is different from abstractions because in abstractions, we merely changed the values, *kinds* of functions such as console.log. Now, we can change the actions which is not the abstraction function itself but the actual actions of those functions. (basically, creating new functions as our tastes.)
+
+```javascript
+function greterThan(n){
+    return m => m>n;
+}
+let greaterThan10 = greaterThan(10);
+console.log(greaterThan10(11));
+// -> true
+```
