@@ -71,4 +71,4 @@ A little note about reduce!
 3. Current Index(idx)
 4. Source Array (src)
 
-Note that other factors are default values (0 or start) when aren't passed in. Need to factor in
+Note that other factors are default values (0 or start) when aren't passed in.
