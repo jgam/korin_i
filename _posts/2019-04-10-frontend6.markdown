@@ -29,3 +29,13 @@ Database system, through index, organizes the data well so that we can find the 
 Database is controllable
 
 We can control the database through coding.
+
+Now what program are we going to use for database?
+
+##MySql
+
+Opensource database, MySQL was sold to Sun from MySQL AB and Sun sold it to Oracle so now Oracle owns MySQL. However, some of the engineers that created MySQL who did not compromise with Oracle, created another database called MariaDB. The improvements on Maria DB increases infinitely and this is definitely intresting point to observe as a developer.
+
+## Database details
+
+Structured
