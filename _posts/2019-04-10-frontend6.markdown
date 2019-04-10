@@ -1,0 +1,31 @@
+---
+title: "Higher-order functions?: Part2"
+layout: post
+date: 2019-04-04
+image: /assets/images/markdown.jpg
+headerImage: false
+tag:
+- jgam
+- Review
+- Javascript
+- full stack
+- backend
+category: blog
+author: jgam
+description: javascript
+---
+
+## Database
+
+Database is safe.
+
+We can keep the files and other informations safe.
+
+
+Database is fast(index)
+
+Database system, through index, organizes the data well so that we can find the information we want faster than looking through the piles of information
+
+Database is controllable
+
+We can control the database through coding.
