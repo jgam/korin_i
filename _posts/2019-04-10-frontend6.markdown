@@ -36,6 +36,16 @@ Now what program are we going to use for database?
 
 Opensource database, MySQL was sold to Sun from MySQL AB and Sun sold it to Oracle so now Oracle owns MySQL. However, some of the engineers that created MySQL who did not compromise with Oracle, created another database called MariaDB. The improvements on Maria DB increases infinitely and this is definitely intresting point to observe as a developer.
 
-## Database details
+SQL stands for structured query language. SQL serves as a language that structures database. Now, when there exists a web browser, looking for "a.php", the webserver finds the php file and the file communicates with MySQL. This demonstrates the cycle of client and server. Here is the demonstrated picture.
 
-Structured
+## Server Client in MySQL
+
+We will be using MySQL monitor to contorl MySQL server becuase server needs to be controlled.
+
+Let's run the mySQL with the command : ./mysql -hlocalhost -uroot -p
+
+The parameters after ./mysql represents the following:
+
+-hlocalhost is the address we want to run MySQL controller
+-uroot is the user authority of MySQL controller
+-p is to hide the password and asks for the password
