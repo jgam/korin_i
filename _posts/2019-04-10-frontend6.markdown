@@ -1,7 +1,7 @@
 ---
-title: "Higher-order functions?: Part2"
+title: "Database"
 layout: post
-date: 2019-04-04
+date: 2019-04-10
 image: /assets/images/markdown.jpg
 headerImage: false
 tag:
@@ -12,7 +12,7 @@ tag:
 - backend
 category: blog
 author: jgam
-description: javascript
+description: database
 ---
 
 ## Database
