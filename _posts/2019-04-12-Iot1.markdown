@@ -28,3 +28,7 @@ Yes, IoT is an interconnected network thta allows devices such as phones, comput
 
 One example I can think of is, when we run a laundary, the dryer automatically hits up five minutes before the laundary gets done or even the closet lines up empty hangers so that we can use them to dry our laundaries. COOL, isn't it?
 
+## Assets of IoT
+
+After a research, I found out that there exist core takeaways in IoT or at least to proceed any IoT related projects with these things in mind.
+
