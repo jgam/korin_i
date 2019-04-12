@@ -32,3 +32,9 @@ One example I can think of is, when we run a laundary, the dryer automatically h
 
 After a research, I found out that there exist core takeaways in IoT or at least to proceed any IoT related projects with these things in mind.
 
+1. Data is the new currency
+2. Faith and Lead
+3. IoT Book
+4. Business should take the driving seat
+
+First of all, let me redefine the IoT. IoT is not a single technology, rather a term used to characterize interconnected "smart objects" or things and their unique ability to collate and, in turn, share information about their world. In other worlds, we empower our "things" in various contexts to ultimately gather data, which is specific to their environment. So what to do with after gathering data? Let's put it this way. I believe that if we have a data from the past, and present, we can predict the future and explain with future data. Example is a lots of machine learning technologies that predict the future.
