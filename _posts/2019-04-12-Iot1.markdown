@@ -1,0 +1,18 @@
+---
+title: "What is IoT?"
+layout: post
+date: 2019-04-12
+image: /assets/images/markdown.jpg
+headerImage: false
+tag:
+- jgam
+- IoT
+- Rakuten
+- crimson
+- algorithm
+star: true
+category: blog
+author: jgam
+description: IoT
+---
+
