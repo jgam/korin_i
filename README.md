@@ -18,7 +18,7 @@
 </p>
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/sergiokopplin/indigo/gh-pages/assets/screen-shot.png" />
+    <img src="https://github.com/jgam/korin_i/tree/master/blog/assets/images/main_page.png" />
 </p>
 
 ## What has inside
