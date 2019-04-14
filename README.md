@@ -18,7 +18,7 @@
 </p>
 
 <p align="center">
-    <img src="https://github.com/jgam/korin_i/blog/assets/images/main_page.png" />
+    <img src="https://github.com/jgam/korin_i/blog/assets/images/main_page.png">
     <!--![](blog/assets/images/main_page.png)-->
 </p>
 
