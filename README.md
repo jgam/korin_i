@@ -19,7 +19,7 @@
 
 <p align="center">
     <!--<img src="https://github.com/jgam/korin_i/tree/master/blog/assets/images/main_page.png" />-->
-    ![](tree/master/blog/assets/images/main_page.png)
+    ![](blog/assets/images/main_page.png)
 </p>
 
 ## What has inside
