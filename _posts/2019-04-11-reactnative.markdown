@@ -1,18 +1,18 @@
 ---
-title: "Database"
+title: "React Native"
 layout: post
 date: 2019-04-10
 image: /assets/images/markdown.jpg
 headerImage: false
 tag:
 - jgam
-- Review
+- React
 - Javascript
-- full stack
-- backend
+- frontend
+- react native
 category: blog
 author: jgam
-description: database
+description: frontend technology
 ---
 
 ## WHat is Reactive Native?
