@@ -1,5 +1,5 @@
 ---
-title: "GCD & LCM"
+title: "Directions Reductions"
 layout: post
 date: 2019-04-15
 image: /assets/images/markdown.jpg
@@ -8,8 +8,8 @@ tag:
 - jgam
 - mathematics
 - algorithm
-- GCD
-- LCM
+- map-reduce
+- pointer
 category: blog
 author: jgam
 description: algorithm
@@ -17,7 +17,7 @@ description: algorithm
 
 ## Directions Reductions
 
-So I was hoping to use Map reduce
+So I was hoping to use Map reduce through this problem. However, I found another fancy way which is to use pointer of this problem. The problem asks for
 
 ```javascript
 function dirReduc(arr){
