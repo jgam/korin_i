@@ -44,4 +44,11 @@ while(num < Math.min(a,b)){
 return num;
 ```
 
-The number returned there is simply a number that both divides a and b which becomes the Greatest Common Divisor.
+The number returned there is simply a number that both divides a and b which becomes the Greatest Common Divisor. Any smarter way to do it?
+
+## Euclidean Algorithm
+
+Previously, we are looping through the minimum number of (a,b). Now we are going to loop through log(min(a,b)) with Eucledian Algorithm
+
+Suppose that we have a and b and if a mod b (where we say b is smaller number of (a,b)), is eqaul to 0, we simply return b which becomes GCD. If a mod b is not equal to 0, we run b mod (a mod b) until we find the case where larger_number mod smaller_number is equal to 0. This way, we are emerely going through (b, a mod b, (a mod b)mod b), ...) This gives the complexity of O(log(N)).
+
