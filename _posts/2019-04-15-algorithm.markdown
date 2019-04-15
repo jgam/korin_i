@@ -52,6 +52,6 @@ Previously, we are looping through the minimum number of (a,b). Now we are going
 
 Suppose that we have a and b and if a mod b (where we say b is smaller number of (a,b)), is eqaul to 0, we simply return b which becomes GCD. If a mod b is not equal to 0, we run b mod (a mod b) until we find the case where larger_number mod smaller_number is equal to 0. This way, we are emerely going through (b, a mod b, (a mod b)mod b), ...) This gives the complexity of O(log(N)).
 
-[here is the link to Euclidean code!][https://github.com/jgam/javascript_web/fundamentals/HTML/]
+[here is the link to Euclidean code!][https://github.com/jgam/EloquentJavascript/codewars/5kyu/convertFrac.js]
 
 The code passed without any problems other than the number of tries it took to actually implement the algorithm. After solving the problem, without any debugging, I thought about a marchine learning engineer's quote, *"Learn from the past, and learn from the present. We can predict the future."* I am not sure how to apply Euclidean algorithm in the future, but I surely know that implementing the algorithms off of mathematical formula, definitely works and reduces runtime which is critical factor in computer science.
