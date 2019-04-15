@@ -17,7 +17,12 @@ description: algorithm
 
 ## Directions Reductions
 
-So I was hoping to use Map reduce through this problem. However, I found another fancy way which is to use pointer of this problem. The problem asks for
+So I was hoping to use Map reduce through this problem. However, I found another fancy way which is to use pointer of this problem. The problem asks for directions to be reduced. For example the array has many directinos as the following:
+[North, south, south]
+
+This set of directions can be reduced to [South]
+
+I was thinking map & reduce but using the pointers can get away with this problem. Here is the code:
 
 ```javascript
 function dirReduc(arr){
@@ -40,3 +45,7 @@ function dirReduc(arr){
   return arr;
 }
 ```
+
+As you can see, the pointer i either increases or decreases meaning, if we move forward because the array met the position conditions, then move back to see if the old value and the new value match the cancelling out conditions. In this way, it is possible for the array to be reduced in the best way possible while looping through the array once. Also, because each element is critical for this problem, I think the best possible time complexity for this problem is linear which is N, the length of input array.
+
+Through this problem, I learned a slick trick about the pointers and reducing the duplicates. Also, I thought about many other linear time solutions including using the map although this was 2 * N time complexity, it still works with going through the map after putting all the keys and values, and sort them out with the numbers.
