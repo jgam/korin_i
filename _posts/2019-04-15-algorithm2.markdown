@@ -1,0 +1,42 @@
+---
+title: "GCD & LCM"
+layout: post
+date: 2019-04-15
+image: /assets/images/markdown.jpg
+headerImage: false
+tag:
+- jgam
+- mathematics
+- algorithm
+- GCD
+- LCM
+category: blog
+author: jgam
+description: algorithm
+---
+
+## Directions Reductions
+
+So I was hoping to use Map reduce
+
+```javascript
+function dirReduc(arr){
+  var i = 0;    
+  while(i < arr.length) {
+    if((arr[i] === "NORTH" && arr[i+1] === "SOUTH") ||
+    (arr[i] === "SOUTH" && arr[i+1] === "NORTH") ||
+    (arr[i] === "EAST" && arr[i+1] === "WEST") ||
+    (arr[i] === "WEST" && arr[i+1] === "EAST")) {
+        console.log(i)
+        console.log(arr)
+        arr.splice(i, 2);
+        i--;
+        console.log(arr)
+    }
+    else {
+        i++;
+    }
+  }
+  return arr;
+}
+```
