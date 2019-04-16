@@ -14,3 +14,15 @@ category: blog
 author: jgam
 description: algorithm
 ---
+
+## longest palindrome in a substring
+
+We often face problems like palindromes. What is palindrome? it is a combination of two strings that are reversely ordered to each other and the middle character of the combined string can be diregarded. This wording is little rough until you see the actual example.
+
+abba -> palindrome
+abbb -> not a palindrome
+abcba -> palindrome
+
+So, now our task is to search through longest palindromes and return the length of the longest palindrome.
+
+## Manachar's Algorithm
