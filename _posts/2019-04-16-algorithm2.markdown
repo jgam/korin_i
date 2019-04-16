@@ -1,0 +1,16 @@
+---
+title: "longest palindrome in a substring?"
+layout: post
+date: 2019-04-16
+image: /assets/images/markdown.jpg
+headerImage: false
+tag:
+- jgam
+- algorithm
+- mathematics
+- Manachar's algorithm
+- backend
+category: blog
+author: jgam
+description: algorithm
+---

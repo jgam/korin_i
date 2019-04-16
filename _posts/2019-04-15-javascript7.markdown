@@ -1,12 +1,12 @@
 ---
-title: "Higher-order functions?: Part2"
+title: "JavaScript OOP"
 layout: post
-date: 2019-04-01
+date: 2019-04-15
 image: /assets/images/markdown.jpg
 headerImage: false
 tag:
 - jgam
-- higher-order functions
+- Object Oriented Programming
 - Javascript
 - full stack
 - backend
