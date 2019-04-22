@@ -1,0 +1,18 @@
+---
+title: "Technical temrs for Linux"
+layout: post
+date: 2019-04-22
+image: /assets/images/markdown.jpg
+headerImage: false
+tag:
+- jgam
+- Linux
+- system programming
+- system calls
+- Operating system
+category: linux
+author: jgam
+description: Linux
+---
+
+##
