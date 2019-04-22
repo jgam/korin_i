@@ -15,3 +15,6 @@ author: jgam
 description: algorithm
 ---
 
+## quick sort and merge sort
+
+I will start with comparing them since that makes it easier to understand each method better.
