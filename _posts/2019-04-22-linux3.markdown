@@ -47,4 +47,12 @@ This time, hello doesn't not get printed on terminal. Rather, a new file is crea
 
 ## Linux & Shell
 
+Let's imagine circles with in each other. The innermost circle exists a hardware which is machinery part of the computer. Then outside of that circle, exists a kernel which is a program that directly controls hardware by communicating directly. The outershell of that circle is a shell which means to help interact with linux commands and kernel program that does the actual job. Now, the outer part of the circle exists applications which are the term we usually call as apps.
+
 ## bash vs zsh
+
+There are different types or products of shell and they are bash and zsh. For example, if you type echo $0, you will see that you are using bash. Now, let's install zsh and run zsh. (sudo alt-install zsh) Now, type echo $0, you will see zsh. If we type something, we are using zshell to send the commands to kernel that will interact with hardware. NOw, what is so *special* about these two?
+
+Of course, the commands differe and authority varies with the two programs. Zshell although, has some functionalities for users. For example, if you want to cd /hoome/ubuntu, you can just type cd /h/u/ and tab key will simplay convert those one char to the name of the directories. Why do we have these two kinds of shells?
+
+Different types of shells allow users to choose programs that are more suitable for them. Because, I am more comfortable with bash, I will use bash because I feel like learning new functionalities of zshell takes more time than typing some of the longer commands at bash shell. Also, because I am a software developer, I do not need to know every little detail of commands that interact with kernel. It is up to users to choose what to use and this does not mean that I will stop learning about interactions of kernel and hardware through shells. At this time, this is the best for me so I will leave it up to you guys to choose the shell program!
