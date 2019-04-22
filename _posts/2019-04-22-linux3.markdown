@@ -15,4 +15,34 @@ author: jgam
 description: Linux
 ---
 
-##
+## IO Redirection
+
+IO redirection is an abbreviation of Input output redirection. What is input and output and what does it mean to redirect them?
+
+In computing, there exists a process, an instance of working program or command. This process can work by itself but usually and conventionally, it takes inputs and produces results depending on the inputs.
+
+```javascript
+console.log('hello');
+```
+
+```javascript
+function printing(input){
+    conosle.log('hello'+' '+input);
+}
+
+printing('korin');
+```
+
+Two processes have a huge difference. The first one does not take input whereas the second one takes input. Using inputs, we can program dynamically, which means we can use the same functios to different inputs and don't have to write same code over and over.
+
+Now what is redirection?
+
+When we do console.log, we get the results on CLI, or terminal(MAC lovers.) That is because, output is supposed to be shown as an standard output(stdout.) We can redirect the output to a file as well.
+
+```javascript
+console.log('hello') > result.txt
+```
+
+This time, hello doesn't not get printed on terminal. Rather, a new file is created named as result.txt. This file then contains 'hello' on the first line. What happened? We redirected standard output to a file called result.txt.
+
+## Linux & Shell
