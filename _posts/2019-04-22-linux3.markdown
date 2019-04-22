@@ -46,3 +46,5 @@ console.log('hello') > result.txt
 This time, hello doesn't not get printed on terminal. Rather, a new file is created named as result.txt. This file then contains 'hello' on the first line. What happened? We redirected standard output to a file called result.txt.
 
 ## Linux & Shell
+
+## bash vs zsh
