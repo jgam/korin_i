@@ -17,4 +17,12 @@ description: algorithm
 
 ## quick sort and merge sort
 
-I will start with comparing them since that makes it easier to understand each method better.
+I will start with comparing them since that makes it easier to understand each method better. Both of the sorting algorithms use the term "divide and conquer." Quick sort usually picks the first or the last element as a pivot and divides the array based on the pivots: left side to be elements less than the pivot and the right side to be elements that are larger than the pivot. Then it sorts each side accordingly and combine them. This is dividing the whole array into two and sort each and combine later. Similarly, merge sort divides arrray consistently from the half point until it gets to a single element. Then they move up the trees to order the elements. Finally, it reaches to the sorted array.
+
+## complexity
+
+While both algorithms use similar divide and concquer, quick sort algorithm's complexity depends on the pivot it chooses. Therefore average case for both algorithms are O(nlog) where wortcase for merge is O(nlogn) and the worstcase for quick sort is O(n^2). Why does quick sort give O(n^2)? because, if the pivot turns out to be the smallest or the largest element, it doesn't divide the array into two parts, rather, it does not divide the array and it is merely just simple linear sorting algorithms.
+
+## Difference
+
+Now, while looking similar the two methods do have difference. Say if we have small data set, instead of dividing the array into halp and half until it gets to one element, it is much faster to use quick sort and divide smaller two arrays then combine it. However, if the data set is large, it is obviously better to use merge sort because its runtime is constant no matter how big the data set is, although it requires lots of space.
