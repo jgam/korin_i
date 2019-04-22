@@ -72,3 +72,6 @@ cp *.log bak
 ```
 
 What the above program does is to check if current directory has bak as a file or directory, if it doesn't, the file cretates a directory called bak and copies all the .log files to bak. The first line is called as a shebang and this indicates that the program runs under the directories of bin/bash. As mentioned earlier, under this folder, there exists numerous executables that run the functionalities.
+
+## process
+
