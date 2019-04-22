@@ -73,5 +73,32 @@ cp *.log bak
 
 What the above program does is to check if current directory has bak as a file or directory, if it doesn't, the file cretates a directory called bak and copies all the .log files to bak. The first line is called as a shebang and this indicates that the program runs under the directories of bin/bash. As mentioned earlier, under this folder, there exists numerous executables that run the functionalities.
 
+Also, .bashrc is a basic file that runs whenever the computer boots up and shell starts running. Therefore, putting codes using alias or put any code there will have run once you start the shell.
+
 ## process
+
+Let's talk about hardwares first. We have a SSD, HDD, Ram, CPU, and etc. These are called storages, memory, and processors. These coexist because we have never reached a goal of more memories, better speed and less expansive. How does this work? one of the applications stored in the storage, runs on the memory. This application is then run on the processor. This program or app running on the CPU is called a process, an instance of working program.
+
+For example, all the commands called mkdir, top, rm, and etc are the commands under /bin or /sbin directories.
+
+Now, let's explore the ways to oversee and control the processes.
+
+1. ps aux
+2. top
+3. htop
+
+These 3 commands allow users to see the processes through various categories and can control those processes by looking at these three commands.
+
+## finding a file
+
+Often times, we come across an instance when we remember what the file does but don't recall neither the name of the file nor the location of the file. we use several commands:
+1. locate
+2. find -> find / -name *.log
+
+First of all, locate looks for the database and finds the argument after the command find, looks for the name of the directory and generally, we use regex (regular expressions) for that.
+
+## background
+
+It is important to understand how the program can run on foreground or background. Foreground is easy because it is what you are running and working on right now. Then, how do we run programs on background? When we run a program, we can simply add "&" at the end of the command to run the program on the background. Another way is to write program on vim or nano and press ctrl + z to put it on the background, if we want to return, we can just type fg to have that background process to come foreground. In order to see background processes, we simply type jobs. So it is important to keep track of background to see which programs are running and kill them.
+
 
