@@ -1,0 +1,17 @@
+---
+title: "quicksort VS mergesort"
+layout: post
+date: 2019-04-22
+image: /assets/images/markdown.jpg
+headerImage: false
+tag:
+- jgam
+- algorithm
+- quicksort
+- mergesort
+- backend
+category: blog
+author: jgam
+description: algorithm
+---
+
