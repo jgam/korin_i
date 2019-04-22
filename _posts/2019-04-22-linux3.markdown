@@ -56,3 +56,19 @@ There are different types or products of shell and they are bash and zsh. For ex
 Of course, the commands differe and authority varies with the two programs. Zshell although, has some functionalities for users. For example, if you want to cd /hoome/ubuntu, you can just type cd /h/u/ and tab key will simplay convert those one char to the name of the directories. Why do we have these two kinds of shells?
 
 Different types of shells allow users to choose programs that are more suitable for them. Because, I am more comfortable with bash, I will use bash because I feel like learning new functionalities of zshell takes more time than typing some of the longer commands at bash shell. Also, because I am a software developer, I do not need to know every little detail of commands that interact with kernel. It is up to users to choose what to use and this does not mean that I will stop learning about interactions of kernel and hardware through shells. At this time, this is the best for me so I will leave it up to you guys to choose the shell program!
+
+## Shell Script
+
+What is so called a "shell script?" A good comparison is a script that actors read. Scripts for movie starts show the flow of movies by showing what they have to say. It is same with shell scripts. It tells shell what to do and show the general flow of a program. In bash, if you type ls /bin -> it illustrates bunch of commands such as rm, mkdir, and etc. Now, let's write a shell script.
+
+```shell
+#!/bin/bash
+
+if ! [ -d bak ] then
+    mkdir bak
+fi
+
+cp *.log bak
+```
+
+What the above program does is to check if current directory has bak as a file or directory, if it doesn't, the file cretates a directory called bak and copies all the .log files to bak. The first line is called as a shebang and this indicates that the program runs under the directories of bin/bash. As mentioned earlier, under this folder, there exists numerous executables that run the functionalities.
