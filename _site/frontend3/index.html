@@ -771,12 +771,16 @@ pre {
 
 .home > .list > .item,
 .blog > .list > .item,
+.python > .list > .item,
+.algorithms > .list > .item,
 .projects > .list > .item {
   display: block;
   width: 95%;
   margin: 0 auto; }
 .home > .list > .item > .url,
 .blog > .list > .item > .url,
+.python > .list > .item > .url,
+.algorithms > .list > .item > .url,
 .projects > .list > .item > .url {
   width: 100%;
   display: block;
@@ -784,6 +788,8 @@ pre {
   text-decoration: none; }
 .home > .list > .item > .url > .title,
 .blog > .list > .item > .url > .title,
+.python > .list > .item > .url > .title,
+.algorithms > .list > .item > .url > .title,
 .projects > .list > .item > .url > .title {
   margin: 0;
   width: 75%;
@@ -791,10 +797,14 @@ pre {
   transition: all ease-in-out 0.2s; }
 .home > .list > .item:hover > .url > .title,
 .blog > .list > .item:hover > .url > .title,
+.python > .list > .item:hover > .url > .title,
+.algorithms > .list > .item:hover > .url > .title,
 .projects > .list > .item:hover > .url > .title {
   color: #4b0082; }
 .home > .list aside,
 .blog > .list aside,
+.python > .list aside,
+.algorithms > .list aside,
 .projects > .list aside {
   position: relative;
   top: 2px;
@@ -807,13 +817,19 @@ pre {
   transition: all ease-in-out 0.2s; }
 .home > .list .item:hover .url aside,
 .blog > .list .item:hover .url aside,
+.python > .list .item:hover .url aside,
+.algorithms > .list .item:hover .url aside,
 .projects > .list .item:hover .url aside {
   color: #666; }
 
 .blog > .list > .item > .url > .title,
+.python > .list > .item > .url > .title,
+.algorithms > .list > .item > .url > .title,
 .projects > .list > .item > .url > .title {
   display: inline; }
 .blog > .list > .item > .url > .emoji,
+.python > .list > .item > .url > .emoji,
+.algorithms > .list > .item > .url > .emoji,
 .projects > .list > .item > .url > .emoji {
   display: inline;
   position: relative;
@@ -1492,7 +1508,7 @@ pre {
     
 
     
-        1 min
+        4 mins
     
 </span>
 
@@ -1531,7 +1547,122 @@ pre {
     </div>
 </div>
 
-<p>Now, left is a picture of web browser and the right is a picture of web server. You can note that the php code part on the right picture is translated into 20 while script tag remains the same. This is because the PHP is a server side language and the php interpreter already translates the php code into a returned value and sends the resulting HTML page to web browser. Now web browser has the value, 20 and translates the script(javascript) part and views it on the HTMl file. Therefore, what we see is just mere 20</p>
+<p>Now, left is a picture of web browser and the right is a picture of web server. You can note that the php code part on the right picture is translated into 20 while script tag remains the same. This is because the PHP is a server side language and the php interpreter already translates the php code into a returned value and sends the resulting HTML page to web browser. Now web browser has the value, 20 and translates the script(javascript) part and views it on the HTMl file. Therefore, what we see is just mere 20 on the top followed by “Javascript” and 20 again.</p>
+
+<h2 id="grammars">Grammars</h2>
+
+<h3 id="following-are-the-data-types-and-their-usages">Following are the data types and their usages:</h3>
+<ol>
+  <li>string : “Emma”</li>
+  <li>integer: 10</li>
+  <li>array : [1,2,3]</li>
+</ol>
+
+<p>###Javascript
+name = “jimmy”;
+list = new Array(“one”, “two”, “three”);
+function function_name(){</p>
+
+<p>}</p>
+
+<p>function_name();</p>
+
+<h4 id="conditional-statements">conditional statements:</h4>
+
+<p>if(true/false){
+    //do some
+}
+else{</p>
+
+<p>}</p>
+
+<h4 id="login-functionality">login functionality</h4>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
+    <span class="nx">password</span> <span class="o">=</span> <span class="nx">prompt</span><span class="p">(</span><span class="s2">"password?"</span><span class="p">);</span>
+    <span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="nx">password</span><span class="p">);</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">password</span><span class="o">==</span><span class="mi">1111</span><span class="p">){</span>
+        <span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="s2">"login successful!"</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="k">else</span><span class="p">{</span>
+        <span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="s2">"login failed!"</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="o">&lt;</span><span class="sr">/script</span><span class="err">&gt;
+</span></code></pre></div></div>
+
+<h4 id="javascript-to-php-communication">Javascript to PHP communication</h4>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&lt;!</span><span class="nx">DOCTYPE</span> <span class="nx">html</span><span class="o">&gt;</span>
+<span class="err">＜</span><span class="nx">html</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="nx">head</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="nx">meta</span> <span class="nx">charset</span><span class="o">=</span><span class="s2">"utf-8"</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="sr">/head</span><span class="err">&gt;
+</span><span class="o">&lt;</span><span class="nx">body</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="nx">form</span> <span class="nx">action</span><span class="o">=</span><span class="s2">"8-2.php"</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="nx">enter</span> <span class="nx">your</span> <span class="nx">password</span><span class="p">.</span><span class="o">&lt;</span><span class="sr">/p</span><span class="err">&gt;
+</span>    <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">type</span><span class="o">=</span><span class="s2">"text"</span> <span class="nx">name</span><span class="o">=</span><span class="s2">"password"</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">type</span><span class="o">=</span><span class="s2">"submit"</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="sr">/form</span><span class="err">&gt;
+</span><span class="o">&lt;</span><span class="sr">/body</span><span class="err">&gt;
+</span><span class="o">&lt;</span><span class="sr">/html</span><span class="err">&gt;
+</span></code></pre></div></div>
+<p>Looking at the above code, the form tag indicates that whenever if there exists a type=”submit” inside of the form tag and is pressed, it transmits the input data to action(destination.) In other words, whatever the user types in as an input password will be transmitted to 8-2.php as a variable called name(in this case “password”) when submit button is being pressed. To find how this communication ends please scroll below to PHP and find Javascript to PHP communication part to see how PHP receives this password.</p>
+
+<p>###PHP
+$name = “jimmy”;
+$list = array(“one”, “two”, “three”);
+function function_name(){
+}</p>
+
+<p>function_name();</p>
+
+<h4 id="conditional-statements-1">conditional statements:</h4>
+
+<p>if(true/false){</p>
+
+<p>}
+else{</p>
+
+<p>}</p>
+
+<h4 id="login-functionality-1">login functionality</h4>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nt">&lt;h1&gt;</span>PHP<span class="nt">&lt;/h1&gt;</span>
+  <span class="cp">&lt;?php</span>
+    <span class="nb">var_dump</span><span class="p">(</span><span class="mi">1</span><span class="o">==</span><span class="mi">1</span><span class="p">);</span>
+    <span class="nv">$result</span> <span class="o">=</span> <span class="p">(</span><span class="mi">2</span><span class="o">==</span><span class="mi">2</span><span class="p">);</span>
+    <span class="k">if</span><span class="p">(</span><span class="nv">$result</span><span class="p">){</span>
+      <span class="k">echo</span> <span class="s2">"trueeeee"</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">else</span><span class="p">{</span>
+      <span class="k">echo</span> <span class="s2">"falseeee"</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="cp">?&gt;</span>
+</code></pre></div></div>
+<p>Above is the simple conditional statement to represent the login functionality!</p>
+
+<h4 id="javascript-to-php-communication-1">Javascript to PHP communication</h4>
+
+<p>Now let’s continue on the way to receive variable on php file.</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+＜html&gt;
+<span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+  <span class="cp">&lt;?php</span>
+    <span class="nv">$password</span> <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span><span class="s2">"password"</span><span class="p">];</span>
+    <span class="k">if</span><span class="p">(</span><span class="nv">$password</span><span class="o">==</span><span class="s2">"1111"</span><span class="p">){</span>
+      <span class="k">echo</span> <span class="s2">"welcome!"</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">else</span><span class="p">{</span>
+      <span class="k">echo</span> <span class="s2">"who is this!!!"</span><span class="p">;</span>
+    <span class="p">}</span>
+   <span class="cp">?&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<p>As you can see, the important part is <strong>$password = $_GET[“password”]</strong>. Through this, the php file receives password variable from javascript and uses such information from there.</p>
 
 
 
@@ -1551,75 +1682,12 @@ pre {
         
             
                 
-            
-                
-            
-                
-            
-                
-            
-                
-            
-        
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-        
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-        
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-        
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-        
-    
-        
-        
-            
-                
                     
                     <h4>Related Posts</h4>
                     <ul>
                     
                     <li class="relatedPost">
-                        <a href="http://localhost:4000/frontend2/">Learning Frontend: what is web app?
+                        <a href="http://localhost:4000/linux3/">Technical temrs for Linux
                         
                         </a>
                     </li>
@@ -1691,7 +1759,7 @@ pre {
                 
                     
                     <li class="relatedPost">
-                        <a href="http://localhost:4000/frontend1/">Learning Frontend
+                        <a href="http://localhost:4000/algorithm4/">quicksort VS mergesort
                         
                         </a>
                     </li>
@@ -1763,7 +1831,7 @@ pre {
                 
                     
                     <li class="relatedPost">
-                        <a href="http://localhost:4000/webjavascript1/">Web javascript
+                        <a href="http://localhost:4000/algorithm3/">longest palindrome in a substring?
                         
                         </a>
                     </li>
@@ -1835,7 +1903,7 @@ pre {
                 
                     
                     <li class="relatedPost">
-                        <a href="http://localhost:4000/selenium1/">Ubuntu Selenium?
+                        <a href="http://localhost:4000/javascript7/">JavaScript OOP
                         
                         </a>
                     </li>
@@ -1907,12 +1975,957 @@ pre {
                 
                     
                     <li class="relatedPost">
-                        <a href="http://localhost:4000/javascript4/">Objects and arrays?
+                        <a href="http://localhost:4000/algorithm2/">Directions Reductions
                         
                         </a>
                     </li>
                     
                     
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
                 
             
                 
