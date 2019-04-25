@@ -73,4 +73,18 @@ delete from 'table_name' WHERE id = 5;
 
 ## WHY RDB?
 
-Now, we looked at the database but why do we need *Relations Database*?
+Now, we looked at the database but why do we need *Relational Database*?
+
+Let's think about it this way.
+
+## Internet and Database
+
+Computers can be connected through internet and this is why internet is so called as an innovation. How does this work? One computer can send request and receive response from the other computer. For example, when we type wikipedia.com, we ask for a request to wekipedia.com's domain and the server on wikipedia's side sends respone back to the web server that initiated the request.
+
+Here is the picture (webserver)
+
+Here is the picture (client & server)
+
+MySQL then installs two programs simultaneously: database client & database server. We can only access to database server through database client even if it seemed that we accessed database server directly. Then, where does that database client exist?
+
+It was ./mysql command before we actually delat with database. Through this client, we were able to send database commands.
