@@ -35,3 +35,42 @@ Let's run mysql server through terminal!
 
 Now, we are into mysql server!
 
+## SQL(Structured Query Language)
+
+It is a language that all the relational databases use to communicate with them. This makes the language very efficient because unlike other languages, knowing this will allow you to use other RDB without any problems. Now, let's make or create a table that includes some data.
+
+```javascript
+ create table topic(
+    ->   id INT(11) not null AUTO_INCREMENT,
+    ->   title VARCHAR(100) NOT NULL,
+    ->   description TEXT NULL,
+    ->   created DATETIME NOT NULL,
+    ->   author VARCHAR(30) NULL,
+    ->   profile VARCHAR(100)
+    -> , PRIMARY KEY(id));
+```
+
+This simple SQL code creates a table called *topic* with these attributes. When it is successful, we can CRUD(create read update and delete)
+
+### CREATE
+
+insert into 'table_name' ('column_names') VALUES ('values for each column_names')
+
+### READ
+
+select * from 'table_name';
+select id,title,created from topic where author='jgam' order by id DESC;
+
+### UPDATE
+
+update 'table_name' SET 'column_name' = 'value' WHERE id=2;
+**Here, the id is very very integral unless otherwise, you will change every column_name set to a value.**
+
+### DELETE
+
+delete from 'table_name' WHERE id = 5;
+**also it is very integral not to forget where here!**
+
+## WHY RDB?
+
+Now, we looked at the database but why do we need *Relations Database*?
