@@ -24,3 +24,14 @@ In 1970, Edgar Frank Ted Kerd created relational database in IBM. The relational
 ## MySQL
 
 Started by Oracle, MySQL grew rapidly with web as a web database. MySQL has similar structure as that of excel spread sheet. In the database, there exists lots of tables and these tables can be grouped as **schemas.** These schemas then get accumulated on **database server.**
+
+Now, what is so special about MySQL? (It seems like this is no different from excel spread sheet.)
+
+**Security** is a powerful functionality for the database. Authorization is also another functionality that allows which one to have permissions to CRUD whereas users can only READ the data. The basic user is **root** and this acts as a superuser who can do anything on mysql server.
+
+Let's run mysql server through terminal!
+1. cd /usr/local/mysql/bin/
+2. ./mysql -uroot -p
+
+Now, we are into mysql server!
+
