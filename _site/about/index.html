@@ -729,29 +729,14 @@ pre {
   100% {
     opacity: 1;
     transform: translateY(0); } }
-.home,
-.blog,
-.projects,
-.python,
-.algorithms,
-.linux {
+.frontend {
   margin-top: 125px; }
-  .home > .list,
-  .blog > .list,
-  .projects > .list,
-  .python > .list,
-  .algorithms > .list,
-  .linux > .list {
+  .frontend > .list {
     border-top: 1px solid #ededed;
     margin-top: 30px;
     padding-top: 40px;
     position: relative; }
-    .home > .list:before,
-    .blog > .list:before,
-    .projects > .list:before,
-    .python > .list:before,
-    .algorithms > .list:before,
-    .linux > .list:before {
+    .frontend > .list:before {
       display: block;
       content: " ";
       width: 7px;
@@ -769,7 +754,9 @@ pre {
 .blog > .list > .item,
 .python > .list > .item,
 .algorithms > .list > .item,
-.projects > .list > .item {
+.projects > .list > .item,
+.javascript > .list > .item,
+.frontend > .list > .item {
   display: block;
   width: 95%;
   margin: 0 auto; }
@@ -777,7 +764,9 @@ pre {
 .blog > .list > .item > .url,
 .python > .list > .item > .url,
 .algorithms > .list > .item > .url,
-.projects > .list > .item > .url {
+.projects > .list > .item > .url,
+.javascript > .list > .item > .url,
+.frontend > .list > .item > .url {
   width: 100%;
   display: block;
   padding: 20px 0;
@@ -786,7 +775,9 @@ pre {
 .blog > .list > .item > .url > .title,
 .python > .list > .item > .url > .title,
 .algorithms > .list > .item > .url > .title,
-.projects > .list > .item > .url > .title {
+.projects > .list > .item > .url > .title,
+.javascript > .list > .item > .url > .title,
+.frontend > .list > .item > .url > .title {
   margin: 0;
   width: 75%;
   font-weight: 500;
@@ -795,13 +786,17 @@ pre {
 .blog > .list > .item:hover > .url > .title,
 .python > .list > .item:hover > .url > .title,
 .algorithms > .list > .item:hover > .url > .title,
-.projects > .list > .item:hover > .url > .title {
+.projects > .list > .item:hover > .url > .title,
+.javascript > .list > .item:hover > .url > .title,
+.frontend > .list > .item:hover > .url > .title {
   color: #4b0082; }
 .home > .list aside,
 .blog > .list aside,
 .python > .list aside,
 .algorithms > .list aside,
-.projects > .list aside {
+.projects > .list aside,
+.javascript > .list aside,
+.frontend > .list aside {
   position: relative;
   top: 2px;
   margin: 0;
@@ -815,7 +810,9 @@ pre {
 .blog > .list .item:hover .url aside,
 .python > .list .item:hover .url aside,
 .algorithms > .list .item:hover .url aside,
-.projects > .list .item:hover .url aside {
+.projects > .list .item:hover .url aside,
+.javascript > .list .item:hover .url aside,
+.frontend > .list .item:hover .url aside {
   color: #666; }
 
 .blog > .list > .item > .url > .title,
@@ -1486,6 +1483,10 @@ pre {
             <li class="item">
                 <a class="link" href="https://google.com/?q=my+resume">Résumé</a>
             </li>
+        
+
+        
+
         
     </ul>
 </nav>

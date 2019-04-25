@@ -3,7 +3,7 @@ name: Jimmy Gam
 bio: A coder in Japan, struggling to learn a language(Japanese)
 
 # twitter summary info
-description: A journey to dream
+description: humble coder
 
 # if it's an external image, update below for true
 # better with square images
@@ -29,7 +29,7 @@ linux4: /linux/assets/images/linux4.png
 linux5: /linux/assets/images/linux5.png
 linux6: /linux/assets/images/linux6.png
 linux7: /linux/assets/images/linux7.png
-frontend: /blog/assets/images/frontend.png
+frontend2: /blog/assets/images/frontend.png
 frontend1: /blog/assets/images/frontend1.png
 
 
@@ -103,6 +103,9 @@ blog: true
 algorithms: true
 python: true
 linux: true
+javascript: true
+React: true
+frontend: true
 # do you want to show the "read time" of the posts?
 read-time: true
 
