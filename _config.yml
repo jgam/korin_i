@@ -31,7 +31,10 @@ linux6: /linux/assets/images/linux6.png
 linux7: /linux/assets/images/linux7.png
 frontend2: /blog/assets/images/frontend.png
 frontend1: /blog/assets/images/frontend1.png
-
+db1: /blog/assets/images/db1.png
+db2: /blog/assets/images/db2.png
+db3: /blog/assets/images/db3.png
+db4: /blog/assets/images/db4.png
 
 # If you want to include your resume, set to true
 # and specify source (external or local).
