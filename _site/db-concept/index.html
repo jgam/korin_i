@@ -14,17 +14,21 @@
     <meta property="og:type" content="profile">
 
     <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>Algorithms | Jimmy Gam</title>
+<title>What is database? | Jimmy Gam</title>
 <meta name="generator" content="Jekyll v3.7.4" />
-<meta property="og:title" content="Algorithms" />
+<meta property="og:title" content="What is database?" />
+<meta name="author" content="jgam" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="humble coder" />
-<meta property="og:description" content="humble coder" />
-<link rel="canonical" href="http://localhost:4000/algorithms/" />
-<meta property="og:url" content="http://localhost:4000/algorithms/" />
+<meta name="description" content="database" />
+<meta property="og:description" content="database" />
+<link rel="canonical" href="http://localhost:4000/db-concept/" />
+<meta property="og:url" content="http://localhost:4000/db-concept/" />
 <meta property="og:site_name" content="Jimmy Gam" />
+<meta property="og:image" content="http://localhost:4000/assets/images/markdown.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-04-25T00:00:00+09:00" />
 <script type="application/ld+json">
-{"description":"humble coder","@type":"WebPage","url":"http://localhost:4000/algorithms/","headline":"Algorithms","@context":"http://schema.org"}</script>
+{"description":"database","author":{"@type":"Person","name":"jgam"},"@type":"BlogPosting","url":"http://localhost:4000/db-concept/","image":"http://localhost:4000/assets/images/markdown.jpg","headline":"What is database?","dateModified":"2019-04-25T00:00:00+09:00","datePublished":"2019-04-25T00:00:00+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/db-concept/"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -50,7 +54,7 @@
 <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 
 
-    <link rel="canonical" href="http://localhost:4000/algorithms/">
+    <link rel="canonical" href="http://localhost:4000/db-concept/">
     <link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000/feed.xml" />
 
     <style>
@@ -1418,83 +1422,11 @@ pre {
 
     <div class="wrapper-normal">
         
-            
-                <div class="page algorithms">
-            
+            <div class="post">
         
 
             
 
-
-    <header class="header-home animated">
-        
-            <a class="link" href="http://localhost:4000/about">
-                <img class="selfie" alt="Jimmy Gam" src="assets/images/profile.jpeg" />
-            </a>
-        
-
-        <h1 class="title">Jimmy Gam</h1>
-        <h2 class="description">A coder in Japan, struggling to learn a language(Japanese)</h2>
-
-        <div class="social-links">
-    
-        <a class="link" data-title="facebook.com/jgam1333" href="http://facebook.com/jgam1333" target="_blank">
-            <svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg>
-        </a>
-    
-
-    
-
-    
-
-    
-        <a class="link" data-title="instagram.com/jgam__" href="http://instagram.com/jgam__" target="_blank">
-            <svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg>
-        </a>
-    
-
-    
-
-    
-        <a class="link" data-title="linkedin.com/in/jeonghan-jimmy-gam-67726b127" href="http://linkedin.com/in/jeonghan-jimmy-gam-67726b127" target="_blank">
-            <svg class="icon icon-linkedin"><use xlink:href="#icon-linkedin"></use></svg>
-        </a>
-    
-
-    
-
-    
-
-    
-
-    
-        <a class="link" data-title="github.com/jgam" href="https://github.com/jgam" target="_blank">
-            <svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg>
-        </a>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <a class="link" data-title="jgam@alumni.nd.edu" href="mailto:jgam@alumni.nd.edu">
-            <svg class="icon icon-mail"><use xlink:href="#icon-mail"></use></svg>
-        </a>
-    
-</div>
-
-    </header>
 
 
 <nav class="nav">
@@ -1539,6 +1471,10 @@ pre {
 
         
             
+                <li class="item">
+                    <a class="link" href="http://localhost:4000/algorithms">Algorithms</a>
+                </li>
+            
         
 
         
@@ -1575,87 +1511,2596 @@ pre {
 
 
 
-<section class="list">
+
+
+<h1 class="title">What is database?</h1>
+
+<span class="date">
+    <time datetime="25-04-2019">Thursday. April 25, 2019</time>
+     - <span class="reading-time" title="Estimated read time">
     
+
+    
+        6 mins
+    
+</span>
+
+</span>
+
+
+    <div class="post-tags">
+        
+            <a class="item" href="http://localhost:4000/tags/#jgam">jgam</a>
+        
+            <a class="item" href="http://localhost:4000/tags/#file">file</a>
+        
+            <a class="item" href="http://localhost:4000/tags/#database">Database</a>
+        
+            <a class="item" href="http://localhost:4000/tags/#system-calls">system calls</a>
+        
+            <a class="item" href="http://localhost:4000/tags/#mysql">mySQL</a>
+        
+    </div>
+
+
+<h2 id="database">Database?</h2>
+
+<p>Before going to school, I remember parents buying me a pencilcase with bunch of pencils in it. Because I only had a few pencils at that time, I could easily fit in more pencils as I grew up. However, when I entered middle school, the story was a little different. I had to get a new pencil case while having a box-like pencil container on my personal desk. Now, I don’t recall how many pencils I have had nor the number of pencil cases that I changed. Similar to this, Computers wanted to store the data and first created a file to store the data. As more files come across, we needed a storage to store those files and found out the database.</p>
+
+<p>In 1970, Edgar Frank Ted Kerd created relational database in IBM. The relational database is still used these days and had a few innovative functionalities involving searching, storing, and updating(basic CRUD) in both safer and faster ways. The popular relational database includes <em>MySQL, Oracle, SQL Server, PostgreSQL, DB2, ACCESS.</em> It is good that knowing one of those languages will allow a huge hand-on knowledges for relational database. Now we can use MySQL to see what the DB is like</p>
+
+<h2 id="mysql">MySQL</h2>
+
+<p>Started by Oracle, MySQL grew rapidly with web as a web database. MySQL has similar structure as that of excel spread sheet. In the database, there exists lots of tables and these tables can be grouped as <strong>schemas.</strong> These schemas then get accumulated on <strong>database server.</strong></p>
+
+<p>Now, what is so special about MySQL? (It seems like this is no different from excel spread sheet.)</p>
+
+<p><strong>Security</strong> is a powerful functionality for the database. Authorization is also another functionality that allows which one to have permissions to CRUD whereas users can only READ the data. The basic user is <strong>root</strong> and this acts as a superuser who can do anything on mysql server.</p>
+
+<p>Let’s run mysql server through terminal!</p>
+<ol>
+  <li>cd /usr/local/mysql/bin/</li>
+  <li>./mysql -uroot -p</li>
+</ol>
+
+<p>Now, we are into mysql server!</p>
+
+<h2 id="sqlstructured-query-language">SQL(Structured Query Language)</h2>
+
+<p>It is a language that all the relational databases use to communicate with them. This makes the language very efficient because unlike other languages, knowing this will allow you to use other RDB without any problems. Now, let’s make or create a table that includes some data.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nx">create</span> <span class="nx">table</span> <span class="nx">topic</span><span class="p">(</span>
+    <span class="o">-&gt;</span>   <span class="nx">id</span> <span class="nx">INT</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span> <span class="nx">not</span> <span class="kc">null</span> <span class="nx">AUTO_INCREMENT</span><span class="p">,</span>
+    <span class="o">-&gt;</span>   <span class="nx">title</span> <span class="nx">VARCHAR</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span> <span class="nx">NOT</span> <span class="nx">NULL</span><span class="p">,</span>
+    <span class="o">-&gt;</span>   <span class="nx">description</span> <span class="nx">TEXT</span> <span class="nx">NULL</span><span class="p">,</span>
+    <span class="o">-&gt;</span>   <span class="nx">created</span> <span class="nx">DATETIME</span> <span class="nx">NOT</span> <span class="nx">NULL</span><span class="p">,</span>
+    <span class="o">-&gt;</span>   <span class="nx">author</span> <span class="nx">VARCHAR</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span> <span class="nx">NULL</span><span class="p">,</span>
+    <span class="o">-&gt;</span>   <span class="nx">profile</span> <span class="nx">VARCHAR</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+    <span class="o">-&gt;</span> <span class="p">,</span> <span class="nx">PRIMARY</span> <span class="nx">KEY</span><span class="p">(</span><span class="nx">id</span><span class="p">));</span>
+</code></pre></div></div>
+
+<p>This simple SQL code creates a table called <em>topic</em> with these attributes. When it is successful, we can CRUD(create read update and delete)</p>
+
+<h3 id="create">CREATE</h3>
+
+<p>insert into ‘table_name’ (‘column_names’) VALUES (‘values for each column_names’)</p>
+
+<h3 id="read">READ</h3>
+
+<p>select * from ‘table_name’;
+select id,title,created from topic where author=’jgam’ order by id DESC;</p>
+
+<h3 id="update">UPDATE</h3>
+
+<p>update ‘table_name’ SET ‘column_name’ = ‘value’ WHERE id=2;
+<strong>Here, the id is very very integral unless otherwise, you will change every column_name set to a value.</strong></p>
+
+<h3 id="delete">DELETE</h3>
+
+<p>delete from ‘table_name’ WHERE id = 5;
+<strong>also it is very integral not to forget where here!</strong></p>
+
+<h2 id="why-rdb">WHY RDB?</h2>
+
+<p>Now, we looked at the database but why do we need <em>Relational Database</em>?</p>
+
+<p>Let’s think about it this way.</p>
+
+<p>We have a regular data like this.</p>
+
+<div class="side-by-side">
+    <div class="tocenter">
+        <img class="image" src="http://localhost:4000/" alt="Alt Text" />
+        <figcaption class="caption">Photo by jgam CREDIT</figcaption>
+    </div>
+</div>
+
+<p>Now, this data table is straight forward and each line contains meaning. Let’s look at the author column. You see how there exists egoing three times? Now, Let’s think if the dataset has several million data and we have several million duplicates of egoing. That is just a lot of memory waste. Here the beauty of RDB comes in with converting the authors to a author_id. Let’s take a look at this RDB.</p>
+
+<div class="side-by-side">
+    <div class="tocenter">
+        <img class="image" src="http://localhost:4000/" alt="Alt Text" />
+        <figcaption class="caption">Photo by jgam CREDIT</figcaption>
+    </div>
+</div>
+
+<p>As you can see, the two tables are related by author_id and we could save lots of memories by converting the names to author ids. However, RDB has important downside which is it is not intuitive to see the authors. For example, you would have to open two tables at once to convert author_id = 1 represents egoing and so forth. This is very tedious and tiresome. Therefore we can use join.</p>
+
+<p>If we do put this command</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">SELECT</span> <span class="nx">topic</span><span class="p">.</span><span class="nx">id</span><span class="p">,</span> <span class="nx">title</span><span class="p">,</span> <span class="nx">description</span><span class="p">,</span> <span class="nx">created</span><span class="p">,</span> <span class="nx">name</span><span class="p">,</span> <span class="nx">profile</span> <span class="nx">FROM</span> <span class="nx">topic</span> <span class="nx">LEFT</span> <span class="nx">JOIN</span> <span class="nx">author</span> <span class="nx">ON</span> <span class="nx">topic</span><span class="p">.</span><span class="nx">author_id</span> <span class="o">=</span> <span class="nx">author</span><span class="p">.</span><span class="nx">id</span><span class="p">;</span>
+</code></pre></div></div>
+<p>We can easily see the straight forward data while saving lots of memories.</p>
+
+<div class="side-by-side">
+    <div class="tocenter">
+        <img class="image" src="http://localhost:4000/" alt="Alt Text" />
+        <figcaption class="caption">Photo by jgam CREDIT</figcaption>
+    </div>
+</div>
+
+<h2 id="internet-and-database">Internet and Database</h2>
+
+<p>Computers can be connected through internet and this is why internet is so called as an innovation. How does this work? One computer can send request and receive response from the other computer. For example, when we type wikipedia.com, we ask for a request to wekipedia.com’s domain and the server on wikipedia’s side sends respone back to the web server that initiated the request.</p>
+
+<div class="side-by-side">
+    <div class="tocenter">
+        <img class="image" src="http://localhost:4000//blog/assets/images/db1.png" alt="Alt Text" />
+        <figcaption class="caption">Photo by jgam CREDIT</figcaption>
+    </div>
+</div>
+
+<div class="side-by-side">
+    <div class="tocenter">
+        <img class="image" src="http://localhost:4000//blog/assets/images/db2.png" alt="Alt Text" />
+        <figcaption class="caption">Photo by jgam CREDIT</figcaption>
+    </div>
+</div>
+
+<p>MySQL then installs two programs simultaneously: database client &amp; database server. We can only access to database server through database client even if it seemed that we accessed database server directly. Then, where does that database client exist?</p>
+
+<p>It was ./mysql command before we actually delat with database. Through this client, we were able to send database commands.</p>
+
+<div class="side-by-side">
+    <div class="tocenter">
+        <img class="image" src="http://localhost:4000//blog/assets/images/db3.png" alt="Alt Text" />
+        <figcaption class="caption">Photo by jgam CREDIT</figcaption>
+    </div>
+</div>
+
+<p>Then why does this fact become so special or noted? YES! Anybody can access the database server through database clients as shown in the picture below:</p>
+
+<div class="side-by-side">
+    <div class="tocenter">
+        <img class="image" src="http://localhost:4000//blog/assets/images/db4.png" alt="Alt Text" />
+        <figcaption class="caption">Photo by jgam CREDIT</figcaption>
+    </div>
+</div>
+
+<h2 id="mysql-client">MySQL client</h2>
+
+<p>Now, we know that mySQL monitor which is ./mysql and it doesn’t have GUI but can control it through CLI. This is because GUI takes up lots of memories and CLI gives speed.</p>
+
+<p>MySQL workbench is famous GUI mySQL client and using this, I was able to access (CRUD) to the database server.</p>
+
+
+
+    <div class="blog-navigation">
+        
+            <a class="prev"></a>
+        
+        
+    </div>
+
+
+
+    <div class="related">
+    
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
         
     
         
-    
+        
+            
+                
+                    
+                    <h4>Related Posts</h4>
+                    <ul>
+                    
+                    <li class="relatedPost">
+                        <a href="http://localhost:4000/linux3/">Technical temrs for Linux
+                        
+                        </a>
+                    </li>
+                    
+                    
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
         
     
         
-    
+        
+            
+                
+                    
+                    <li class="relatedPost">
+                        <a href="http://localhost:4000/algorithm4/">quicksort VS mergesort
+                        
+                        </a>
+                    </li>
+                    
+                    
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
         
     
         
-    
+        
+            
+                
+                    
+                    <li class="relatedPost">
+                        <a href="http://localhost:4000/algorithm3/">longest palindrome in a substring?
+                        
+                        </a>
+                    </li>
+                    
+                    
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
         
     
         
-    
+        
+            
+                
+                    
+                    <li class="relatedPost">
+                        <a href="http://localhost:4000/javascript7/">JavaScript OOP
+                        
+                        </a>
+                    </li>
+                    
+                    
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
         
     
         
-    
+        
+            
+                
+                    
+                    <li class="relatedPost">
+                        <a href="http://localhost:4000/algorithm2/">Directions Reductions
+                        
+                        </a>
+                    </li>
+                    
+                    
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
         
     
         
-    
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
         
     
         
-    
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
         
     
         
-    
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
         
     
         
-    
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
         
     
         
-    
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
         
     
         
-    
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
         
     
         
-    
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
         
     
         
-    
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
         
     
         
-    
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
         
     
         
-    
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
         
     
         
-    
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
         
     
         
-    
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
         
     
         
-    
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
         
     
         
-    
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
         
     
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+    
+        </ul>
+    
+</div>
+
+
+
+
+    <section class="author">
+    <div class="toleft">
+        <img class="selfie" src="../assets/images/profile.jpeg" alt="Jimmy Gam"><!-- "./assets/images/profile.jpeg"site.authors[page.author].picture-->
+    </div>
+
+    <div class="toright">
+        <h4 class="name">Jimmy Gam</h4>
+        <p class="bio">A man who likes coding and Japan</p>
+
+        <div class="share">
+            <!-- Note: Only use three share links if your site width is set to large -->
+            <!-- If site width is set to normal, you may choose any two share links -->
+            <a class="twitter" href="https://twitter.com/intent/tweet?text=http://localhost:4000/db-concept/ - What is database? by @">
+                <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg><span class="icon-twitter">Tweet</span>
+            </a>
+
+            <a class="facebook" href="javascript:void(0)" onclick="window.open('https://facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 'facebook-share-dialog', 'width=626,height=436'); return false;">
+                <svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg><span class="icon-facebook-rect">Share</span>
+            </a>
+
+            <!-- <a class="google-plus" href="https://plus.google.com/share?url=http://localhost:4000/db-concept/" target="_blank">
+                <svg class="icon icon-google-plus"><use xlink:href="#icon-google-plus"></use></svg><span class="icon-google-plus">Share</span>
+            </a> -->
+
+            <!-- <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:4000/db-concept/&amp;title=What is database?&amp;summary=database&amp;source=http://localhost:4000" target="_blank">
+                <svg class="icon icon-linkedin"><use xlink:href="#icon-linkedin"></use></svg><span class="icon-linkedin">Share</span>
+            </a> -->
+
+            <!-- <a class="reddit" href="https://reddit.com/submit?url=http://localhost:4000/db-concept/&amp;title=What is database?" target="_blank">
+                <svg class="icon icon-reddit"><use xlink:href="#icon-reddit"></use></svg><span class="icon-reddit">Share</span>
+            </a> -->
+        </div>
+    </div>
 </section>
+
+
+
+
+    <section class="disqus">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+
+        var disqus_config = function () {
+            this.page.url = 'http://localhost:4000/db-concept/';
+            this.page.identifier = '/db-concept';
+        };
+        var disqus_shortname = 'mydisqus';
+        var disqus_developer = 0;
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+
 
 <footer class="footer-main">
     Jimmy Gam © 2019 <a class="link" href="http://localhost:4000/feed.xml" target="_blank"><svg class="icon icon-rss"><use xlink:href="#icon-rss"></use></svg></a>

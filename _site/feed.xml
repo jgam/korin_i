@@ -1,4 +1,151 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-04-25T14:24:27+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jimmy Gam</title><subtitle>humble coder</subtitle><entry><title type="html">Technical temrs for Linux</title><link href="http://localhost:4000/linux3/" rel="alternate" type="text/html" title="Technical temrs for Linux" /><published>2019-04-22T00:00:00+09:00</published><updated>2019-04-22T00:00:00+09:00</updated><id>http://localhost:4000/linux3</id><content type="html" xml:base="http://localhost:4000/linux3/">&lt;h2 id=&quot;io-redirection&quot;&gt;IO Redirection&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-04-25T19:20:53+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jimmy Gam</title><subtitle>humble coder</subtitle><entry><title type="html">What is database?</title><link href="http://localhost:4000/db-concept/" rel="alternate" type="text/html" title="What is database?" /><published>2019-04-25T00:00:00+09:00</published><updated>2019-04-25T00:00:00+09:00</updated><id>http://localhost:4000/db-concept</id><content type="html" xml:base="http://localhost:4000/db-concept/">&lt;h2 id=&quot;database&quot;&gt;Database?&lt;/h2&gt;
+
+&lt;p&gt;Before going to school, I remember parents buying me a pencilcase with bunch of pencils in it. Because I only had a few pencils at that time, I could easily fit in more pencils as I grew up. However, when I entered middle school, the story was a little different. I had to get a new pencil case while having a box-like pencil container on my personal desk. Now, I don’t recall how many pencils I have had nor the number of pencil cases that I changed. Similar to this, Computers wanted to store the data and first created a file to store the data. As more files come across, we needed a storage to store those files and found out the database.&lt;/p&gt;
+
+&lt;p&gt;In 1970, Edgar Frank Ted Kerd created relational database in IBM. The relational database is still used these days and had a few innovative functionalities involving searching, storing, and updating(basic CRUD) in both safer and faster ways. The popular relational database includes &lt;em&gt;MySQL, Oracle, SQL Server, PostgreSQL, DB2, ACCESS.&lt;/em&gt; It is good that knowing one of those languages will allow a huge hand-on knowledges for relational database. Now we can use MySQL to see what the DB is like&lt;/p&gt;
+
+&lt;h2 id=&quot;mysql&quot;&gt;MySQL&lt;/h2&gt;
+
+&lt;p&gt;Started by Oracle, MySQL grew rapidly with web as a web database. MySQL has similar structure as that of excel spread sheet. In the database, there exists lots of tables and these tables can be grouped as &lt;strong&gt;schemas.&lt;/strong&gt; These schemas then get accumulated on &lt;strong&gt;database server.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Now, what is so special about MySQL? (It seems like this is no different from excel spread sheet.)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Security&lt;/strong&gt; is a powerful functionality for the database. Authorization is also another functionality that allows which one to have permissions to CRUD whereas users can only READ the data. The basic user is &lt;strong&gt;root&lt;/strong&gt; and this acts as a superuser who can do anything on mysql server.&lt;/p&gt;
+
+&lt;p&gt;Let’s run mysql server through terminal!&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;cd /usr/local/mysql/bin/&lt;/li&gt;
+  &lt;li&gt;./mysql -uroot -p&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Now, we are into mysql server!&lt;/p&gt;
+
+&lt;h2 id=&quot;sqlstructured-query-language&quot;&gt;SQL(Structured Query Language)&lt;/h2&gt;
+
+&lt;p&gt;It is a language that all the relational databases use to communicate with them. This makes the language very efficient because unlike other languages, knowing this will allow you to use other RDB without any problems. Now, let’s make or create a table that includes some data.&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;nx&quot;&gt;create&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;table&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;topic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;   &lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;INT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;11&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;AUTO_INCREMENT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;   &lt;span class=&quot;nx&quot;&gt;title&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;VARCHAR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;   &lt;span class=&quot;nx&quot;&gt;description&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;TEXT&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;   &lt;span class=&quot;nx&quot;&gt;created&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;DATETIME&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;   &lt;span class=&quot;nx&quot;&gt;author&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;VARCHAR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;   &lt;span class=&quot;nx&quot;&gt;profile&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;VARCHAR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;PRIMARY&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;KEY&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This simple SQL code creates a table called &lt;em&gt;topic&lt;/em&gt; with these attributes. When it is successful, we can CRUD(create read update and delete)&lt;/p&gt;
+
+&lt;h3 id=&quot;create&quot;&gt;CREATE&lt;/h3&gt;
+
+&lt;p&gt;insert into ‘table_name’ (‘column_names’) VALUES (‘values for each column_names’)&lt;/p&gt;
+
+&lt;h3 id=&quot;read&quot;&gt;READ&lt;/h3&gt;
+
+&lt;p&gt;select * from ‘table_name’;
+select id,title,created from topic where author=’jgam’ order by id DESC;&lt;/p&gt;
+
+&lt;h3 id=&quot;update&quot;&gt;UPDATE&lt;/h3&gt;
+
+&lt;p&gt;update ‘table_name’ SET ‘column_name’ = ‘value’ WHERE id=2;
+&lt;strong&gt;Here, the id is very very integral unless otherwise, you will change every column_name set to a value.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;delete&quot;&gt;DELETE&lt;/h3&gt;
+
+&lt;p&gt;delete from ‘table_name’ WHERE id = 5;
+&lt;strong&gt;also it is very integral not to forget where here!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;why-rdb&quot;&gt;WHY RDB?&lt;/h2&gt;
+
+&lt;p&gt;Now, we looked at the database but why do we need &lt;em&gt;Relational Database&lt;/em&gt;?&lt;/p&gt;
+
+&lt;p&gt;Let’s think about it this way.&lt;/p&gt;
+
+&lt;p&gt;We have a regular data like this.&lt;/p&gt;
+
+&lt;div class=&quot;side-by-side&quot;&gt;
+    &lt;div class=&quot;tocenter&quot;&gt;
+        &lt;img class=&quot;image&quot; src=&quot;http://localhost:4000/&quot; alt=&quot;Alt Text&quot; /&gt;
+        &lt;figcaption class=&quot;caption&quot;&gt;Photo by jgam CREDIT&lt;/figcaption&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Now, this data table is straight forward and each line contains meaning. Let’s look at the author column. You see how there exists egoing three times? Now, Let’s think if the dataset has several million data and we have several million duplicates of egoing. That is just a lot of memory waste. Here the beauty of RDB comes in with converting the authors to a author_id. Let’s take a look at this RDB.&lt;/p&gt;
+
+&lt;div class=&quot;side-by-side&quot;&gt;
+    &lt;div class=&quot;tocenter&quot;&gt;
+        &lt;img class=&quot;image&quot; src=&quot;http://localhost:4000/&quot; alt=&quot;Alt Text&quot; /&gt;
+        &lt;figcaption class=&quot;caption&quot;&gt;Photo by jgam CREDIT&lt;/figcaption&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;As you can see, the two tables are related by author_id and we could save lots of memories by converting the names to author ids. However, RDB has important downside which is it is not intuitive to see the authors. For example, you would have to open two tables at once to convert author_id = 1 represents egoing and so forth. This is very tedious and tiresome. Therefore we can use join.&lt;/p&gt;
+
+&lt;p&gt;If we do put this command&lt;/p&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;topic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;created&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;profile&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;topic&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;LEFT&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;JOIN&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;author&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;topic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;author_id&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;author&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;We can easily see the straight forward data while saving lots of memories.&lt;/p&gt;
+
+&lt;div class=&quot;side-by-side&quot;&gt;
+    &lt;div class=&quot;tocenter&quot;&gt;
+        &lt;img class=&quot;image&quot; src=&quot;http://localhost:4000/&quot; alt=&quot;Alt Text&quot; /&gt;
+        &lt;figcaption class=&quot;caption&quot;&gt;Photo by jgam CREDIT&lt;/figcaption&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;internet-and-database&quot;&gt;Internet and Database&lt;/h2&gt;
+
+&lt;p&gt;Computers can be connected through internet and this is why internet is so called as an innovation. How does this work? One computer can send request and receive response from the other computer. For example, when we type wikipedia.com, we ask for a request to wekipedia.com’s domain and the server on wikipedia’s side sends respone back to the web server that initiated the request.&lt;/p&gt;
+
+&lt;div class=&quot;side-by-side&quot;&gt;
+    &lt;div class=&quot;tocenter&quot;&gt;
+        &lt;img class=&quot;image&quot; src=&quot;http://localhost:4000//blog/assets/images/db1.png&quot; alt=&quot;Alt Text&quot; /&gt;
+        &lt;figcaption class=&quot;caption&quot;&gt;Photo by jgam CREDIT&lt;/figcaption&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;side-by-side&quot;&gt;
+    &lt;div class=&quot;tocenter&quot;&gt;
+        &lt;img class=&quot;image&quot; src=&quot;http://localhost:4000//blog/assets/images/db2.png&quot; alt=&quot;Alt Text&quot; /&gt;
+        &lt;figcaption class=&quot;caption&quot;&gt;Photo by jgam CREDIT&lt;/figcaption&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;MySQL then installs two programs simultaneously: database client &amp;amp; database server. We can only access to database server through database client even if it seemed that we accessed database server directly. Then, where does that database client exist?&lt;/p&gt;
+
+&lt;p&gt;It was ./mysql command before we actually delat with database. Through this client, we were able to send database commands.&lt;/p&gt;
+
+&lt;div class=&quot;side-by-side&quot;&gt;
+    &lt;div class=&quot;tocenter&quot;&gt;
+        &lt;img class=&quot;image&quot; src=&quot;http://localhost:4000//blog/assets/images/db3.png&quot; alt=&quot;Alt Text&quot; /&gt;
+        &lt;figcaption class=&quot;caption&quot;&gt;Photo by jgam CREDIT&lt;/figcaption&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Then why does this fact become so special or noted? YES! Anybody can access the database server through database clients as shown in the picture below:&lt;/p&gt;
+
+&lt;div class=&quot;side-by-side&quot;&gt;
+    &lt;div class=&quot;tocenter&quot;&gt;
+        &lt;img class=&quot;image&quot; src=&quot;http://localhost:4000//blog/assets/images/db4.png&quot; alt=&quot;Alt Text&quot; /&gt;
+        &lt;figcaption class=&quot;caption&quot;&gt;Photo by jgam CREDIT&lt;/figcaption&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;mysql-client&quot;&gt;MySQL client&lt;/h2&gt;
+
+&lt;p&gt;Now, we know that mySQL monitor which is ./mysql and it doesn’t have GUI but can control it through CLI. This is because GUI takes up lots of memories and CLI gives speed.&lt;/p&gt;
+
+&lt;p&gt;MySQL workbench is famous GUI mySQL client and using this, I was able to access (CRUD) to the database server.&lt;/p&gt;</content><author><name>jgam</name></author><category term="blog" /><category term="jgam" /><category term="file" /><category term="Database" /><category term="system calls" /><category term="mySQL" /><summary type="html">Database?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/markdown.jpg" /></entry><entry><title type="html">quicksort VS mergesort</title><link href="http://localhost:4000/algorithm4/" rel="alternate" type="text/html" title="quicksort VS mergesort" /><published>2019-04-22T00:00:00+09:00</published><updated>2019-04-22T00:00:00+09:00</updated><id>http://localhost:4000/algorithm4</id><content type="html" xml:base="http://localhost:4000/algorithm4/">&lt;h2 id=&quot;quick-sort-and-merge-sort&quot;&gt;quick sort and merge sort&lt;/h2&gt;
+
+&lt;p&gt;I will start with comparing them since that makes it easier to understand each method better. Both of the sorting algorithms use the term “divide and conquer.” Quick sort usually picks the first or the last element as a pivot and divides the array based on the pivots: left side to be elements less than the pivot and the right side to be elements that are larger than the pivot. Then it sorts each side accordingly and combine them. This is dividing the whole array into two and sort each and combine later. Similarly, merge sort divides arrray consistently from the half point until it gets to a single element. Then they move up the trees to order the elements. Finally, it reaches to the sorted array.&lt;/p&gt;
+
+&lt;h2 id=&quot;complexity&quot;&gt;complexity&lt;/h2&gt;
+
+&lt;p&gt;While both algorithms use similar divide and concquer, quick sort algorithm’s complexity depends on the pivot it chooses. Therefore average case for both algorithms are O(nlog) where wortcase for merge is O(nlogn) and the worstcase for quick sort is O(n^2). Why does quick sort give O(n^2)? because, if the pivot turns out to be the smallest or the largest element, it doesn’t divide the array into two parts, rather, it does not divide the array and it is merely just simple linear sorting algorithms.&lt;/p&gt;
+
+&lt;h2 id=&quot;difference&quot;&gt;Difference&lt;/h2&gt;
+
+&lt;p&gt;Now, while looking similar the two methods do have difference. Say if we have small data set, instead of dividing the array into halp and half until it gets to one element, it is much faster to use quick sort and divide smaller two arrays then combine it. However, if the data set is large, it is obviously better to use merge sort because its runtime is constant no matter how big the data set is, although it requires lots of space.&lt;/p&gt;</content><author><name>jgam</name></author><category term="blog" /><category term="jgam" /><category term="algorithm" /><category term="quicksort" /><category term="mergesort" /><category term="backend" /><summary type="html">quick sort and merge sort</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/markdown.jpg" /></entry><entry><title type="html">Technical temrs for Linux</title><link href="http://localhost:4000/linux3/" rel="alternate" type="text/html" title="Technical temrs for Linux" /><published>2019-04-22T00:00:00+09:00</published><updated>2019-04-22T00:00:00+09:00</updated><id>http://localhost:4000/linux3</id><content type="html" xml:base="http://localhost:4000/linux3/">&lt;h2 id=&quot;io-redirection&quot;&gt;IO Redirection&lt;/h2&gt;
 
 &lt;p&gt;IO redirection is an abbreviation of Input output redirection. What is input and output and what does it mean to redirect them?&lt;/p&gt;
 
@@ -82,17 +229,7 @@
 
 &lt;h2 id=&quot;background&quot;&gt;background&lt;/h2&gt;
 
-&lt;p&gt;It is important to understand how the program can run on foreground or background. Foreground is easy because it is what you are running and working on right now. Then, how do we run programs on background? When we run a program, we can simply add “&amp;amp;” at the end of the command to run the program on the background. Another way is to write program on vim or nano and press ctrl + z to put it on the background, if we want to return, we can just type fg to have that background process to come foreground. In order to see background processes, we simply type jobs. So it is important to keep track of background to see which programs are running and kill them.&lt;/p&gt;</content><author><name>jgam</name></author><category term="linux" /><category term="jgam" /><category term="Linux" /><category term="system programming" /><category term="system calls" /><category term="Operating system" /><summary type="html">IO Redirection</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/markdown.jpg" /></entry><entry><title type="html">quicksort VS mergesort</title><link href="http://localhost:4000/algorithm4/" rel="alternate" type="text/html" title="quicksort VS mergesort" /><published>2019-04-22T00:00:00+09:00</published><updated>2019-04-22T00:00:00+09:00</updated><id>http://localhost:4000/algorithm4</id><content type="html" xml:base="http://localhost:4000/algorithm4/">&lt;h2 id=&quot;quick-sort-and-merge-sort&quot;&gt;quick sort and merge sort&lt;/h2&gt;
-
-&lt;p&gt;I will start with comparing them since that makes it easier to understand each method better. Both of the sorting algorithms use the term “divide and conquer.” Quick sort usually picks the first or the last element as a pivot and divides the array based on the pivots: left side to be elements less than the pivot and the right side to be elements that are larger than the pivot. Then it sorts each side accordingly and combine them. This is dividing the whole array into two and sort each and combine later. Similarly, merge sort divides arrray consistently from the half point until it gets to a single element. Then they move up the trees to order the elements. Finally, it reaches to the sorted array.&lt;/p&gt;
-
-&lt;h2 id=&quot;complexity&quot;&gt;complexity&lt;/h2&gt;
-
-&lt;p&gt;While both algorithms use similar divide and concquer, quick sort algorithm’s complexity depends on the pivot it chooses. Therefore average case for both algorithms are O(nlog) where wortcase for merge is O(nlogn) and the worstcase for quick sort is O(n^2). Why does quick sort give O(n^2)? because, if the pivot turns out to be the smallest or the largest element, it doesn’t divide the array into two parts, rather, it does not divide the array and it is merely just simple linear sorting algorithms.&lt;/p&gt;
-
-&lt;h2 id=&quot;difference&quot;&gt;Difference&lt;/h2&gt;
-
-&lt;p&gt;Now, while looking similar the two methods do have difference. Say if we have small data set, instead of dividing the array into halp and half until it gets to one element, it is much faster to use quick sort and divide smaller two arrays then combine it. However, if the data set is large, it is obviously better to use merge sort because its runtime is constant no matter how big the data set is, although it requires lots of space.&lt;/p&gt;</content><author><name>jgam</name></author><category term="blog" /><category term="jgam" /><category term="algorithm" /><category term="quicksort" /><category term="mergesort" /><category term="backend" /><summary type="html">quick sort and merge sort</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/markdown.jpg" /></entry><entry><title type="html">longest palindrome in a substring?</title><link href="http://localhost:4000/algorithm3/" rel="alternate" type="text/html" title="longest palindrome in a substring?" /><published>2019-04-16T00:00:00+09:00</published><updated>2019-04-16T00:00:00+09:00</updated><id>http://localhost:4000/algorithm3</id><content type="html" xml:base="http://localhost:4000/algorithm3/">&lt;h2 id=&quot;longest-palindrome-in-a-substring&quot;&gt;longest palindrome in a substring&lt;/h2&gt;
+&lt;p&gt;It is important to understand how the program can run on foreground or background. Foreground is easy because it is what you are running and working on right now. Then, how do we run programs on background? When we run a program, we can simply add “&amp;amp;” at the end of the command to run the program on the background. Another way is to write program on vim or nano and press ctrl + z to put it on the background, if we want to return, we can just type fg to have that background process to come foreground. In order to see background processes, we simply type jobs. So it is important to keep track of background to see which programs are running and kill them.&lt;/p&gt;</content><author><name>jgam</name></author><category term="linux" /><category term="jgam" /><category term="Linux" /><category term="system programming" /><category term="system calls" /><category term="Operating system" /><summary type="html">IO Redirection</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/markdown.jpg" /></entry><entry><title type="html">longest palindrome in a substring?</title><link href="http://localhost:4000/algorithm3/" rel="alternate" type="text/html" title="longest palindrome in a substring?" /><published>2019-04-16T00:00:00+09:00</published><updated>2019-04-16T00:00:00+09:00</updated><id>http://localhost:4000/algorithm3</id><content type="html" xml:base="http://localhost:4000/algorithm3/">&lt;h2 id=&quot;longest-palindrome-in-a-substring&quot;&gt;longest palindrome in a substring&lt;/h2&gt;
 
 &lt;p&gt;We often face problems like palindromes. What is palindrome? it is a combination of two strings that are reversely ordered to each other and the middle character of the combined string can be diregarded. This wording is little rough until you see the actual example.&lt;/p&gt;
 
@@ -200,15 +337,7 @@ abcba -&amp;gt; palindrome&lt;/p&gt;
 
 &lt;p&gt;Because of IoT’s characteristics, I assume lots of teams mingle together to not only develop the products together but also to share their problems and thoughts. Ok, the key is communication and it is very hard when you are from different backgrounds especially when you are from differnt fields. Yes, integral point is to be on the SAME page. Wiuth this in mind, a book, of sorts, should be created so that each team member has the same understanding. If I get to work on IoT, I will first check how this is happening to see if the teams are actually collaborating or not.&lt;/p&gt;
 
-&lt;p&gt;Of course, lots of tech companies are planning to offer an IoT solution. I really believe the statement of the business strategy defining your IoT strategy should keep in mind that the technology that empowers your IoT strategy is defined by real-world use cases, which help shpae your overall vision. Yes, we are developing IoT but what is a strategy? is it tangible? We need to start developing solutions that solve real-world problems rather than meremly &lt;strong&gt;having strategy and devloping IoT.&lt;/strong&gt;&lt;/p&gt;</content><author><name>jgam</name></author><category term="blog" /><category term="jgam" /><category term="IoT" /><category term="Rakuten" /><category term="crimson" /><category term="algorithm" /><summary type="html">The Internet of Things</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/markdown.jpg" /></entry><entry><title type="html">React Native</title><link href="http://localhost:4000/reactnative/" rel="alternate" type="text/html" title="React Native" /><published>2019-04-10T00:00:00+09:00</published><updated>2019-04-10T00:00:00+09:00</updated><id>http://localhost:4000/reactnative</id><content type="html" xml:base="http://localhost:4000/reactnative/">&lt;h2 id=&quot;what-is-reactive-native&quot;&gt;WHat is Reactive Native?&lt;/h2&gt;
-
-&lt;h2 id=&quot;several-important-files&quot;&gt;Several important files&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;index.js -&amp;gt; kicks off the files and runs the function App component in App.js&lt;/li&gt;
-  &lt;li&gt;App.js -&amp;gt; we render and import original react. React native doesn’t work with the normal DOM or normal CSS or normal Javascript and all of these special things are given to you as with React Native.&lt;/li&gt;
-  &lt;li&gt;the style variable is a style sheet object of react native and can be assigned to component. It emulates CSS.&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>jgam</name></author><category term="blog" /><category term="jgam" /><category term="React" /><category term="Javascript" /><category term="frontend" /><category term="react native" /><summary type="html">WHat is Reactive Native?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/markdown.jpg" /></entry><entry><title type="html">Database</title><link href="http://localhost:4000/frontend6/" rel="alternate" type="text/html" title="Database" /><published>2019-04-10T00:00:00+09:00</published><updated>2019-04-10T00:00:00+09:00</updated><id>http://localhost:4000/frontend6</id><content type="html" xml:base="http://localhost:4000/frontend6/">&lt;h2 id=&quot;database&quot;&gt;Database&lt;/h2&gt;
+&lt;p&gt;Of course, lots of tech companies are planning to offer an IoT solution. I really believe the statement of the business strategy defining your IoT strategy should keep in mind that the technology that empowers your IoT strategy is defined by real-world use cases, which help shpae your overall vision. Yes, we are developing IoT but what is a strategy? is it tangible? We need to start developing solutions that solve real-world problems rather than meremly &lt;strong&gt;having strategy and devloping IoT.&lt;/strong&gt;&lt;/p&gt;</content><author><name>jgam</name></author><category term="blog" /><category term="jgam" /><category term="IoT" /><category term="Rakuten" /><category term="crimson" /><category term="algorithm" /><summary type="html">The Internet of Things</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/markdown.jpg" /></entry><entry><title type="html">Database</title><link href="http://localhost:4000/frontend6/" rel="alternate" type="text/html" title="Database" /><published>2019-04-10T00:00:00+09:00</published><updated>2019-04-10T00:00:00+09:00</updated><id>http://localhost:4000/frontend6</id><content type="html" xml:base="http://localhost:4000/frontend6/">&lt;h2 id=&quot;database&quot;&gt;Database&lt;/h2&gt;
 
 &lt;p&gt;Database is safe.&lt;/p&gt;
 
@@ -240,107 +369,12 @@ abcba -&amp;gt; palindrome&lt;/p&gt;
 
 &lt;p&gt;-hlocalhost is the address we want to run MySQL controller
 -uroot is the user authority of MySQL controller
--p is to hide the password and asks for the password&lt;/p&gt;</content><author><name>jgam</name></author><category term="blog" /><category term="jgam" /><category term="Review" /><category term="Javascript" /><category term="full stack" /><category term="backend" /><summary type="html">Database</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/markdown.jpg" /></entry><entry><title type="html">Higher-order functions?: Part2</title><link href="http://localhost:4000/javascriptreview/" rel="alternate" type="text/html" title="Higher-order functions?: Part2" /><published>2019-04-04T00:00:00+09:00</published><updated>2019-04-04T00:00:00+09:00</updated><id>http://localhost:4000/javascriptreview</id><content type="html" xml:base="http://localhost:4000/javascriptreview/">&lt;h2 id=&quot;defining-a-function&quot;&gt;Defining a function&lt;/h2&gt;
+-p is to hide the password and asks for the password&lt;/p&gt;</content><author><name>jgam</name></author><category term="blog" /><category term="jgam" /><category term="Review" /><category term="Javascript" /><category term="full stack" /><category term="backend" /><summary type="html">Database</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/markdown.jpg" /></entry><entry><title type="html">React Native</title><link href="http://localhost:4000/reactnative/" rel="alternate" type="text/html" title="React Native" /><published>2019-04-10T00:00:00+09:00</published><updated>2019-04-10T00:00:00+09:00</updated><id>http://localhost:4000/reactnative</id><content type="html" xml:base="http://localhost:4000/reactnative/">&lt;h2 id=&quot;what-is-reactive-native&quot;&gt;WHat is Reactive Native?&lt;/h2&gt;
 
-&lt;p&gt;A function definition is a regular binding where the value of the binding is a function. Functions have a set of parameters (in this case, only x) and a body, which contains the statements that are to be executed when the function is called. The function body of a function created this way must always be wrapped in braces, even when it consists of only a single statement.&lt;/p&gt;
+&lt;h2 id=&quot;several-important-files&quot;&gt;Several important files&lt;/h2&gt;
 
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;power&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;base&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;exponent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;exponent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;base&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;power&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;// -&amp;gt; 1024&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;This is regular way of declaring functions and as you can see the function takes in two parameters and whenever we call that function within two values, those automatically become parameters.&lt;/p&gt;
-
-&lt;p&gt;Now, the function can either return a value or not. Those functions that do not return anything are marked as undefined. Parameters to a function behave like regular binings, but their initial values are given by the &lt;em&gt;caller&lt;/em&gt; of the function, not the code in the functino itself.&lt;/p&gt;
-
-&lt;h2 id=&quot;bindings-and-scopes&quot;&gt;Bindings and Scopes&lt;/h2&gt;
-
-&lt;p&gt;Each binding has a scope, which is the part of the program in which the binding is visible. For bindings defined outside of any function or block, the scope is the whole program-you can refer to such bindings wherever you want.&lt;/p&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;What is the difference of above two declarations? The difference is that const data types can be accessed anywhere while let can be accessed, following the rules of scopes.&lt;/p&gt;
-
-&lt;h2 id=&quot;back-to-functions&quot;&gt;Back to functions&lt;/h2&gt;
-
-&lt;p&gt;In javascript there are three ways to define functions.&lt;/p&gt;
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;//regular function declaration&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;hello&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;hello&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);}&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;//shorter way of function declaration&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;hello&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;//arrow functions&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;hello&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)}&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;These 3 ways of declaring functions. One thing to note is that, second way of declaring function is the original way of declaration personally. Since I use lots of python. The first case, we set a variable “hello” equal to the function. What is the type of hello?&lt;/p&gt;
-
-&lt;p&gt;Interestingly, the type of hello is function. What does this refer to? The functions as values are allowed in javascript.&lt;/p&gt;
-
-&lt;p&gt;Another note is the last way, arrow functions. The arrow functions indicate that the variable is passed in as a parameter and if we have multiples, we need parenthesis wrapping around the list of inputs. What about a function without a parameter? we can just pass in empty list which is ().&lt;/p&gt;
-
-&lt;h2 id=&quot;the-call-stack&quot;&gt;The Call Stack&lt;/h2&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;greet&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;who&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;hello &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;who&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;greet&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Harry&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Bye&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Let’s look at the call stack. (It is very simple.) The control of the code starts at the first line but it is a mere declaration so moves on to greet(“Harry”). Here the control sees the function call and looks for the function declaration and go inside, taking the parameter, does its actions and returns to wherever it was called. Now the greet(“Harry”) is completed and move to the next console.log(“Bye”).&lt;/p&gt;
-
-&lt;p&gt;not in function
-   in greet
-        in console.log
-   in greet
-not in function
-   in console.log
-not in function&lt;/p&gt;
-
-&lt;p&gt;This is an example of the calls tack and it is important to keep up with the call stack due to avoid errors such as “stack overflow.”&lt;/p&gt;
-
-&lt;h2 id=&quot;closure&quot;&gt;Closure&lt;/h2&gt;
-
-&lt;p&gt;Being able to reference a specific instance of a local binding in an enclosing scope – is called &lt;em&gt;closure&lt;/em&gt;. A function that references bindings from local scopes around it is called a closure.&lt;/p&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;multiplier&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;factor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;number&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;number&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;factor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;twice&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;multiplier&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;twice&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;// → 10&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;What I said earlier is probably very &lt;strong&gt;abstract&lt;/strong&gt;. It is fine because that definition is literally a book definition. What I understand closure is to reference local bindings even if the function of those bindings had been called. Let’s break that exaple into parts.&lt;/p&gt;
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;twice&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;multiplier&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;twice is a variable, a type of function and the function taking 2 as its input. what is the function multiplier? it is a function that takes in one input and returns &lt;strong&gt;another function&lt;/strong&gt; as the following:&lt;/p&gt;
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;number&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;number&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;factor&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;After return, this is a arrow function which is the third way of declaring function so the function multiplier returns function that passes factor as that returned function’s outer scope’s variable. Now getting back to the declaration above, twice is a new function as following:&lt;/p&gt;
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;number&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;number&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Now going back to the whole example, we are finally calling console.log() on twice, passing in 5 as its input.&lt;/p&gt;
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Now the return value should be 10 and this is what is happening. Summing up, what is the closure in this? The closure is how when console.log(twice(5)) is called, the ability to access factor which is 2 and previously called. This is a closure and is very helpful because it not only frees people from having to worry about lifetimes of bindings but also makes it possible to use function values in some creative ways.&lt;/p&gt;</content><author><name>jgam</name></author><category term="blog" /><category term="jgam" /><category term="Review" /><category term="Javascript" /><category term="full stack" /><category term="backend" /><summary type="html">Defining a function</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/markdown.jpg" /></entry></feed>
+&lt;ol&gt;
+  &lt;li&gt;index.js -&amp;gt; kicks off the files and runs the function App component in App.js&lt;/li&gt;
+  &lt;li&gt;App.js -&amp;gt; we render and import original react. React native doesn’t work with the normal DOM or normal CSS or normal Javascript and all of these special things are given to you as with React Native.&lt;/li&gt;
+  &lt;li&gt;the style variable is a style sheet object of react native and can be assigned to component. It emulates CSS.&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>jgam</name></author><category term="blog" /><category term="jgam" /><category term="React" /><category term="Javascript" /><category term="frontend" /><category term="react native" /><summary type="html">WHat is Reactive Native?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/markdown.jpg" /></entry></feed>

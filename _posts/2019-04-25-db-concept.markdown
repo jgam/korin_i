@@ -77,14 +77,82 @@ Now, we looked at the database but why do we need *Relational Database*?
 
 Let's think about it this way.
 
+We have a regular data like this.
+
+<div class="side-by-side">
+    <div class="tocenter">
+        <img class="image" src="{{ site.url }}/{{ site.normaldb }}" alt="Alt Text">
+        <figcaption class="caption">Photo by jgam CREDIT</figcaption>
+    </div>
+</div>
+
+Now, this data table is straight forward and each line contains meaning. Let's look at the author column. You see how there exists egoing three times? Now, Let's think if the dataset has several million data and we have several million duplicates of egoing. That is just a lot of memory waste. Here the beauty of RDB comes in with converting the authors to a author_id. Let's take a look at this RDB.
+
+<div class="side-by-side">
+    <div class="tocenter">
+        <img class="image" src="{{ site.url }}/{{ site.rdb }}" alt="Alt Text">
+        <figcaption class="caption">Photo by jgam CREDIT</figcaption>
+    </div>
+</div>
+
+As you can see, the two tables are related by author_id and we could save lots of memories by converting the names to author ids. However, RDB has important downside which is it is not intuitive to see the authors. For example, you would have to open two tables at once to convert author_id = 1 represents egoing and so forth. This is very tedious and tiresome. Therefore we can use join.
+
+If we do put this command
+```javascript
+SELECT topic.id, title, description, created, name, profile FROM topic LEFT JOIN author ON topic.author_id = author.id;
+```
+We can easily see the straight forward data while saving lots of memories.
+
+<div class="side-by-side">
+    <div class="tocenter">
+        <img class="image" src="{{ site.url }}/{{ site.rdb2 }}" alt="Alt Text">
+        <figcaption class="caption">Photo by jgam CREDIT</figcaption>
+    </div>
+</div>
+
+
 ## Internet and Database
 
 Computers can be connected through internet and this is why internet is so called as an innovation. How does this work? One computer can send request and receive response from the other computer. For example, when we type wikipedia.com, we ask for a request to wekipedia.com's domain and the server on wikipedia's side sends respone back to the web server that initiated the request.
 
-Here is the picture (webserver)
+<div class="side-by-side">
+    <div class="tocenter">
+        <img class="image" src="{{ site.url }}/{{ site.db1 }}" alt="Alt Text">
+        <figcaption class="caption">Photo by jgam CREDIT</figcaption>
+    </div>
+</div>
 
-Here is the picture (client & server)
+<div class="side-by-side">
+    <div class="tocenter">
+        <img class="image" src="{{ site.url }}/{{ site.db2 }}" alt="Alt Text">
+        <figcaption class="caption">Photo by jgam CREDIT</figcaption>
+    </div>
+</div>
+
 
 MySQL then installs two programs simultaneously: database client & database server. We can only access to database server through database client even if it seemed that we accessed database server directly. Then, where does that database client exist?
 
 It was ./mysql command before we actually delat with database. Through this client, we were able to send database commands.
+
+<div class="side-by-side">
+    <div class="tocenter">
+        <img class="image" src="{{ site.url }}/{{ site.db3 }}" alt="Alt Text">
+        <figcaption class="caption">Photo by jgam CREDIT</figcaption>
+    </div>
+</div>
+
+
+Then why does this fact become so special or noted? YES! Anybody can access the database server through database clients as shown in the picture below:
+
+<div class="side-by-side">
+    <div class="tocenter">
+        <img class="image" src="{{ site.url }}/{{ site.db4 }}" alt="Alt Text">
+        <figcaption class="caption">Photo by jgam CREDIT</figcaption>
+    </div>
+</div>
+
+## MySQL client
+
+Now, we know that mySQL monitor which is ./mysql and it doesn't have GUI but can control it through CLI. This is because GUI takes up lots of memories and CLI gives speed.
+
+MySQL workbench is famous GUI mySQL client and using this, I was able to access (CRUD) to the database server.
