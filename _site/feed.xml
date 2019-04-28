@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-04-25T19:20:53+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jimmy Gam</title><subtitle>humble coder</subtitle><entry><title type="html">What is database?</title><link href="http://localhost:4000/db-concept/" rel="alternate" type="text/html" title="What is database?" /><published>2019-04-25T00:00:00+09:00</published><updated>2019-04-25T00:00:00+09:00</updated><id>http://localhost:4000/db-concept</id><content type="html" xml:base="http://localhost:4000/db-concept/">&lt;h2 id=&quot;database&quot;&gt;Database?&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-04-26T09:28:44+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jimmy Gam</title><subtitle>humble coder</subtitle><entry><title type="html">What is database?</title><link href="http://localhost:4000/db-concept/" rel="alternate" type="text/html" title="What is database?" /><published>2019-04-25T00:00:00+09:00</published><updated>2019-04-25T00:00:00+09:00</updated><id>http://localhost:4000/db-concept</id><content type="html" xml:base="http://localhost:4000/db-concept/">&lt;h2 id=&quot;database&quot;&gt;Database?&lt;/h2&gt;
 
 &lt;p&gt;Before going to school, I remember parents buying me a pencilcase with bunch of pencils in it. Because I only had a few pencils at that time, I could easily fit in more pencils as I grew up. However, when I entered middle school, the story was a little different. I had to get a new pencil case while having a box-like pencil container on my personal desk. Now, I don’t recall how many pencils I have had nor the number of pencil cases that I changed. Similar to this, Computers wanted to store the data and first created a file to store the data. As more files come across, we needed a storage to store those files and found out the database.&lt;/p&gt;
 
@@ -65,7 +65,7 @@ select id,title,created from topic where author=’jgam’ order by id DESC;&lt;
 
 &lt;div class=&quot;side-by-side&quot;&gt;
     &lt;div class=&quot;tocenter&quot;&gt;
-        &lt;img class=&quot;image&quot; src=&quot;http://localhost:4000/&quot; alt=&quot;Alt Text&quot; /&gt;
+        &lt;img class=&quot;image&quot; src=&quot;http://localhost:4000//blog/assets/images/normaldb.png&quot; alt=&quot;Alt Text&quot; /&gt;
         &lt;figcaption class=&quot;caption&quot;&gt;Photo by jgam CREDIT&lt;/figcaption&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -74,7 +74,7 @@ select id,title,created from topic where author=’jgam’ order by id DESC;&lt;
 
 &lt;div class=&quot;side-by-side&quot;&gt;
     &lt;div class=&quot;tocenter&quot;&gt;
-        &lt;img class=&quot;image&quot; src=&quot;http://localhost:4000/&quot; alt=&quot;Alt Text&quot; /&gt;
+        &lt;img class=&quot;image&quot; src=&quot;http://localhost:4000//blog/assets/images/rdb.png&quot; alt=&quot;Alt Text&quot; /&gt;
         &lt;figcaption class=&quot;caption&quot;&gt;Photo by jgam CREDIT&lt;/figcaption&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -88,7 +88,7 @@ select id,title,created from topic where author=’jgam’ order by id DESC;&lt;
 
 &lt;div class=&quot;side-by-side&quot;&gt;
     &lt;div class=&quot;tocenter&quot;&gt;
-        &lt;img class=&quot;image&quot; src=&quot;http://localhost:4000/&quot; alt=&quot;Alt Text&quot; /&gt;
+        &lt;img class=&quot;image&quot; src=&quot;http://localhost:4000//blog/assets/images/rdb2.png&quot; alt=&quot;Alt Text&quot; /&gt;
         &lt;figcaption class=&quot;caption&quot;&gt;Photo by jgam CREDIT&lt;/figcaption&gt;
     &lt;/div&gt;
 &lt;/div&gt;
