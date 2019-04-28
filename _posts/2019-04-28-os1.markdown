@@ -1,0 +1,21 @@
+---
+title: "OS"
+layout: post
+date: 2019-04-28
+image: /assets/images/markdown.jpg
+headerImage: false
+tag:
+- jgam
+- Operating System
+- System Call
+- golden week coding
+- OS
+category: blog
+author: jgam
+description: operating system
+---
+
+## Operating System
+
+Before we go into Operating System, I want to share the goodness of Japanese holidays and during which< I am able to do lots of OS studyings. SO, thank you Japan for this wonderful 10 days of break! Also, my first project during golden week is to understand os in my words and again IN MY WORDS. So the definiction could be slightly different and if it is, please let me know so I can fix my thoughts! Let's begin!
+
