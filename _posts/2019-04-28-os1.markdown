@@ -24,3 +24,45 @@ Before we go into Operating System, I want to share the goodness of Japanese hol
 For a compjuter to start running, when it is powered up or rebootted, it needs to have an initial program to run. This initial program, **bootstrap program** initializes all aspects of the system, from CPU registers to device controllers to memory contents. The bootstrap progra must know how to load the operating system and how to start executing that system. After it has been initiated, the system is waiting for *event* to occur and this event is called interrupt and it can occur via system calls ortother special oeprations.
 
 Computers usually run their programs from rewriteable memory called main memory (Random Access memory, or RAM). Main memory is implemented in a semiconductor technology called dynamic random access memory (DRAM). Because main memory is too small to store all needed programs and data and also it being volatile, (contents removed when power is turned off) secondary storage is needed and in here, computers save all the programs and data to ensure that the information is kept.
+
+### Single Processor System VS Multiprocessor Systems
+
+Multiprocessors have three main advantages:
+1. Increased throughput : expect to get more work done in less time
+2. Economy of Scale: Multiprocessor Systems can cost less than equivalent multiple single-processor systems, because they share *peripherals, mass storage, and power supplies.*
+3. Increaesd reliability: adding safety to reliability. Failing one won't cause much damage because the other is alive.
+
+Therefore, we now use multiple processor systems which provide those advantages.
+
+## Kernel Data Structures
+
+What is the way data are structured in the system? Fundamental data structures used extensively in oeprating systems.
+
+1.10.1 Lists, Stacks, and Queues
+
+An array is a simple data structure in which each element can bea ccessed directly. For example, main memory is constructed as an array. If the data item being stored is larger than one byte, then multiple bytes can be allocated to the item, and the item is addressed as item number x item size.
+
+List represents a collectino of data values as a sequence.
+
+### Linked List
+
+In linked list, itmes are linked to one another and has several types:
+1. singly linked list: each item points to its successor
+2. doubly linked list: given item can refer either to its predecessor or to its successor
+3. circularly linked list: the last element in the list refers to the first element
+
+Stack is sequentially ordered data structure that has **LIFO**.
+Queue is sequentially ordered data structure that has **FIFO**.
+
+###Trees
+
+A tree is a data structure that can be used to represent data hierarchically. Data values in a tree structure are linked through parent-child relationships. In a general tree, a parent may have an unlimited number of children.
+
+1. binary tree: a parent may have at most two children, which wet erm the left and right child
+2. binary search tree requires an ordering between the parent's two chidlren in which leftc hile <= right child.
+3. balanced binary search tree is a tree containing n items that have at most log n levels, thus ensuring worst case perforamnce of O(logN).
+
+### Hash Functions and Maps
+
+Hash functino is to use key and values(indexing) to maixmize the performance efficiency. One potential difficulty with hash functions is thatt wo inputs can result in the same output value, that is they can link to the same table location. We can solve this hash collosion by having a linked list at that index or list. Similar to this data structure, we use mapping.
+
