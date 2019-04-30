@@ -66,3 +66,18 @@ A tree is a data structure that can be used to represent data hierarchically. Da
 
 Hash functino is to use key and values(indexing) to maixmize the performance efficiency. One potential difficulty with hash functions is thatt wo inputs can result in the same output value, that is they can link to the same table location. We can solve this hash collosion by having a linked list at that index or list. Similar to this data structure, we use mapping.
 
+### Bitmaps
+
+A **bitmap** is a string of n binary digits that can be used to represent the status of n items. This might be a little uncommon term but what this datastructure does is simple. For example, we have 8 resources and 0 means the resource is available whereas 1 means the resource is taken. 0 0 1 0 1 1 1 0 means that there are four untaken resources that we can use. This we can use it in **disk blocks** and is good for space complexity.
+
+## Cloud Computing
+
+Clou computing is a typ of computing that delivers computing, storage, and even applications as a service across a network. In some ways, it is a logical extension of virtualization, because it uses virtualization as a base for its functionality.
+1. public cloud : a cloud available via the Internet to anyone willing to pay for the services
+2. private cloud : a cloud run by a company for that company's own use
+3. hybrid cloud : a cloud that includes both pblic and private cloud components
+4. SaaS(software as a service) : one or more applications(such as word processors or spreadshees) available via the Internet
+5. Platorm as a service (PaaS) : a software stack ready for applicatino use via the Internet(database server)
+6. Infrastructure as a service (IaaS) : servers or storage available over the Internet (for example, storage available for making backup copies of production data)
+
+The cloud-computing typs are not discrete, as a cloud computing environment may provide a combination of several types. Certainly, there are traditinal operating systems within many of the types of cloud infrastructure.
