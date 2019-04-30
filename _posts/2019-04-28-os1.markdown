@@ -19,3 +19,8 @@ description: operating system
 
 Before we go into Operating System, I want to share the goodness of Japanese holidays and during which< I am able to do lots of OS studyings. SO, thank you Japan for this wonderful 10 days of break! Also, my first project during golden week is to understand os in my words and again IN MY WORDS. So the definiction could be slightly different and if it is, please let me know so I can fix my thoughts! Let's begin!
 
+## Computer System Organization
+
+For a compjuter to start running, when it is powered up or rebootted, it needs to have an initial program to run. This initial program, **bootstrap program** initializes all aspects of the system, from CPU registers to device controllers to memory contents. The bootstrap progra must know how to load the operating system and how to start executing that system. After it has been initiated, the system is waiting for *event* to occur and this event is called interrupt and it can occur via system calls ortother special oeprations.
+
+Computers usually run their programs from rewriteable memory called main memory (Random Access memory, or RAM). Main memory is implemented in a semiconductor technology called dynamic random access memory (DRAM). Because main memory is too small to store all needed programs and data and also it being volatile, (contents removed when power is turned off) secondary storage is needed and in here, computers save all the programs and data to ensure that the information is kept.
