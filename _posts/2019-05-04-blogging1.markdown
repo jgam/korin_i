@@ -14,3 +14,13 @@ category: blog
 author: jgam
 description: MVC and its pattern
 ---
+
+
+## MVC?
+
+MVC stands for model, view, controller and a lot of people may be wondering why is it so important or often come across in programming? The term is often used in web programming. First is first so, let's try to understand what web programming is. When we go on to google's search engine, we see a search box in the middle and above that there exists a huge GOOGLE logo. This is viewing and the web is displaying(view) HTML code from google's server. Now, when we put something in the search box and click searh button, the website makes a request to a google server and google server now looks for the results and this is called control. Lastly, model is somewhat tricky but you can simply think of it as a database. For example, the search results may be stored or stacked in a huge google database and google simply fetches that data to show the results of search keywords. Simple, right?
+
+Now, the hard part is to actually come up with such design or so called "web architecture." Imagine when you were building a toy racing car, the important parts are already built. For example, you wouldn't visit a mechanic engineering factory to build a small motor that runs the racing car or wouldn't visit a store to buy wheels for the racing car. They are all within a model kit inside of toy racing car. Now, lots of companies or organizations provide similar concepts that are consist of MVC and we call these "model kits" as web frameworks.
+
+## web Framework
+
