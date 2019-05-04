@@ -24,3 +24,14 @@ Now, the hard part is to actually come up with such design or so called "web arc
 
 ## web Framework
 
+As was explained earlier, web framework is a model kit that allows users to build on web programming way easier. It is somewhat similar to the libraries that we often use. If library is the function that we are using, the web framework is composed of various libraries so that we can build the website from the start. There are various kinds of MVC web frameworks.
+
+1. spring framework(java)
+2. Laravel, CodeIgniter, Symfony (php)
+3. MTV -> django(python)
+4. Ruby on Rails(ruby)
+5. Scala(play)
+6. etc
+
+These web frameworks are different because of different languages being used however the core flow of mvc pattern is very similar.
+
