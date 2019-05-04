@@ -1,0 +1,16 @@
+---
+title: "MVC web framework?"
+layout: post
+date: 2019-05-04
+image: /assets/images/markdown.jpg
+headerImage: false
+tag:
+- jgam
+- Model
+- View
+- Controller
+- Framework
+category: blog
+author: jgam
+description: MVC and its pattern
+---
