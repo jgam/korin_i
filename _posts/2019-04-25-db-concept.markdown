@@ -156,3 +156,6 @@ Then why does this fact become so special or noted? YES! Anybody can access the 
 Now, we know that mySQL monitor which is ./mysql and it doesn't have GUI but can control it through CLI. This is because GUI takes up lots of memories and CLI gives speed.
 
 MySQL workbench is famous GUI mySQL client and using this, I was able to access (CRUD) to the database server.
+
+### Future of DB
+
