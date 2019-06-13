@@ -41,7 +41,7 @@ It is 100% helpful to build web app from the bottom.
 
 Things need to be learned for web architecturers:
 1. Web platform (django maybe?)
-2. unix command
-
-
+2. unix command (regex, shell scripting, process management(zombies and kills))
+3. Database(SQL, RDBMS, index? performance check!)
+4. Basic programming
 
