@@ -31,4 +31,10 @@ Content delivery network is a network that connects big files or contents to her
 
 ## big data
 
-Put it in to Dataware House (Hadoop)
+Put it in to Dataware House (Hadoop) data firebase?
+
+## Full text search service
+
+Elastic search -> another way of managing database. This is a trend. **When new product is available, we need to understand the philosophy of it and see why we use that at that certain era.**
+
+
