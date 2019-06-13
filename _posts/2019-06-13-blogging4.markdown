@@ -52,3 +52,8 @@ Some of the situations:
 2. I do not want to reveal my weakness, what should I do ?
 -> reach out to people and know who to reach out is very important.
 
+3. nothing to learn here? what should I do?
+-> always be the worst developer on your team. If need to move, move to a new environment.
+
+4. What is the next big boss or problem?
+-> I need guide and assistance. Find **mentor**
