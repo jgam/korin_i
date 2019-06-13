@@ -17,4 +17,18 @@ description: little detail about web architecture
 
 ## DNS
 
-B
+Domain name system and it is a hierarchical and decentralized naming system for computers, services, or other resources connected to the internet or a private network.
+
+## Createiong of DB
+
+CRUD is first thing that needs to be done. Create, Read, Update and Delete is basic process and logic that needs to be built (data structure) when creating a database.
+
+Cache server(memory) is another useful database that stores data or information before database(hard disk). It is faster to read and write but it is dangerous because the data will vaporate when computer is shut down.
+
+## CDN
+
+Content delivery network is a network that connects big files or contents to here.
+
+## big data
+
+Put it in to Dataware House (Hadoop)
