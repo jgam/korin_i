@@ -1,0 +1,16 @@
+---
+title: "Atarashii kaisha: Rakuten"
+layout: post
+date: 2019-06-18
+image: /assets/images/markdown.jpg
+headerImage: false
+tag:
+- jgam
+- Rakuten
+- New work
+- web architecture
+- IoT
+category: blog
+author: jgam
+description: Onboarding to the new environment
+---
