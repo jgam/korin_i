@@ -17,4 +17,4 @@ description: Onboarding to the new environment
 
 ## First Orientation
 
-Through this article, I want to demonstrate different culture that I faced when working in Japanese company.
+Through this article, I want to demonstrate different culture that I faced when working in Japanese company. So currently, Rakuten Mobile Inc. is getting hot attentions from Rakuten and hiring people from all over the world. My colleagues, all had work experiences and were settled as somewhat managing positions. Before the orientation, I was given a laptop and had to set the VPN and intranet following the instructions given. (You can choose OS from windows or mac)
