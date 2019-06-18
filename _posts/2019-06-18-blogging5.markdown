@@ -14,3 +14,7 @@ category: blog
 author: jgam
 description: Onboarding to the new environment
 ---
+
+## First Orientation
+
+Through this article, I want to demonstrate different culture that I faced when working in Japanese company.
