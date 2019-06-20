@@ -16,3 +16,14 @@ description: What really is IoT?
 ---
 
 ## Modern IoT
+
+The important part about IoT is divided by the abilities to connect to the internet.
+
+1. Gazette
+- Fitbit and Microsoft Band are health care equipments. They themselves cannot be connected to the Internet but can be connected indirectly to the mobile phones so that data is being saved on a server through the mobile devices.
+
+2. Infra
+- Using vibrating sensors to analyze the data so that alleviate human labours. In concluding, it is about controlling the infra system using the sensors or even using another layer of infrastructure.
+- The important part is a network protocol and they are the following: HTTP/HTTPS(REST API), AMPQ, MQTT
+
+
