@@ -41,6 +41,7 @@ description: little detail about web architecture
 -> guide rabbit ambassador in requirement.
 
 ## Yahoo Developer
-
+- yahoo dp(dynamic package) -> hotel + air flight = saving money + time efficient
+- 
 
 ## Yahoo
